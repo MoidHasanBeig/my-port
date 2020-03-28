@@ -1,0 +1,64 @@
+Components(state/props used, setState):
+
+1) Top (0,B)
+-> Light source (A,0)
+-> Background (A,0)
+-> Clouds (A,0)
+-> Planet (A,0)
+-> Balloon (A,0)
+-> Speech bubble (0,0)
+
+2) About me (A,B)
+
+3) Skillset (0,B)
+-> Heading* (A,0)
+-> Display section (skills) ((A,C),0)
+-> Bottom selector section
+    --One select button for each skill* (A,C)
+
+4) My work (0,B)
+-> Heading* (A,0)
+-> Display section (work)
+    --Screens (D,0)
+    --Next button (A,D)
+    --Previous button (A,D)
+    --Tools used
+      ---One indicator for each tool*
+
+5) Credentials (0,B)
+-> Heading* (A,0)
+-> Logos of institutes (A,0)
+-> Certificates
+
+6) Contact me (0,B)
+-> Heading* (A,0)
+-> Form (internal/ non-component)
+-> Social icons (A,0)
+
+7) Toggle theme button (Non-mobile device) (A,A)
+
+8) Menu button (Mobile devices) (A,F)
+
+9) Menu (Non-mobile) (A,0)
+
+10) Menu (Mobile) (A,0)
+
+
+********************************************************************************
+********************************************************************************
+
+
+State management:
+
+
+A) Light/Dark mode toggle
+
+B) Active section of the page
+
+C) Choose skillset
+
+D) Choose my work (project)
+
+E) Contact me form
+
+F) Mobile menu active
