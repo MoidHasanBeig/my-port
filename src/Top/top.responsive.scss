@@ -1,0 +1,137 @@
+// Extra small devices (portrait phones, less than 567px)
+@media (max-width: 567px) {
+//This is by default.
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {
+  div.top-section {
+    height: 200vh;
+    height: calc(var(--vh, 1vh) * 200);
+    background-image: url('./images/blue-sky-lg.svg');
+
+    div.light-source {
+      width: 40vw;
+      height: 40vw;
+    }
+    div.cloud-1 {
+      width: 35vw;
+      height: 35vw;
+    }
+    div.cloud-2 {
+      width: 17vw;
+      height: 17vw;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 30vw;
+        height: 30vw;
+      }
+      div.balloon {
+        width: 8vw;
+        height: 8vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 70vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
+}
+
+// Medium devices (tablets portrait, 768px and up)
+@media (min-width: 760px) and (min-height: 1000px) {
+  div.top-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-size: 100% 140%;
+
+    div.light-source {
+      width: 50vw;
+      height: 50vw;
+    }
+    div.cloud-1 {
+      width: 42vw;
+      height: 42vw;
+    }
+    div.cloud-2 {
+      width: 21vw;
+      height: 21vw;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 40vw;
+        height: 40vw;
+      }
+      div.balloon {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 100vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  div.top-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('./images/blue-sky-lg.svg');
+    background-size: 105% 100%;
+
+    div.light-source {
+      width: 30vw;
+      height: 30vw;
+    }
+    div.cloud-1 {
+      width: 20vw;
+      height: 20vw;
+      top: -10px;
+      left: 90px;
+    }
+    div.cloud-2 {
+      width: 13vw;
+      height: 13vw;
+      top: 40px;
+      right: 155px;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 18vw;
+        height: 18vw;
+      }
+      div.balloon {
+        width: 4vw;
+        height: 4vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 50vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
