@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import './top.styles.scss';
 import './top.responsive.scss';
 
@@ -14,9 +14,7 @@ function Top() {
         <div className="speech-bubble" />
         <div className="balloon" />
       </div>
-      <div className="globe-container">
-        <div className="globe" />
-      </div>
+      <div className="globe" />
     </div>
   );
 }
