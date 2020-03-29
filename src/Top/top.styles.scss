@@ -1,0 +1,82 @@
+div.top-section {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  min-height: 600px;
+  background: #D7EFFE;
+  position: relative;
+  transition: height 500ms;
+
+  div.light-source {
+    background-image: url('./images/sun.svg');
+    width: 60vw;
+    height: 60vw;
+    max-width: 250px;
+    max-height: 250px;
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  div.cloud-1 {
+    background-image: url('./images/cloud1.svg');
+    width: 54vw;
+    height: 54vw;
+    max-width: 220px;
+    max-height: 220px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5px;
+    left: -90px;
+  }
+  div.cloud-2 {
+    background-image: url('./images/cloud1.svg');
+    width: 25vw;
+    height: 25vw;
+    max-width: 100px;
+    max-height: 100px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  div.speech-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    div.speech-bubble {
+      background-image: url('./images/speechbubble.svg');
+      width: 55vw;
+      height: 55vw;
+      max-width: 225px;
+      max-height: 225px;
+      background-size: 100% 100%;
+      position: relative;
+    }
+
+    div.balloon {
+      background-image: url('./images/balloon.svg');
+      width: 17vw;
+      height: 17vw;
+      max-width: 55px;
+      max-height: 55px;
+      background-size: 100% 100%;
+      position: relative;
+      top: -50px;
+      left: -20px;
+    }
+  }
+  div.globe-container {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(60%);
+
+    div.globe {
+      background-image: url('./images/globe.svg');
+      width: 100vw;
+      height: 140vw;
+      background-size: 155% 100%;
+      position: relative;
+      background-position: center;
+    }
+  }
+}
