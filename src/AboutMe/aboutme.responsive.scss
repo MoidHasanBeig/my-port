@@ -22,13 +22,66 @@
 }
 
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {}
+@media (min-width: 760px) and (min-height: 1000px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 38vw;
+      height: 38vw;
+    }
+    p.about-text {
+      font-size: 1rem;
+      width: 60vw;
+    }
+  }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 15vw;
+      height: 15vw;
+      opacity: 1;
+    }
+    div.about-pic::before {
+      content: url('./images/profile-left.svg');
+      position: absolute;
+      left: -125%;
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
+    div.about-pic::after {
+      content: url('./images/profile-right.svg');
+      position: absolute;
+      left: 125%;
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
+    p.about-text {
+      font-size: 1rem;
+      width: 40vw;
+    }
+  }
+}
 
 //iPad pro portrait
-@media (min-width: 1000px) and (min-height: 1200px) {}
+@media (min-width: 1000px) and (min-height: 1200px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 38vw;
+      height: 38vw;
+    }
+    div.about-pic::before {
+      content: none;
+    }
+    div.about-pic::after {
+      content: none;
+    }
+    p.about-text {
+      width: 60vw;
+    }
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

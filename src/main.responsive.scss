@@ -9,13 +9,25 @@
 @media (min-width: 568px) {}
 
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {}
+@media (min-width: 760px) and (min-height: 1000px) {
+  html,body {
+    font-size: 180%;
+  }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  html,body {
+    font-size: 140%;
+  }
+}
 
 //iPad pro portrait
-@media (min-width: 1000px) and (min-height: 1200px) {}
+@media (min-width: 1000px) and (min-height: 1200px) {
+  html,body {
+    font-size: 200%;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

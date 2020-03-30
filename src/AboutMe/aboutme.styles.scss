@@ -14,7 +14,7 @@ div.about-me-section {
     font-size: 2.3rem;
     position: relative;
     color: #B0B0B0;
-    padding-top: 8vw;
+    margin: auto;
   }
   div.about-pic {
     background-image: url('./images/profile-pic.png');
@@ -22,17 +22,14 @@ div.about-me-section {
     width: 55vw;
     height: 55vw;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     opacity: 0.9;
+    margin: auto;
   }
   p.about-text {
     text-align: center;
     width: 75vw;
     font-size: 1.35rem;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 8vw;
+    margin: auto;
   }
 }
