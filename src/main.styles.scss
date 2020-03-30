@@ -1,5 +1,13 @@
+@font-face {
+    font-family: PoorStory;
+    src: url('./fonts/PoorStory.ttf');
+}
+
 html,body {
+
   margin: 0;
+  font-family: 'PoorStory';
+  font-size: 100%;
 
   /* width */
   ::-webkit-scrollbar {
@@ -20,4 +28,5 @@ html,body {
   ::-webkit-scrollbar-thumb:hover {
       background: #555;
   }
+
 }

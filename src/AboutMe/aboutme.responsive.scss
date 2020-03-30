@@ -1,12 +1,25 @@
 // Extra small devices (portrait phones, less than 360px)
 @media (max-width: 360px) {
-  html,body {
-    font-size: 80%;
+  div.about-me-section {
+    p.about-text {
+      padding-bottom: 2vw;
+    }
   }
 }
 
 // Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {}
+@media (min-width: 568px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 28vw;
+      height: 28vw;
+    }
+    p.about-text {
+      font-size: 1rem;
+      width: 50vw;
+    }
+  }
+}
 
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {}
