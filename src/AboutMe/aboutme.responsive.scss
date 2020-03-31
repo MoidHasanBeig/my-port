@@ -38,28 +38,23 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   div.about-me-section {
+    div.about-filler {
+      background-image: url('./images/filler.svg');
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0;
+      top: 5vh;
+      height: 50vw;
+      width: 30vw;
+    }
     div.about-pic {
       width: 15vw;
       height: 15vw;
       opacity: 1;
     }
-    div.about-pic::before {
-      content: url('./images/profile-left.svg');
-      position: absolute;
-      left: -125%;
-      transform: scale(0.8);
-      opacity: 0.6;
-    }
-    div.about-pic::after {
-      content: url('./images/profile-right.svg');
-      position: absolute;
-      left: 125%;
-      transform: scale(0.8);
-      opacity: 0.6;
-    }
     p.about-text {
-      font-size: 1rem;
-      width: 40vw;
+      font-size: 0.9rem;
+      width: 30vw;
     }
   }
 }
@@ -67,15 +62,12 @@
 //iPad pro portrait
 @media (min-width: 1000px) and (min-height: 1200px) {
   div.about-me-section {
+    div.about-filler {
+      display: none;
+    }
     div.about-pic {
       width: 38vw;
       height: 38vw;
-    }
-    div.about-pic::before {
-      content: none;
-    }
-    div.about-pic::after {
-      content: none;
     }
     p.about-text {
       width: 60vw;
@@ -83,5 +75,28 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 18vw;
+      height: 18vw;
+    }
+    p.about-text {
+      width: 40vw;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  div.about-me-section {
+    div.about-pic {
+      width: 18vw;
+      height: 18vw;
+    }
+    p.about-text {
+      width: 40vw;
+    }
+  }
+}

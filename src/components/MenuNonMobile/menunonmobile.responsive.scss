@@ -1,44 +1,41 @@
 // Extra small devices (portrait phones, less than 360px)
 @media (max-width: 360px) {
-  html,body {
-    font-size: 80%;
-  }
+    div.menu-non-mobile {
+      display: none;
+    }
 }
 
 // Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {}
+@media (min-width: 568px) {
+    div.menu-non-mobile {
+      display: none;
+    }
+}
 
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
-  html,body {
-    font-size: 180%;
+  div.menu-non-mobile {
+    display: none;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  html,body {
-    font-size: 140%;
+  div.menu-non-mobile {
+    display: flex;
   }
 }
 
 //iPad pro portrait
 @media (min-width: 1000px) and (min-height: 1200px) {
-  html,body {
-    font-size: 220%;
-  }
-}
-
-//iPad pro landscape
-@media (min-width: 1200px) and (min-height: 1000px) {
-  html,body {
-    font-size: 200%;
+  div.menu-non-mobile {
+    display: none;
   }
 }
 
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
-  html,body {
-    font-size: 180%;
+  div.menu-non-mobile {
+    display: flex;
   }
 }

@@ -176,7 +176,94 @@
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+  div.top-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('./images/blue-sky-lg.svg');
+    background-size: 105% 120%;
 
+    div.light-source {
+      width: 35vw;
+      height: 35vw;
+    }
+    div.cloud-1 {
+      width: 25vw;
+      height: 25vw;
+      top: -10px;
+      left: 90px;
+    }
+    div.cloud-2 {
+      width: 16vw;
+      height: 16vw;
+      top: 70px;
+      right: 155px;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 23vw;
+        height: 23vw;
+      }
+      div.balloon {
+        width: 6vw;
+        height: 6vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 65vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  div.top-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('./images/blue-sky-lg.svg');
+    background-size: 105% 100%;
+
+    div.light-source {
+      width: 35vw;
+      height: 35vw;
+    }
+    div.cloud-1 {
+      width: 24vw;
+      height: 24vw;
+      top: -10px;
+      left: 60px;
+    }
+    div.cloud-2 {
+      width: 14vw;
+      height: 14vw;
+      top: 90px;
+      right: 155px;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 21vw;
+        height: 21vw;
+      }
+      div.balloon {
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 55vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
 }

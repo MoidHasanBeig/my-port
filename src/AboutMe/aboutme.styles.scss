@@ -2,12 +2,13 @@ div.about-me-section {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   min-height: 568px;
-  background-color: #EEEEEE;
+  background-color: #F8F8F8;
   position: relative;
   transition: height 500ms;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden;
 
   div.about-heading {
     text-align: center;
@@ -19,8 +20,8 @@ div.about-me-section {
   div.about-pic {
     background-image: url('./images/profile-pic.png');
     background-size: 100% 100%;
-    width: 55vw;
-    height: 55vw;
+    width: 50vw;
+    height: 50vw;
     position: relative;
     opacity: 0.9;
     margin: auto;
