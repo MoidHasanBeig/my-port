@@ -1,18 +1,17 @@
 // Extra small devices (portrait phones, less than 360px)
-@media (max-width: 360px) {
-  div.about-me-section {
-    p.about-text {
-      padding-bottom: 2vw;
-    }
-  }
-}
+@media (max-width: 360px) {}
 
 // Small devices (landscape phones, 568px and up)
 @media (min-width: 568px) {
   div.about-me-section {
-    div.about-pic {
-      width: 28vw;
-      height: 28vw;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 12vw;
+        height: 12vw;
+      }
+      hr {
+        width: 50vw;
+      }
     }
     p.about-text {
       font-size: 1rem;
@@ -24,9 +23,14 @@
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
   div.about-me-section {
-    div.about-pic {
-      width: 38vw;
-      height: 38vw;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 18vw;
+        height: 18vw;
+      }
+      hr {
+        width: 70vw;
+      }
     }
     p.about-text {
       font-size: 1rem;
@@ -47,14 +51,22 @@
       height: 50vw;
       width: 30vw;
     }
-    div.about-pic {
-      width: 15vw;
-      height: 15vw;
-      opacity: 1;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 8.5vw;
+        height: 8.5vw;
+
+        div.about-pic {
+          opacity: 1;
+        }
+      }
+      hr {
+        width: 35vw;
+      }
     }
     p.about-text {
       font-size: 0.9rem;
-      width: 30vw;
+      width: 35vw;
     }
   }
 }
@@ -65,9 +77,15 @@
     div.about-filler {
       display: none;
     }
-    div.about-pic {
-      width: 38vw;
-      height: 38vw;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 18vw;
+        height: 18vw;
+        padding: 5px;
+      }
+      hr {
+        width: 70vw;
+      }
     }
     p.about-text {
       width: 60vw;
@@ -78,9 +96,14 @@
 //iPad pro landscape
 @media (min-width: 1200px) and (min-height: 1000px) {
   div.about-me-section {
-    div.about-pic {
-      width: 18vw;
-      height: 18vw;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 11vw;
+        height: 11vw;
+      }
+      hr {
+        width: 50vw;
+      }
     }
     p.about-text {
       width: 40vw;
@@ -91,9 +114,14 @@
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
   div.about-me-section {
-    div.about-pic {
-      width: 18vw;
-      height: 18vw;
+    div.about-pic-container {
+      div.about-pic-subcontainer {
+        width: 9vw;
+        height: 9vw;
+      }
+      hr {
+        width: 50vw;
+      }
     }
     p.about-text {
       width: 40vw;

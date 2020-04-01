@@ -17,17 +17,47 @@ div.about-me-section {
     color: #B0B0B0;
     margin: auto;
   }
-  div.about-pic {
-    background-image: url('./images/profile-pic.png');
-    background-size: 100% 100%;
-    width: 50vw;
-    height: 50vw;
-    position: relative;
-    opacity: 0.9;
+  div.about-pic-container {
     margin: auto;
+
+    div.about-pic-subcontainer {
+      width: 27vw;
+      height: 27vw;
+      position: relative;
+      margin: auto;
+      border: 2px solid #DDD;
+      background-color: #F8F8F8;
+      border-radius: 50%;
+      z-index: 2;
+      padding: 3px;
+
+      div.about-pic {
+        background-image: url('./images/profile-pic.png');
+        background-size: 100% 100%;
+        opacity: 0.9;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    hr {
+      width: 80vw;
+      position: relative;
+      top: -50%;
+      color: #DDD;
+      border: 1px solid;
+      margin: 0;
+    }
   }
+  p.about-text:before {
+  color: #DDD;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
   p.about-text {
-    text-align: center;
+    text-align: justify;
     width: 75vw;
     font-size: 1.35rem;
     position: relative;
