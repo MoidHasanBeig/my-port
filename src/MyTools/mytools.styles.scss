@@ -1,0 +1,8 @@
+div.my-tools-section {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  min-height: 568px;
+  background-color: #F4F4F4;
+  position: relative;
+  transition: height 500ms;
+}

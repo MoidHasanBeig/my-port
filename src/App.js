@@ -1,6 +1,7 @@
 import React,{ useEffect } from 'react';
 import Top from './Top/Top';
 import AboutMe from './AboutMe/AboutMe';
+import MyTools from './MyTools/MyTools';
 import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
 import MenuButton from './components/MenuButton/MenuButton';
 import store from './redux/reduxStore'
@@ -25,6 +26,7 @@ function App() {
         <MenuNonMobile />
         <Top />
         <AboutMe />
+        <MyTools />
       </div>
     </Provider>
   );

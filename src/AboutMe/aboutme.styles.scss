@@ -1,66 +1,72 @@
-div.about-me-section {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  min-height: 568px;
-  background-color: #F8F8F8;
-  position: relative;
-  transition: height 500ms;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow: hidden;
+div.about-me-container {
+  background: #F8F8F8;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 
-  div.about-heading {
-    text-align: center;
-    font-size: 2.3rem;
+  div.about-me-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 568px;
+    background-color: #F8F8F8;
     position: relative;
-    color: #B0B0B0;
-    margin: auto;
-  }
-  div.about-pic-container {
-    margin: auto;
+    transition: height 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
 
-    div.about-pic-subcontainer {
-      width: 27vw;
-      height: 27vw;
+    div.about-heading {
+      text-align: center;
+      font-size: 2.3rem;
       position: relative;
+      color: #B0B0B0;
       margin: auto;
-      border: 2px solid #DDD;
-      background-color: #F8F8F8;
-      border-radius: 50%;
-      z-index: 2;
-      padding: 3px;
+    }
+    div.about-pic-container {
+      margin: auto;
 
-      div.about-pic {
-        background-image: url('./images/profile-pic.png');
-        background-size: 100% 100%;
-        opacity: 0.9;
-        height: 100%;
-        width: 100%;
+      div.about-pic-subcontainer {
+        width: 27vw;
+        height: 27vw;
+        position: relative;
+        margin: auto;
+        border: 2px solid #DDD;
+        background-color: #F8F8F8;
+        border-radius: 50%;
+        z-index: 2;
+        padding: 3px;
+
+        div.about-pic {
+          background-image: url('./images/profile-pic.png');
+          background-size: 100% 100%;
+          opacity: 0.9;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      hr {
+        width: 80vw;
+        position: relative;
+        top: -50%;
+        color: #DDD;
+        border: 1px solid;
+        margin: 0;
       }
     }
-    hr {
-      width: 80vw;
-      position: relative;
-      top: -50%;
+    p.about-text:before {
       color: #DDD;
-      border: 1px solid;
-      margin: 0;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
     }
-  }
-  p.about-text:before {
-  color: #DDD;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-  p.about-text {
-    text-align: justify;
-    width: 75vw;
-    font-size: 1.35rem;
-    position: relative;
-    margin: auto;
+    p.about-text {
+      text-align: justify;
+      width: 75vw;
+      font-size: 1.35rem;
+      position: relative;
+      margin: auto;
+    }
   }
 }

@@ -3,128 +3,174 @@
 
 // Small devices (landscape phones, 568px and up)
 @media (min-width: 568px) {
-  div.about-me-section {
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 12vw;
-        height: 12vw;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 12vw;
+          height: 12vw;
+        }
+        hr {
+          width: 50vw;
+        }
       }
-      hr {
+      p.about-text {
+        font-size: 1rem;
         width: 50vw;
       }
-    }
-    p.about-text {
-      font-size: 1rem;
-      width: 50vw;
     }
   }
 }
 
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
-  div.about-me-section {
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 18vw;
-        height: 18vw;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 18vw;
+          height: 18vw;
+        }
+        hr {
+          width: 70vw;
+        }
       }
-      hr {
-        width: 70vw;
+      p.about-text {
+        font-size: 1rem;
+        width: 60vw;
       }
-    }
-    p.about-text {
-      font-size: 1rem;
-      width: 60vw;
     }
   }
 }
 
-// Large devices (desktops, 992px and up)
+// MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  div.about-me-section {
-    div.about-filler {
-      background-image: url('./images/filler.svg');
-      background-size: 100% 100%;
-      position: absolute;
-      left: 0;
-      top: 5vh;
-      height: 50vw;
-      width: 30vw;
-    }
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 8.5vw;
-        height: 8.5vw;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-filler {
+        background-image: url('./images/filler.svg');
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        top: 5vh;
+        height: 50vw;
+        width: 30vw;
+      }
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 9.5vw;
+          height: 9.5vw;
 
-        div.about-pic {
-          opacity: 1;
+          div.about-pic {
+            opacity: 1;
+          }
+        }
+        hr {
+          width: 38vw;
         }
       }
-      hr {
-        width: 35vw;
+      p.about-text {
+        font-size: 0.9rem;
+        width: 52vw;
       }
     }
-    p.about-text {
-      font-size: 0.9rem;
-      width: 35vw;
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
+  div.about-me-container {
+    div.about-me-section {
+      div.about-filler {
+        background-image: url('./images/filler.svg');
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        top: 5vh;
+        height: 50vw;
+        width: 30vw;
+      }
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 8.5vw;
+          height: 8.5vw;
+
+          div.about-pic {
+            opacity: 1;
+          }
+        }
+        hr {
+          width: 35vw;
+        }
+      }
+      p.about-text {
+        font-size: 0.9rem;
+        width: 35vw;
+      }
     }
   }
 }
 
 //iPad pro portrait
 @media (min-width: 1000px) and (min-height: 1200px) {
-  div.about-me-section {
-    div.about-filler {
-      display: none;
-    }
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 18vw;
-        height: 18vw;
-        padding: 5px;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-filler {
+        display: none;
       }
-      hr {
-        width: 70vw;
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 18vw;
+          height: 18vw;
+          padding: 5px;
+        }
+        hr {
+          width: 70vw;
+        }
       }
-    }
-    p.about-text {
-      width: 60vw;
+      p.about-text {
+        width: 60vw;
+      }
     }
   }
 }
 
 //iPad pro landscape
 @media (min-width: 1200px) and (min-height: 1000px) {
-  div.about-me-section {
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 11vw;
-        height: 11vw;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 11vw;
+          height: 11vw;
+        }
+        hr {
+          width: 50vw;
+        }
       }
-      hr {
-        width: 50vw;
+      p.about-text {
+        width: 40vw;
       }
-    }
-    p.about-text {
-      width: 40vw;
     }
   }
 }
 
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
-  div.about-me-section {
-    div.about-pic-container {
-      div.about-pic-subcontainer {
-        width: 9vw;
-        height: 9vw;
+  div.about-me-container {
+    div.about-me-section {
+      div.about-pic-container {
+        div.about-pic-subcontainer {
+          width: 9vw;
+          height: 9vw;
+        }
+        hr {
+          width: 50vw;
+        }
       }
-      hr {
-        width: 50vw;
+      p.about-text {
+        width: 40vw;
       }
-    }
-    p.about-text {
-      width: 40vw;
     }
   }
 }

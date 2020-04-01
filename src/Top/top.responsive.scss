@@ -85,8 +85,54 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
+// MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  div.top-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('./images/blue-sky-lg.svg');
+    background-size: 105% 100%;
+
+    div.light-source {
+      width: 35vw;
+      height: 35vw;
+    }
+    div.cloud-1 {
+      width: 23vw;
+      height: 23vw;
+      top: -10px;
+      left: 80px;
+    }
+    div.cloud-2 {
+      width: 15vw;
+      height: 15vw;
+      top: 50px;
+      right: 155px;
+    }
+    div.speech-container {
+      div.speech-bubble {
+        width: 21vw;
+        height: 21vw;
+      }
+      div.balloon {
+        width: 6vw;
+        height: 6vw;
+      }
+    }
+    div.globe {
+      width: 100vw;
+      height: 57vw;
+      transform: translate(0,63%) rotate(0deg);
+    }
+    @keyframes rotateGlobe {
+      from {transform: translate(0,63%) rotate(0deg);}
+      to {transform: translate(0,63%) rotate(360deg);}
+    }
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
   div.top-section {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);

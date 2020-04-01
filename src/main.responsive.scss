@@ -15,8 +15,15 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
+// MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  html,body {
+    font-size: 160%;
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
   html,body {
     font-size: 140%;
   }
