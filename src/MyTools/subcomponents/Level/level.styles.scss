@@ -1,0 +1,20 @@
+div.level-container {
+  display: flex;
+  flex-direction: row;
+
+  div.level-ball {
+    background-size: 100% 100%;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0.2rem;
+  }
+  div.one {
+    background-image: url('../../images/one.svg');
+  }
+  div.half {
+    background-image: url('../../images/half.svg');
+  }
+  div.zero {
+    background-image: url('../../images/zero.svg');
+  }
+}

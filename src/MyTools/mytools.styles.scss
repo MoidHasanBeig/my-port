@@ -1,8 +1,76 @@
-div.my-tools-section {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  min-height: 568px;
-  background-color: #F4F4F4;
-  position: relative;
-  transition: height 500ms;
+div.my-tools-container {
+  background: #F4F4F4;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+
+  div.my-tools-section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 568px;
+    background-color: #F4F4F4;
+    position: relative;
+    transition: height 500ms;
+
+    div.display-container {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      margin: auto;
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+
+      div.tool-logo-lg {
+        background-size: 100% 100%;
+        width: 26vw;
+        height: 26vw;
+        margin: auto;
+        margin-bottom: 1rem;
+        transition: all 500ms;
+      }
+      div.tool-desc-container {
+        display: flex;
+        flex-direction: column;
+
+        div.tool-name {
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 2rem;
+          transition: all 500ms;
+        }
+        div.tool-desc {
+          font-size: 1.3rem;
+          color: #7B7B7B;
+          text-align: justify;
+          margin-bottom: 2rem;
+        }
+        div.details-container {
+          div.used-for {
+            margin-bottom: 0.6rem;
+            color: #7B7B7B;
+            font-size: 1rem;
+
+            span.for {
+              color: #000000;
+            }
+          }
+          div.skill-level {
+            color: #7B7B7B;
+            font-size: 1rem;
+            display: flex;
+          }
+        }
+      }
+    }
+    div.selector-container {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      min-height: 22vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: absolute;
+      bottom: 3vw;
+    }
+  }
 }

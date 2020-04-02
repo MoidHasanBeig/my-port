@@ -7,14 +7,21 @@ html,body {
 
   scroll-behavior: smooth;
   user-select: none;
+  scrollbar-width: none;
+  scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);
 
   margin: 0;
   font-family: 'PoorStory';
   font-size: 100%;
 
-  /* width */
+  /* width & height */
   ::-webkit-scrollbar {
       width: 0px;
+      height: 0px;
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
   }
 
   /* Track */
