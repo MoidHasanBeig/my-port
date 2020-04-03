@@ -15,7 +15,7 @@ let skillsArr = [
     for: "Frontend development"
   },
   {
-    name: "HTML/CSS/JS",
+    name: "HTML/ CSS/ JS",
     desc: "",
     class: "js-logo",
     level: 4.5,
@@ -54,7 +54,7 @@ let skillsArr = [
     desc: "",
     class: "figma-logo",
     level: "4.5",
-    for: "Illustrations/Prototypes"
+    for: "Illustrations/ Prototypes"
   },
   {
     name: "Adobe XD",

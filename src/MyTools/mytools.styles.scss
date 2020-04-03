@@ -6,7 +6,7 @@ div.my-tools-container {
   div.my-tools-section {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    min-height: 568px;
+    min-height: 440px;
     background-color: #F4F4F4;
     position: relative;
 
@@ -21,7 +21,7 @@ div.my-tools-container {
 
       div.tool-logo-lg {
         background-size: 100% 100%;
-        width: 26vw;
+        min-width: 26vw;
         height: 26vw;
         margin: auto;
         margin-bottom: 1rem;
@@ -48,6 +48,7 @@ div.my-tools-container {
             margin-bottom: 0.6rem;
             color: #7B7B7B;
             font-size: 1rem;
+            width: max-content;
 
             span.for {
               color: #000000;
@@ -65,11 +66,11 @@ div.my-tools-container {
       display: flex;
       flex-direction: row;
       width: 100vw;
-      min-height: 22vw;
+      min-height: 24vw;
       overflow-x: auto;
       overflow-y: hidden;
       position: absolute;
-      bottom: 3vw;
+      bottom: 0;
     }
   }
 }

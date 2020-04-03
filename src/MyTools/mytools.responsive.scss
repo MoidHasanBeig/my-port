@@ -1,0 +1,126 @@
+// Extra small devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        flex-direction: row;
+        width: 70vw;
+
+        div.tool-logo-lg {
+          min-width: 22vw;
+          height: 22vw;
+          margin-bottom: auto;
+          margin-right: 3rem;
+        }
+        div.tool-desc-container {
+          div.tool-name {
+            text-align: left;
+            margin-bottom: 1rem;
+          }
+          div.tool-desc {
+            font-size: 1rem;
+          }
+        }
+        div.details-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+      div.selector-container {
+        justify-content: center;
+        min-height: 13vw;
+        bottom: -2vw;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets portrait, 768px and up)
+@media (min-width: 760px) and (min-height: 1000px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
+
+// MDPI devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
+
+//iPad pro portrait
+@media (min-width: 1000px) and (min-height: 1200px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
+
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  div.my-tools-container {
+    div.my-tools-section {
+      div.display-container {
+        div.tool-logo-lg {}
+        div.tool-desc-container {
+
+        }
+      }
+    }
+  }
+}
