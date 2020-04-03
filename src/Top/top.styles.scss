@@ -6,7 +6,6 @@ div.top-section {
   background-image: url('./images/blue-sky.svg');
   background-size: 100% 100%;
   position: relative;
-  transition: height 500ms;
   overflow: hidden;
 
   div.light-source {
@@ -58,14 +57,14 @@ div.top-section {
 
     div.balloon {
       background-image: url('./images/balloon.svg');
-      width: 17vw;
-      height: 17vw;
+      width: 13vw;
+      height: 13vw;
       // max-width: 55px;
       // max-height: 55px;
       background-size: 100% 100%;
       position: relative;
-      top: -50px;
-      left: -20px;
+      top: -40px;
+      left: -15px;
     }
   }
 

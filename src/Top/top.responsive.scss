@@ -6,8 +6,6 @@
 // Small devices (landscape phones, 568px and up)
 @media (min-width: 568px) {
   div.top-section {
-    height: 200vh;
-    height: calc(var(--vh, 1vh) * 200);
     background-image: url('./images/blue-sky-lg.svg');
 
     div.light-source {
@@ -35,11 +33,11 @@
     div.globe {
       width: 100vw;
       height: 70vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -47,8 +45,6 @@
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-size: 100% 140%;
 
     div.light-source {
@@ -76,11 +72,11 @@
     div.globe {
       width: 100vw;
       height: 100vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -88,8 +84,6 @@
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 105% 100%;
 
@@ -122,11 +116,11 @@
     div.globe {
       width: 100vw;
       height: 57vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -134,8 +128,6 @@
 // Large devices (desktops, 1300px and up)
 @media (min-width: 1300px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 105% 100%;
 
@@ -168,11 +160,11 @@
     div.globe {
       width: 100vw;
       height: 50vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -180,8 +172,6 @@
 //iPad pro portrait
 @media (min-width: 1000px) and (min-height: 1200px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-size: 100% 140%;
 
     div.light-source {
@@ -213,11 +203,11 @@
     div.globe {
       width: 100vw;
       height: 100vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -225,8 +215,6 @@
 //iPad pro landscape
 @media (min-width: 1200px) and (min-height: 1000px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 105% 120%;
 
@@ -259,11 +247,11 @@
     div.globe {
       width: 100vw;
       height: 65vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
@@ -271,8 +259,6 @@
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
   div.top-section {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 105% 100%;
 
@@ -305,11 +291,11 @@
     div.globe {
       width: 100vw;
       height: 55vw;
-      transform: translate(0,63%) rotate(0deg);
+      transform: translateY(63%) rotate(0deg);
     }
     @keyframes rotateGlobe {
-      from {transform: translate(0,63%) rotate(0deg);}
-      to {transform: translate(0,63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
   }
 }
