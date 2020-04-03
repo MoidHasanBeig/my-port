@@ -67,22 +67,26 @@ div.top-section {
       left: -15px;
     }
   }
+    div.glob-container {
+      display: flex;
+      justify-content: center;
 
-    div.globe {
-      background-image: url('./images/globe.svg');
-      width: 150vw;
-      height: 150vw;
-      background-size: 100% 100%;
-      position: absolute;
-      bottom: 0;
-      transform: translate(calc((-25/150)*100%),63%) rotate(0deg);
-      animation-name: rotateGlobe;
-      animation-duration: 60s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
+      div.globe {
+        background-image: url('./images/globe.svg');
+        width: 150vw;
+        height: 150vw;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(63%) rotate(0deg);
+        animation-name: rotateGlobe;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
     }
     @keyframes rotateGlobe {
-      from {transform: translate(calc((-25/150)*100%),63%) rotate(0deg);}
-      to {transform: translate(calc((-25/150)*100%),63%) rotate(360deg);}
+      from {transform: translateY(63%) rotate(0deg);}
+      to {transform: translateY(63%) rotate(360deg);}
     }
 }

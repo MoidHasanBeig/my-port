@@ -14,7 +14,9 @@ function Top() {
         <div className="speech-bubble" />
         <div className="balloon" />
       </div>
-      <div className="globe" />
+      <div className="glob-container">
+        <div className="globe" />
+      </div>
     </div>
   );
 }
