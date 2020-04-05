@@ -1,0 +1,52 @@
+// Extra small devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+    div.toggle-theme {
+      display: none;
+    }
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {
+    div.toggle-theme {
+      display: none;
+    }
+}
+
+// Medium devices (tablets portrait, 768px and up)
+@media (min-width: 760px) and (min-height: 1000px) {
+  div.toggle-theme {
+    display: none;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  div.toggle-theme {
+    display: inline-block;
+  }
+}
+
+//iPad pro portrait
+@media (min-width: 1000px) and (min-height: 1200px) {
+  div.toggle-theme {
+    display: none;
+  }
+}
+
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+  div.toggle-theme {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  div.toggle-theme {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+}

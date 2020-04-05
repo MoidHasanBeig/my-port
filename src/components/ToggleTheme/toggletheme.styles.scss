@@ -1,0 +1,23 @@
+div.toggle-theme {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  margin: 0.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  display: none;
+  transition: all 500ms;
+}
+div.toggle-theme:hover {
+  opacity: 1;
+}
+div.dark-mode {
+  background-image: url('./images/dark-mode.svg');
+}
+div.light-mode {
+  background-image: url('./images/dark-mode.svg');
+}

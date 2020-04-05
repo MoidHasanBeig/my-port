@@ -4,6 +4,7 @@ import AboutMe from './AboutMe/AboutMe';
 import MyTools from './MyTools/MyTools';
 import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
 import MenuButton from './components/MenuButton/MenuButton';
+import ToggleTheme from './components/ToggleTheme/ToggleTheme';
 import store from './redux/reduxStore'
 import { Provider } from 'react-redux';
 import './main.styles.scss';
@@ -24,6 +25,7 @@ function App() {
       <div className="App">
         <MenuButton />
         <MenuNonMobile />
+        <ToggleTheme />
         <Top />
         <AboutMe />
         <MyTools />
