@@ -8,9 +8,9 @@ function MenuNonMobile() {
       <a href="#top" className="menu-option">Top</a>
       <a href="#about-me" className="menu-option">About me</a>
       <a href="#my-tools" className="menu-option">My tools</a>
-      <a href="#" className="menu-option">My work</a>
-      <a href="#" className="menu-option">Credentials</a>
-      <a href="#" className="menu-option">Contact</a>
+      <a href="#top" className="menu-option">My work</a>
+      <a href="#top" className="menu-option">Credentials</a>
+      <a href="#top" className="menu-option">Contact</a>
     </div>
   );
 }
