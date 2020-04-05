@@ -1,0 +1,41 @@
+// Extra small devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {}
+
+// Medium devices (tablets portrait, 768px and up)
+@media (min-width: 760px) and (min-height: 1000px) {
+
+}
+
+// MDPI devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  div.heading-general {
+    transform: rotate(90deg) translate(22%,100%);
+    position: absolute;
+    font-size: 2.5rem;
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
+
+}
+
+//iPad pro portrait
+@media (min-width: 1000px) and (min-height: 1200px) {
+
+}
+
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}

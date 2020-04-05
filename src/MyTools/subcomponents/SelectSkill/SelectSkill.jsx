@@ -8,7 +8,7 @@ function SelectSkill(props) {
     <div onClick={() => props.handleClick(props.index)} className="select-skill-container">
       <div
         className={`select-skill ${props.class}`}
-        style={props.active ? {filter:"grayscale(0)"} : {}}
+        style={props.active ? {filter:"grayscale(0)",opacity:1} : {}}
       />
       <div className="skill-name">{props.active && props.name}</div>
     </div>

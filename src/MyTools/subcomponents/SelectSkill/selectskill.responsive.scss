@@ -21,18 +21,51 @@
 }
 
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {
+@media (min-width: 760px) and (min-height: 1000px) and (orientation:portrait) {
+  div.select-skill-container {
+    min-width: 17vw;
+    height: 17vw;
+    div.select-skill {
 
+    }
+    div.skill-name {
+      max-width: 16vw;
+      font-size: 0.8rem;
+    }
+  }
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation:landscape) {
+  div.select-skill-container {
+    min-width: 8vw;
+    height: 8vw;
 
+    div.select-skill {
+
+    }
+    div.skill-name {
+      max-width: 8vw;
+      font-size: 0.8rem;
+    }
+  }
 }
 
 // Large devices (desktops, 1300px and up)
-@media (min-width: 1300px) {
+@media (min-width: 1300px) and (orientation:landscape) {
+  div.select-skill-container {
+    min-width: 7vw;
+    height: 7vw;
 
+    div.select-skill {
+      min-height: 60%;
+      width: 60%;
+    }
+    div.skill-name {
+      max-width: 7vw;
+      font-size: 0.8rem;
+    }
+  }
 }
 
 //iPad pro portrait
@@ -42,10 +75,34 @@
 
 //iPad pro landscape
 @media (min-width: 1200px) and (min-height: 1000px) {
+  div.select-skill-container {
+    min-width: 8vw;
+    height: 8vw;
 
+    div.select-skill {
+      min-height: 60%;
+      width: 60%;
+    }
+    div.skill-name {
+      max-width: 8vw;
+      font-size: 0.9rem;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {
+  div.select-skill-container {
+    min-width: 9vw;
+    height: 9vw;
 
+    div.select-skill {
+      min-height: 60%;
+      width: 60%;
+    }
+    div.skill-name {
+      max-width: 9vw;
+      font-size: 0.8rem;
+    }
+  }
 }

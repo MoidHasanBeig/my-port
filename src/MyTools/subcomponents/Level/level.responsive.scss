@@ -7,7 +7,7 @@
 @media (min-width: 568px) {
   div.level-container {
     margin-top: 2px;
-    
+
     div.level-ball {
       height: 1.5vw;
       width: 1.5vw;
@@ -16,18 +16,35 @@
 }
 
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {
+@media (min-width: 760px) and (min-height: 1000px) and (orientation:portrait) {
+  div.level-container {
 
+    div.level-ball {
+      height: 3vw;
+      width: 3vw;
+    }
+  }
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation:landscape) {
+  div.level-container {
 
+    div.level-ball {
+      height: 1vw;
+      width: 1vw;
+    }
+  }
 }
 
 // Large devices (desktops, 1300px and up)
-@media (min-width: 1300px) {
+@media (min-width: 1300px) and (orientation:landscape) {
+  div.level-container {
+    margin-top: 0px;
 
+    div.level-ball {
+    }
+  }
 }
 
 //iPad pro portrait
@@ -37,7 +54,13 @@
 
 //iPad pro landscape
 @media (min-width: 1200px) and (min-height: 1000px) {
+  div.level-container {
 
+    div.level-ball {
+      height: 1.3vw;
+      width: 1.3vw;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 1400px and up)

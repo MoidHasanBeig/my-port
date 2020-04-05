@@ -42,42 +42,112 @@
 }
 
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {
+@media (min-width: 760px) and (min-height: 1000px) and (orientation:portrait) {
   div.my-tools-container {
     div.my-tools-section {
       div.display-container {
-        div.tool-logo-lg {}
-        div.tool-desc-container {
+        flex-direction: column;
+        width: 50vw;
+        top: 38%;
+
+        div.tool-logo-lg {
+          margin-right: auto;
+          margin-bottom: 1rem;
 
         }
+        div.tool-desc-container {
+          div.tool-name {
+            text-align: center;
+          }
+
+        }
+        div.details-container {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      }
+      div.selector-container {
+        justify-content: flex-start;
+        min-height: 21vw;
+        bottom: -2vw;
       }
     }
   }
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation:landscape) {
   div.my-tools-container {
     div.my-tools-section {
       div.display-container {
-        div.tool-logo-lg {}
-        div.tool-desc-container {
+        width: 58vw;
+        top: 45%;
 
+        div.tool-logo-lg {
+          margin-right: 1.5rem;
+          height: 17vw;
+          min-width: 17vw;
         }
+        div.tool-desc-container {
+          div.tool-name {
+            margin-bottom: 0.5rem;
+          }
+          div.tool-desc {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+          }
+          div.details-container {
+            div.used-for {
+              font-size: 0.8rem;
+            }
+            div.skill-level {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      div.selector-container {
+        min-height: 11vw;
+        bottom: 0vw;
       }
     }
   }
 }
 
 // Large devices (desktops, 1300px and up)
-@media (min-width: 1300px) {
+@media (min-width: 1300px) and (orientation:landscape) {
   div.my-tools-container {
     div.my-tools-section {
       div.display-container {
-        div.tool-logo-lg {}
-        div.tool-desc-container {
+        width: 50vw;
+        top: 43%;
 
+        div.tool-logo-lg {
+          margin-right: 2rem;
+          height: 15vw;
+          min-width: 15vw;
         }
+        div.tool-desc-container {
+          div.tool-name {
+            margin-bottom: 0.5rem;
+          }
+          div.tool-desc {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+          }
+          div.details-container {
+            div.used-for {
+              font-size: 0.8rem;
+            }
+            div.skill-level {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      div.selector-container {
+        min-height: 11vw;
+        bottom: -2vw;
       }
     }
   }
@@ -102,10 +172,15 @@
   div.my-tools-container {
     div.my-tools-section {
       div.display-container {
+        width: 58vw;
+
         div.tool-logo-lg {}
         div.tool-desc-container {
 
         }
+      }
+      div.selector-container {
+        bottom: 0vw;
       }
     }
   }
@@ -116,10 +191,15 @@
   div.my-tools-container {
     div.my-tools-section {
       div.display-container {
+        width: 54vw;
+
         div.tool-logo-lg {}
         div.tool-desc-container {
 
         }
+      }
+      div.selector-container {
+        bottom: 0vw;
       }
     }
   }
