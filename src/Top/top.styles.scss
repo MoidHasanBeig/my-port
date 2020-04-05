@@ -53,8 +53,16 @@ div.top-section {
       // max-height: 225px;
       background-size: 100% 100%;
       position: relative;
+      animation-name: speechAnim;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
     }
-
+    @keyframes speechAnim {
+      0% {transform: translateY(0px);}
+      50% {transform: translateY(-5px);}
+      100% {transform: translateY(0px);}
+    }
     div.balloon {
       background-image: url('./images/balloon.svg');
       width: 13vw;
@@ -65,6 +73,15 @@ div.top-section {
       position: relative;
       top: -40px;
       left: -15px;
+      animation-name: balloonAnim;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    @keyframes balloonAnim {
+      0% {transform: scaleX(1) translateY(0px);}
+      50% {transform: scaleX(1.08) translateY(-5px);}
+      100% {transform: scaleX(1) translateY(0px);}
     }
   }
     div.glob-container {
