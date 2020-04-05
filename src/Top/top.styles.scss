@@ -90,6 +90,7 @@ div.top-section {
 
       div.globe {
         background-image: url('./images/globe.svg');
+        filter: saturate(0.9);
         width: 150vw;
         height: 150vw;
         background-size: 100% 100%;
