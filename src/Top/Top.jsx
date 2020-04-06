@@ -6,7 +6,7 @@ import './top.responsive.scss';
 function Top() {
 
   return (
-    <div className="top-section" id="top">
+    <div className="top-section section" id="top">
       <div className="light-source" />
       <div className="cloud-1" />
       <div className="cloud-2" />

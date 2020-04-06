@@ -75,7 +75,7 @@ function MyTools() {
 
   return (
     <div className="my-tools-container">
-      <div className="my-tools-section" id="my-tools">
+      <div className="my-tools-section section" id="my-tools">
         <Heading text="My tools" />
         <div className="display-container">
           <div className={`tool-logo-lg ${skillsArr[currentSkill].class}`} />

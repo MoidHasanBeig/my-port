@@ -7,7 +7,6 @@ div.about-me-container {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     min-height: 440px;
-    background-color: #F8F8F8;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,13 +39,13 @@ div.about-me-container {
           width: 100%;
           animation-name: picAnim;
           animation-duration: 2s;
-          animation-timing-function: steps(1,end);
+          animation-timing-function: steps(1);
           animation-iteration-count: infinite;
         }
         @keyframes picAnim {
           0% {background-image: url('./images/profile-cod.png');}
-          25% {background-image: url('./images/profile-des.png');}
-          50% {background-image: url('./images/profile-pla.png');}
+          35% {background-image: url('./images/profile-des.png');}
+          70% {background-image: url('./images/profile-pla.png');}
         }
       }
       hr {

@@ -40,10 +40,10 @@
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) {
   div.about-me-container {
+    background-image: url('./images/about-bg.svg');
+    background-size: 100% 100%;
+    
     div.about-me-section {
-      background-image: url('./images/about-bg.svg');
-      background-size: 100% 100%;
-      
       div.about-pic-container {
         div.about-pic-subcontainer {
           width: 12vw;
