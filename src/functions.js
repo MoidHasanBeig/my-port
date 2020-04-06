@@ -20,6 +20,14 @@ function actualResizeHandler() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
+let isInViewport = function (elem) {
+    let bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+};
+
 export {
   getScreenHeight,
   resizeThrottler

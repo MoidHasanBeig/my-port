@@ -2,7 +2,7 @@ div.top-section {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   min-height: 500px;
-  background-color: #C9EAFE;
+  background-color: #E1F2FD;
   background-image: url('./images/blue-sky.svg');
   background-size: 100% 100%;
   position: relative;
@@ -12,8 +12,6 @@ div.top-section {
     background-image: url('./images/sun.svg');
     width: 60vw;
     height: 60vw;
-    // max-width: 250px;
-    // max-height: 250px;
     background-size: 100% 100%;
     position: absolute;
   }
@@ -21,8 +19,6 @@ div.top-section {
     background-image: url('./images/cloud1.svg');
     width: 54vw;
     height: 54vw;
-    // max-width: 220px;
-    // max-height: 220px;
     background-size: 100% 100%;
     position: absolute;
     top: 5px;
@@ -32,8 +28,6 @@ div.top-section {
     background-image: url('./images/cloud1.svg');
     width: 25vw;
     height: 25vw;
-    // max-width: 100px;
-    // max-height: 100px;
     background-size: 100% 100%;
     position: absolute;
     top: 30px;
@@ -49,11 +43,8 @@ div.top-section {
       background-image: url('./images/speechbubble.svg');
       width: 55vw;
       height: 55vw;
-      // max-width: 225px;
-      // max-height: 225px;
       background-size: 100% 100%;
       position: relative;
-      animation-name: speechAnim;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
@@ -67,13 +58,10 @@ div.top-section {
       background-image: url('./images/balloon.svg');
       width: 13vw;
       height: 13vw;
-      // max-width: 55px;
-      // max-height: 55px;
       background-size: 100% 100%;
       position: relative;
       top: -40px;
       left: -15px;
-      animation-name: balloonAnim;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
@@ -97,7 +85,6 @@ div.top-section {
         position: absolute;
         bottom: 0;
         transform: translateY(63%) rotate(0deg);
-        animation-name: rotateGlobe;
         animation-duration: 60s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;

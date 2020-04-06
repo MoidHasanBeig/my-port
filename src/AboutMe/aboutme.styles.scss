@@ -18,29 +18,35 @@ div.about-me-container {
       text-align: center;
       font-size: 2.3rem;
       position: relative;
-      color: #B0B0B0;
+      color: #ABABAB;
       margin: auto;
     }
     div.about-pic-container {
       margin: auto;
 
       div.about-pic-subcontainer {
-        width: 27vw;
-        height: 27vw;
+        width: 31vw;
+        height: 31vw;
         position: relative;
         margin: auto;
-        border: 2px solid #DDD;
         background-color: #F8F8F8;
-        border-radius: 50%;
         z-index: 2;
-        padding: 3px;
 
         div.about-pic {
-          background-image: url('./images/profile-pic.png');
+          background-image: url('./images/profile-cod.png');
           background-size: 100% 100%;
           opacity: 0.9;
           height: 100%;
           width: 100%;
+          animation-name: picAnim;
+          animation-duration: 2s;
+          animation-timing-function: steps(1,end);
+          animation-iteration-count: infinite;
+        }
+        @keyframes picAnim {
+          0% {background-image: url('./images/profile-cod.png');}
+          25% {background-image: url('./images/profile-des.png');}
+          50% {background-image: url('./images/profile-pla.png');}
         }
       }
       hr {
@@ -64,6 +70,7 @@ div.about-me-container {
     }
     p.about-text {
       text-align: justify;
+      color: #595959;
       width: 75vw;
       font-size: 1.35rem;
       position: relative;
