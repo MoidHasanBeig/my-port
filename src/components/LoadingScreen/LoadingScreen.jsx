@@ -2,9 +2,9 @@ import React from 'react';
 import './loadingscreen.styles.scss';
 import './loadingscreen.responsive.scss';
 
-function LoadingScreen() {
+function LoadingScreen(props) {
   return (
-    <div className="loading-screen"></div>
+    <div className="loading-screen">{props.text}</div>
   );
 }
 

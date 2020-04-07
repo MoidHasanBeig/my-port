@@ -15,6 +15,7 @@ function App() {
 
   let [activeSection,setActiveSection] = useState("top");
   let [loadingState,setLoadingState] = useState(true);
+  console.log(loadingState,"App");
 
   function getScreenHeight() {
     let vh = window.innerHeight * 0.01;
@@ -35,6 +36,7 @@ function App() {
 
   function handleLoading() {
     setLoadingState(false);
+    console.log(loadingState,"handle");
   }
 
   function actualResizeHandler() {
@@ -89,7 +91,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {loadingState && <LoadingScreen />}
+        {loadingState && <LoadingScreen text={loadingState} />}
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} />
         <ToggleTheme />
