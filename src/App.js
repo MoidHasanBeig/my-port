@@ -76,17 +76,17 @@ function App() {
       }
   };
 
-  window.addEventListener("load", handleLoading, false);
   useEffect(() => {
     getScreenHeight();
+    window.addEventListener("load", handleLoading, false);
     window.addEventListener("resize", resizeThrottler, false);
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
       window.removeEventListener("resize", resizeThrottler, false);
       window.removeEventListener("scroll", scrollThrottler, false);
-      // window.removeEventListener("load", handleLoading, false);
+      window.removeEventListener("load", handleLoading, false);
     }
-  });
+  },[loadingState]);
 
   return (
     <Provider store={store}>
