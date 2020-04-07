@@ -76,6 +76,8 @@ function App() {
       }
   };
 
+  window.addEventListener("load", handleLoading, false);
+
   useEffect(() => {
     getScreenHeight();
     window.addEventListener("load", handleLoading, false);
@@ -86,7 +88,7 @@ function App() {
       window.removeEventListener("scroll", scrollThrottler, false);
       window.removeEventListener("load", handleLoading, false);
     }
-  },[loadingState]);
+  });
 
   return (
     <Provider store={store}>
