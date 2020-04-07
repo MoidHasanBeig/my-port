@@ -5,7 +5,6 @@ import MyTools from './MyTools/MyTools';
 import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
 import MenuButton from './components/MenuButton/MenuButton';
 import ToggleTheme from './components/ToggleTheme/ToggleTheme';
-import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import store from './redux/reduxStore'
 import { Provider } from 'react-redux';
 import './main.styles.scss';
@@ -14,8 +13,6 @@ import './main.responsive.scss';
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
-  let [loadingState,setLoadingState] = useState(true);
-  console.log(loadingState,"App");
 
   function getScreenHeight() {
     let vh = window.innerHeight * 0.01;
@@ -32,11 +29,6 @@ function App() {
        // The actualResizeHandler will execute at a rate of 15fps
        }, 66);
     }
-  }
-
-  function handleLoading() {
-    setLoadingState(false);
-    console.log(loadingState,"handle");
   }
 
   function actualResizeHandler() {
@@ -76,24 +68,20 @@ function App() {
       }
   };
 
-  window.addEventListener("load", handleLoading, false);
 
   useEffect(() => {
     getScreenHeight();
-    window.addEventListener("load", handleLoading, false);
     window.addEventListener("resize", resizeThrottler, false);
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
       window.removeEventListener("resize", resizeThrottler, false);
       window.removeEventListener("scroll", scrollThrottler, false);
-      window.removeEventListener("load", handleLoading, false);
     }
   });
 
   return (
     <Provider store={store}>
       <div className="App">
-        {loadingState && <LoadingScreen text={loadingState} />}
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} />
         <ToggleTheme />
