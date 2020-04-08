@@ -2,6 +2,7 @@ import React,{ useEffect,useState } from 'react';
 import Top from './Top/Top';
 import AboutMe from './AboutMe/AboutMe';
 import MyTools from './MyTools/MyTools';
+import MyWork from './MyWork/MyWork';
 import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
 import MenuButton from './components/MenuButton/MenuButton';
 import ToggleTheme from './components/ToggleTheme/ToggleTheme';
@@ -70,6 +71,7 @@ function App() {
 
 
   useEffect(() => {
+    console.log("call");
     getScreenHeight();
     window.addEventListener("resize", resizeThrottler, false);
     window.addEventListener("scroll", scrollThrottler, false);
@@ -88,6 +90,7 @@ function App() {
         <Top />
         <AboutMe />
         <MyTools />
+        <MyWork />
       </div>
     </Provider>
   );
