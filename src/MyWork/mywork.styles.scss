@@ -12,74 +12,147 @@ div.my-work-container {
     div.display-container {
       display: flex;
       flex-direction: column;
-      margin-top: 3rem;
+      margin-top: 22vw;
 
-      div.project-image {
-        width: 100vw;
-        height: 30vh;
-        background: #CCC;
-      }
-      div.title-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 2rem auto 2rem auto;
-        width: 80vw;
-
-        div.prev-work-btn {
-          background-image: url('./images/nav-btn.svg');
-          background-size: 100% 100%;
-          height: 2rem;
-          width: 2rem;
-          margin: auto;
-          margin-left: 0;
-        }
-        div.work-title {
-          color: #595959;
-          font-size: 2.2rem;
-        }
-        div.next-work-btn {
-          background-image: url('./images/nav-btn.svg');
-          background-size: 100% 100%;
-          height: 2rem;
-          width: 2rem;
-          margin: auto;
-          margin-right: 0;
-          transform: scale(-1);
-        }
-      }
-      div.work-desc {
-        color: #777777;
-        text-align: justify;
-        width: 80vw;
+      div.sub-container-1 {
         margin: auto;
-        font-size: 1rem
-      }
-      div.tools-used {
-        color: #ABABAB;
-        margin: 1rem auto 1rem auto;
-        width: 80vw;
-        font-size: 1rem
-      }
-      div.work-footer {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        bottom: 2vw;
-        left: 50%;
-        width: 80vw;
-        transform: translateX(-50%);
 
-        a.learn-more {
-          text-decoration: none;
-          margin-top: 2rem;
-          margin-bottom: 1rem;
-          font-size: 1rem;
-          color: #595959;
-          border: 1px solid #595959;
-          border-radius: 5px;
-          padding: 10px;
+        div.screens-container {
+          position: relative;
+          width: 91vw;
+          height: 91vw;
+          margin: auto;
+
+          div.desktop-screen {
+            background: #D3D3D3;
+            border-radius: 15px;
+            max-width: 100%;
+            height: 65%;
+            position: relative;
+            padding: 0.2rem;
+            border: 1px solid #FFFFFF;
+
+            div.desktop-image {
+              background: #FFFFFF;
+              border-radius: 10px;
+              height: 90%;
+              position: relative;
+            }
+          }
+          div.tablet-screen {
+            background: #D3D3D3;
+            border-radius: 15px;
+            max-width: 61%;
+            height: 40%;
+            position: relative;
+            padding: 0.2rem;
+            top: -10%;
+            margin-left: 0.5rem;
+            border: 1px solid #FFFFFF;
+
+            div.tablet-image {
+              background: #FFFFFF;
+              border-radius: 10px;
+              height: 100%;
+              width: 95%;
+              position: relative;
+            }
+            div.tablet-button {
+              background: #FFFFFF;
+              border-radius: 50%;
+              position: absolute;
+              right: 3px;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 2.5vw;
+              width: 2.5vw;
+            }
+          }
+          div.mobile-screen {
+            background: #D3D3D3;
+            border-radius: 15px;
+            max-width: 28%;
+            height: 50%;
+            position: relative;
+            margin-left: auto;
+            margin-right: 0.5rem;
+            padding: 0.2rem;
+            top: -60%;
+            border: 1px solid #FFFFFF;
+
+            div.mobile-image {
+              background: #FFFFFF;
+              border-radius: 10px;
+              height: 100%;
+              width: 100%;
+              position: relative;
+            }
+            div.mobile-notch {
+              position: absolute;
+              top: 0.2rem;
+              width: 30%;
+              height: 3%;
+              left: 50%;
+              transform: translateX(-50%);
+              display: flex;
+
+              div.notch-1 {
+                width: 80%;
+                height: 100%;
+                transform: skewX(45deg);
+                background: #D3D3D3;
+                border-radius: 3px;
+              }
+              div.notch-2 {
+                width: 20%;
+                height: 100%;
+                transform: skewX(-45deg);
+                background: #D3D3D3;
+                border-radius: 3px;
+              }
+            }
+          }
+        }
+        div.tools-used {
           text-align: center;
+          margin: auto;
+          margin-top: 3rem;
+        }
+      }
+      div.sub-container-2 {
+        margin: auto;
+        position: absolute;
+        width: 100vw;
+        bottom: 2vw;
+
+        div.title-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 2rem auto 2rem auto;
+          width: 80vw;
+
+          div.prev-work-btn {
+            background-image: url('./images/nav-btn.svg');
+            background-size: 100% 100%;
+            height: 2rem;
+            width: 2rem;
+            margin: auto;
+            margin-left: 0;
+          }
+          div.work-title {
+            color: #595959;
+            font-size: 2.2rem;
+          }
+          div.next-work-btn {
+            background-image: url('./images/nav-btn.svg');
+            background-size: 100% 100%;
+            height: 2rem;
+            width: 2rem;
+            margin: auto;
+            margin-right: 0;
+            transform: scale(-1);
+          }
         }
       }
     }

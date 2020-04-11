@@ -1,0 +1,55 @@
+// Extra small devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+  span.tool-name-component {
+
+  }
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {
+  span.tool-name-component {
+    font-size: 0.7rem;
+  }
+}
+
+// Medium devices (tablets portrait, 768px and up)
+@media (min-width: 760px) and (min-height: 1000px) {
+  span.tool-name-component {
+
+  }
+}
+
+// MDPI devices (desktops, 992px and up)
+@media (min-width: 992px) and (orientation:landscape) {
+  span.tool-name-component {
+    font-size: 0.7rem;
+  }
+}
+
+// Large devices (desktops, 1300px and up)
+@media (min-width: 1300px) {
+  span.tool-name-component {
+
+  }
+}
+
+//iPad pro portrait
+@media (min-width: 1000px) and (min-height: 1200px) {
+  span.tool-name-component {
+
+  }
+}
+
+//iPad pro landscape
+@media (min-width: 1200px) and (min-height: 1000px) {
+  span.tool-name-component {
+
+  }
+}
+
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+  span.tool-name-component {
+
+  }
+}

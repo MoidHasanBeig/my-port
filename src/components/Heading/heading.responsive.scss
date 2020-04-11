@@ -12,7 +12,7 @@
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation: landscape) {
   div.heading-general {
     transform: rotate(90deg) translate(22%,100%);
     position: absolute;
