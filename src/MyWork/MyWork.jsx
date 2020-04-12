@@ -23,6 +23,7 @@ function MyWork() {
               <div className="mobile-image" />
               <div className="mobile-notch">
                 <div className="notch-1" />
+                <div className="notch-fill" />
                 <div className="notch-2" />
               </div>
               </div>
@@ -36,6 +37,10 @@ function MyWork() {
                 <div className="next-work-btn" />
             </div>
           </div>
+        </div>
+        <div className="nav-footer">
+          <div className="nav-prev">PREV</div>
+          <div className="nav-next">NEXT</div>
         </div>
       </div>
     </div>
