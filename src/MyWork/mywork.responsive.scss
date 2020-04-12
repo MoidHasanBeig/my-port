@@ -117,6 +117,11 @@
 @media (min-width: 992px) and (orientation:landscape) {
   div.my-work-container {
     div.my-work-section {
+      background-image: url('./images/my-work-bg.svg');
+      background-size: 80% 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+
       div.display-container {
         div.sub-container-1 {
           div.screens-container {
@@ -215,7 +220,7 @@
           div.screens-container {
             height: 48vw;
             width: 48vw;
-            
+
             div.desktop-screen {}
             div.tablet-screen {}
             div.mobile-screen {}
