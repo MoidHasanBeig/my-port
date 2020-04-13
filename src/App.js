@@ -71,7 +71,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log("call");
     getScreenHeight();
     window.addEventListener("resize", resizeThrottler, false);
     window.addEventListener("scroll", scrollThrottler, false);

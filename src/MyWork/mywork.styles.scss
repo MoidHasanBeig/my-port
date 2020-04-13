@@ -24,7 +24,7 @@ div.my-work-container {
           margin: auto;
 
           div.desktop-screen {
-            background: #D3D3D3;
+            background: #ABABAB;
             border-radius: 15px;
             max-width: 100%;
             height: 65%;
@@ -33,14 +33,15 @@ div.my-work-container {
             border: 1px solid #FFFFFF;
 
             div.desktop-image {
-              background: #FFFFFF;
+              background-color: #FFFFFF;
+              background-size: 100% 100%;
               border-radius: 10px;
               height: 90%;
               position: relative;
             }
           }
           div.tablet-screen {
-            background: #D3D3D3;
+            background: #ABABAB;
             border-radius: 15px;
             max-width: 61%;
             height: 40%;
@@ -51,11 +52,12 @@ div.my-work-container {
             border: 1px solid #FFFFFF;
 
             div.tablet-image {
-              background: #FFFFFF;
+              background-color: #FFFFFF;
               border-radius: 10px;
               height: 100%;
               width: 95%;
               position: relative;
+              background-size: 100% 100%;
             }
             div.tablet-button {
               background: #FFFFFF;
@@ -69,7 +71,7 @@ div.my-work-container {
             }
           }
           div.mobile-screen {
-            background: #D3D3D3;
+            background: #ABABAB;
             border-radius: 15px;
             max-width: 28%;
             height: 50%;
@@ -81,11 +83,12 @@ div.my-work-container {
             border: 1px solid #FFFFFF;
 
             div.mobile-image {
-              background: #FFFFFF;
+              background-color: #FFFFFF;
               border-radius: 10px;
               height: 100%;
               width: 100%;
               position: relative;
+              background-size: 100% 100%;
             }
             div.mobile-notch {
               position: absolute;
@@ -100,7 +103,7 @@ div.my-work-container {
                 width: 50%;
                 height: 100%;
                 transform: skewX(45deg);
-                background: #D3D3D3;
+                background: #ABABAB;
                 border-radius: 1px;
               }
               div.notch-fill {
@@ -108,14 +111,14 @@ div.my-work-container {
                 width: 50%;
                 position: absolute;
                 left: 50%;
-                background: #D3D3D3;
+                background: #ABABAB;
                 transform: translateX(-50%);
               }
               div.notch-2 {
                 width: 50%;
                 height: 100%;
                 transform: skewX(-45deg);
-                background: #D3D3D3;
+                background: #ABABAB;
                 border-radius: 1px;
               }
             }
