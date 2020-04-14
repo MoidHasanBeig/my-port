@@ -163,6 +163,9 @@ div.my-work-container {
             margin-right: 0;
             transform: scale(-1);
           }
+          div.next-work-btn:hover, div.prev-work-btn:hover {
+            height: 1.7rem;
+          }
         }
       }
     }

@@ -1,11 +1,11 @@
-import React,{ Suspense,useState } from 'react';
+import React,{ useState } from 'react';
 import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
-const DisplayWork = React.lazy( () => import('./subcomponents/DisplayWork/DisplayWork'));
+import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
 
 let workArr = [
   {
@@ -31,7 +31,7 @@ let workArr = [
     desktopImg:'klipmunk-lg',
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
-    tools:[],
+    tools:['React-native','Redux'],
     desc:'',
     link:''
   },
@@ -69,24 +69,18 @@ function MyWork() {
             <div className="screens-container">
               <div className="desktop-frame">
                 <div className="desktop-screen">
-                  <Suspense fallback={<LoadingScreen />}>
-                    <DisplayWork className={workArr[currentWork].desktopImg} />
-                  </Suspense>
+                  <DisplayWork className={workArr[currentWork].desktopImg} />
                 </div>
               </div>
               <div className="tablet-frame">
                 <div className="tablet-screen">
-                  <Suspense fallback={<LoadingScreen />}>
-                    <DisplayWork className={workArr[currentWork].tabletImg} />
-                  </Suspense>
+                  <DisplayWork className={workArr[currentWork].tabletImg} />
                 </div>
                 <div className="tablet-button" />
               </div>
               <div className="mobile-frame">
               <div className="mobile-screen">
-                <Suspense fallback={<LoadingScreen />}>
-                  <DisplayWork className={workArr[currentWork].mobileImg} />
-                </Suspense>
+                <DisplayWork className={workArr[currentWork].mobileImg} />
               </div>
               <div className="mobile-notch">
                 <div className="notch-1" />

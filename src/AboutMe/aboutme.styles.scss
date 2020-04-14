@@ -31,8 +31,10 @@ div.about-me-container {
         z-index: 2;
 
         div.about-pic {
-          background-image: url('./images/profile-cod.png');
+          background-image: url('./images/profile-cod.png'),url('./images/profile-des.png'),url('./images/profile-pla.png');
+          background-position: 0% -100%, 0% 0%, 0% 100%;
           background-size: 100% 100%;
+          background-repeat: no-repeat;
           opacity: 0.9;
           height: 100%;
           width: 100%;
@@ -42,9 +44,9 @@ div.about-me-container {
           animation-iteration-count: infinite;
         }
         @keyframes picAnim {
-          0% {background-image: url('./images/profile-cod.png');}
-          35% {background-image: url('./images/profile-des.png');}
-          70% {background-image: url('./images/profile-pla.png');}
+          0% {background-position: 0% 100vh, 0% 0%, 0% 100vh;}
+          35% {background-position: 0% 0%, 0% 100vh, 0% 100vh;}
+          70% {background-position: 0% 100vh, 0% 100vh, 0% 0%;}
         }
       }
       hr {

@@ -123,6 +123,8 @@
       background-position: center;
 
       div.display-container {
+        margin-top: 5vh;
+
         div.sub-container-1 {
           div.screens-container {
             div.desktop-frame{}
@@ -157,9 +159,13 @@
         justify-content: space-between;
         color: #595959;
         font-size: 0.9rem;
+        line-height: 1rem;
 
         div.nav-next, div.nav-prev {
           cursor: pointer;
+        }
+        div.nav-next:hover, div.nav-prev:hover {
+          font-size: 1rem;
         }
       }
     }
