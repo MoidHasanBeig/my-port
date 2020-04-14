@@ -1,4 +1,4 @@
-import React,{ Suspense } from 'react';
+import React,{ Suspense,useState } from 'react';
 import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
@@ -9,29 +9,28 @@ const DisplayWork = React.lazy( () => import('./subcomponents/DisplayWork/Displa
 
 let workArr = [
   {
-    name:'klipmunk.com',
+    name:'Klipmunk',
     desktopImg:'klipmunk-lg',
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
     tools:['HTML/CSS/JS','NodeJS','ExpressJS','Figma'],
     desc:'',
     link:'https://klipmunk.com/',
-    git:'Private'
   },
   {
-    name:'',
-    desktopImg:'',
-    tabletImg:'',
-    mobileImg:'',
-    tools:[],
+    name:'Speedklip',
+    desktopImg:'speedklip-lg',
+    tabletImg:'speedklip-md',
+    mobileImg:'speedklip-sm',
+    tools:['HTML/CSS/JS','Figma'],
     desc:'',
     link:''
   },
   {
-    name:'',
-    desktopImg:'',
-    tabletImg:'',
-    mobileImg:'',
+    name:'Mindly',
+    desktopImg:'klipmunk-lg',
+    tabletImg:'klipmunk-md',
+    mobileImg:'klipmunk-sm',
     tools:[],
     desc:'',
     link:''
@@ -39,6 +38,28 @@ let workArr = [
 ];
 
 function MyWork() {
+
+  let [currentWork,setCurrentWork] = useState(0);
+
+  function handleClick(type) {
+    if(type === 'next') {
+      if(currentWork === workArr.length-1) {
+        setCurrentWork(0);
+      }
+      else {
+        setCurrentWork( prevValue => prevValue+1);
+      }
+    }
+    else {
+      if(currentWork === 0) {
+        setCurrentWork(workArr.length-1);
+      }
+      else {
+        setCurrentWork( prevValue => prevValue-1);
+      }
+    }
+  }
+
   return (
     <div className="my-work-container">
       <div className="my-work-section section" id="my-work">
@@ -49,14 +70,14 @@ function MyWork() {
               <div className="desktop-frame">
                 <div className="desktop-screen">
                   <Suspense fallback={<LoadingScreen />}>
-                    <DisplayWork className="klipmunk-lg" />
+                    <DisplayWork className={workArr[currentWork].desktopImg} />
                   </Suspense>
                 </div>
               </div>
               <div className="tablet-frame">
                 <div className="tablet-screen">
                   <Suspense fallback={<LoadingScreen />}>
-                    <DisplayWork className="klipmunk-md" />
+                    <DisplayWork className={workArr[currentWork].tabletImg} />
                   </Suspense>
                 </div>
                 <div className="tablet-button" />
@@ -64,7 +85,7 @@ function MyWork() {
               <div className="mobile-frame">
               <div className="mobile-screen">
                 <Suspense fallback={<LoadingScreen />}>
-                  <DisplayWork className="klipmunk-sm" />
+                  <DisplayWork className={workArr[currentWork].mobileImg} />
                 </Suspense>
               </div>
               <div className="mobile-notch">
@@ -74,19 +95,25 @@ function MyWork() {
               </div>
               </div>
             </div>
-            <div className="tools-used"><ToolUsed text="HTML/CSS/JS" /><ToolUsed text="NodeJS" /><ToolUsed text="ExpressJS" /></div>
+            <div className="tools-used">
+              {
+                workArr[currentWork].tools.map( (tool) => {
+                  return <ToolUsed text={tool} />;
+                })
+              }
+            </div>
           </div>
           <div className="sub-container-2">
               <div className="title-container">
-                <div className="prev-work-btn" />
-                <div className="work-title">Klipmunk</div>
-                <div className="next-work-btn" />
+                <div onClick={() => handleClick('prev')} className="prev-work-btn" />
+                <div className="work-title">{workArr[currentWork].name}</div>
+                <div onClick={() => handleClick('next')} className="next-work-btn" />
             </div>
           </div>
         </div>
         <div className="nav-footer">
-          <div className="nav-prev">PREV</div>
-          <div className="nav-next">NEXT</div>
+          <div onClick={() => handleClick('prev')} className="nav-prev">PREV</div>
+          <div onClick={() => handleClick('next')} className="nav-next">NEXT</div>
         </div>
       </div>
     </div>

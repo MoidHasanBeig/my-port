@@ -3,7 +3,11 @@ import './loadingscreen.styles.scss';
 
 function LoadingScreen() {
   return (
-    <div className="loading-screen"><div>Loading...</div></div>
+    <div className="loading-screen">
+      <div>
+        Loading...
+      </div>
+    </div>
   );
 }
 
