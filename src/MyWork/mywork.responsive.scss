@@ -116,6 +116,9 @@
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) and (orientation:landscape) {
   div.my-work-container {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
     div.my-work-section {
       background-image: url('./images/my-work-bg.svg');
       background-size: 80% 80%;

@@ -78,6 +78,9 @@
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) and (orientation:landscape) {
   div.my-tools-container {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
     div.my-tools-section {
       background-image: url('./images/tools-bg.svg');
       background-size: 80% 80%;

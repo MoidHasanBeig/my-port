@@ -3,7 +3,6 @@ import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
-import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
 import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
 
@@ -91,8 +90,8 @@ function MyWork() {
             </div>
             <div className="tools-used">
               {
-                workArr[currentWork].tools.map( (tool) => {
-                  return <ToolUsed text={tool} />;
+                workArr[currentWork].tools.map( (tool,index) => {
+                  return <ToolUsed key={index} text={tool} />;
                 })
               }
             </div>
