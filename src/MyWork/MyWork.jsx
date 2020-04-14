@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{ Suspense } from 'react';
 import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
+import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
+const DisplayWork = React.lazy( () => import('./subcomponents/DisplayWork/DisplayWork'));
 
 let workArr = [
   {
@@ -44,15 +46,27 @@ function MyWork() {
         <div className="display-container">
           <div className="sub-container-1">
             <div className="screens-container">
-              <div className="desktop-screen">
-                <div className="desktop-image klipmunk-lg" />
+              <div className="desktop-frame">
+                <div className="desktop-screen">
+                  <Suspense fallback={<LoadingScreen />}>
+                    <DisplayWork className="klipmunk-lg" />
+                  </Suspense>
+                </div>
               </div>
-              <div className="tablet-screen">
-                <div className="tablet-image klipmunk-md" />
+              <div className="tablet-frame">
+                <div className="tablet-screen">
+                  <Suspense fallback={<LoadingScreen />}>
+                    <DisplayWork className="klipmunk-md" />
+                  </Suspense>
+                </div>
                 <div className="tablet-button" />
               </div>
+              <div className="mobile-frame">
               <div className="mobile-screen">
-              <div className="mobile-image klipmunk-sm" />
+                <Suspense fallback={<LoadingScreen />}>
+                  <DisplayWork className="klipmunk-sm" />
+                </Suspense>
+              </div>
               <div className="mobile-notch">
                 <div className="notch-1" />
                 <div className="notch-fill" />
