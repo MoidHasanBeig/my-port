@@ -2,7 +2,6 @@ import React from 'react';
 import './top.styles.scss';
 import './top.responsive.scss';
 
-
 function Top() {
 
   return (
