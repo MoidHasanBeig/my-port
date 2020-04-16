@@ -11,14 +11,10 @@ html,body {
   scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0); //for firefox
 
   margin: 0;
-  font-family: 'PoorStory';
+  font-family: 'Poor Story', PoorStory , cursive;
   font-size: 100%;
 
   /* width & height */
-  ::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-  }
   ::-webkit-scrollbar {
       width: 0px;
       height: 0px;

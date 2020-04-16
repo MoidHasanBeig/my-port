@@ -1,7 +1,7 @@
 div.top-section {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  min-height: 500px;
+  height: 110vh;
+  height: calc(var(--vh, 1vh) * 110);
+  min-height: 600px;
   background-color: #E1F2FD;
   background-image: url('./images/blue-sky.svg');
   background-size: 100% 100%;
@@ -35,8 +35,8 @@ div.top-section {
   }
   div.speech-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%,-50%);
 
     div.speech-bubble {
@@ -84,14 +84,23 @@ div.top-section {
         background-size: 100% 100%;
         position: absolute;
         bottom: 0;
-        transform: translateY(63%) rotate(0deg);
+        transform: translateY(55%) rotate(0deg);
         animation-duration: 60s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
     }
     @keyframes rotateGlobe {
-      from {transform: translateY(63%) rotate(0deg);}
-      to {transform: translateY(63%) rotate(360deg);}
+      from {transform: translateY(55%) rotate(0deg);}
+      to {transform: translateY(55%) rotate(360deg);}
+    }
+    div.seamless-clouds {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: -10px;
+      width: 100vw;
+      height: 18vw;
+      background-image: url('./images/seamless-clouds.svg');
+      background-size: 100% 100%;
     }
 }

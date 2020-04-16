@@ -21,6 +21,9 @@
       height: 17vw;
     }
     div.speech-container {
+      top: 50%;
+      left: 50%;
+
       div.speech-bubble {
         width: 30vw;
         height: 30vw;
@@ -35,6 +38,9 @@
         width: 100vw;
         height: 70vw;
       }
+    }
+    div.seamless-clouds {
+      height: 15vw;
     }
   }
 }
@@ -79,10 +85,11 @@
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation:landscape) {
   div.top-section {
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 105% 100%;
+    background-attachment: fixed;
 
     div.light-source {
       width: 35vw;
@@ -117,12 +124,21 @@
         width: 100vw;
         height: 57vw;
         animation-name: rotateGlobe;
-        transform: translateY(68%) rotate(0deg);
+        transform: translateY(59%) rotate(0deg);
       }
     }
     @keyframes rotateGlobe {
-      from {transform: translateY(68%) rotate(0deg);}
-      to {transform: translateY(68%) rotate(360deg);}
+      from {transform: translateY(59%) rotate(0deg);}
+      to {transform: translateY(59%) rotate(360deg);}
+    }
+    div.seamless-clouds {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: -10px;
+      width: 100vw;
+      height: 14vw;
+      background-image: url('./images/seamless-clouds.svg');
+      background-size: 100% 100%;
     }
   }
 }

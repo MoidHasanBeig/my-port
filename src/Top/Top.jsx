@@ -17,6 +17,7 @@ function Top() {
       <div className="glob-container">
         <div className="globe" />
       </div>
+      <div className="seamless-clouds" />
     </div>
   );
 }
