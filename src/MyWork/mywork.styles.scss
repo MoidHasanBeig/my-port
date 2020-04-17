@@ -3,11 +3,13 @@ div.my-work-container {
   padding-top: 10vw;
   padding-bottom: 10vw;
   overflow: hidden;
+  border-bottom: 2px dashed #E9E9E9;
+  position: relative;
 
   div.my-work-section {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    min-height: 440px;
+    min-height: 550px;
     position: relative;
 
     div.display-container {

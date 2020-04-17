@@ -2,6 +2,7 @@ import React from 'react';
 import './aboutme.styles.scss';
 import './aboutme.responsive.scss';
 import Fade from 'react-reveal/Fade';
+import FooterQuote from '../components/FooterQuote/FooterQuote';
 
 function AboutMe() {
   return (
@@ -17,6 +18,7 @@ function AboutMe() {
           </div>
         </Fade>
       </div>
+      <FooterQuote text="&quot;Whatever you do, do it well.&quot; – Walt Disney" />
     </div>
   );
 

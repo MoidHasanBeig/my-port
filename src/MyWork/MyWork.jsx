@@ -3,6 +3,7 @@ import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
+import FooterQuote from '../components/FooterQuote/FooterQuote';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
 import WorkDetailsDialog from './subcomponents/WorkDetailsDialog/WorkDetailsDialog';
 import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
@@ -120,6 +121,7 @@ function MyWork() {
             <div onClick={() => handleClick('next')} className="nav-next">NEXT</div>
           </div>
       </div>
+      <FooterQuote text="&quot;There is no substitute for hard work.&quot; – Thomas Edison" />
     </div>
   );
 }
