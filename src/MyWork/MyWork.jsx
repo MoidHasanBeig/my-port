@@ -105,13 +105,15 @@ function MyWork() {
                 </div>
               </div>
             </Fade>
-            <div className="sub-container-2">
-                <div className="title-container">
-                  <div onClick={() => handleClick('prev')} className="prev-work-btn" />
-                  <div onClick={() => handleClick('show')} className="work-title">{workArr[currentWork].name}</div>
-                  <div onClick={() => handleClick('next')} className="next-work-btn" />
+            <Fade>
+              <div className="sub-container-2">
+                  <div className="title-container">
+                    <div onClick={() => handleClick('prev')} className="prev-work-btn" />
+                    <div onClick={() => handleClick('show')} className="work-title">{workArr[currentWork].name}</div>
+                    <div onClick={() => handleClick('next')} className="next-work-btn" />
+                </div>
               </div>
-            </div>
+            </Fade>
           </div>
           <div className="nav-footer">
             <div onClick={() => handleClick('prev')} className="nav-prev">PREV</div>

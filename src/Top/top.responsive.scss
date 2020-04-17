@@ -4,7 +4,7 @@
 }
 
 // Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {
+@media (min-width: 568px) and (orientation:landscape) {
   div.top-section {
     background-image: url('./images/blue-sky-lg.svg');
 
@@ -22,7 +22,6 @@
     }
     div.speech-container {
       top: 50%;
-      left: 50%;
 
       div.speech-bubble {
         width: 30vw;
@@ -80,6 +79,9 @@
         height: 100vw;
         animation-name: rotateGlobe;
       }
+    }
+    div.seamless-clouds {
+      height: 18vw;
     }
   }
 }
