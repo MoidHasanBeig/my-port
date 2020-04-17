@@ -20,19 +20,21 @@
 // Small devices (landscape phones, 568px and up)
 @media (min-width: 568px) and (orientation: landscape) {
   div.my-work-container {
+    border-width: 0.5vw;
+
     div.my-work-section {
       div.display-container {
         flex-direction: column-reverse;
-        margin-top: 12vh;
+        margin-top: 22vh;
 
         div.sub-container-1 {
           div.screens-container {
-            width: 42vw;
-            height: 42vw;
+            width: 55vw;
+            height: 55vw;
 
             div.desktop-frame{}
             div.tablet-frame{
-              left: -25%;
+              left: -10%;
               top: -30%;
 
               div.tablet-button {
@@ -49,7 +51,7 @@
             margin-top: -1rem;
             position: relative;
             left: 65%;
-            top: -160px;
+            top: -30vw;
             transform: rotate(90deg);
             width: fit-content;
           }
@@ -81,6 +83,8 @@
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
   div.my-work-container {
+    border-width: 0.6vw;
+
     div.my-work-section {
       div.display-container {
         margin-top: 14vw;
@@ -115,7 +119,9 @@
 
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) and (orientation:landscape) {
-  div.my-work-container {    
+  div.my-work-container {
+    border-width: 0.4vw;
+
     div.my-work-section {
       background-image: url('./images/my-work-bg.svg');
       background-size: 80% 80%;
@@ -127,32 +133,38 @@
 
         div.sub-container-1 {
           div.screens-container {
+            height: 50vw;
+            width: 50vw;
+
             div.desktop-frame{}
-            div.tablet-frame{}
+            div.tablet-frame{
+              left: -25%;
+            }
             div.mobile-frame{}
           }
           div.tools-used {
-            position: static;
-            transform: rotate(0deg);
-            margin-top: -3rem;
           }
         }
         div.sub-container-2 {
           div.title-container {
-            margin: 3rem auto;
-            width: 35vw;
+            margin: 2rem auto 2rem auto;
+            width: 50vw;
 
+            div.work-title {
+              width: 100%;
+              text-align: left;
+            }
             div.prev-work-btn, div.next-work-btn {
-              cursor: pointer;
+              display: none;
             }
           }
         }
       }
       div.nav-footer {
         position: absolute;
-        bottom: 4vw;
         width: 70vw;
         left: 50%;
+        bottom: 3vw;
         transform: translateX(-50%);
         display: flex;
         flex-direction: row;
@@ -175,22 +187,26 @@
 // Large devices (desktops, 1300px and up)
 @media (min-width: 1300px) {
   div.my-work-container {
+    border-width: 0.3vw;
+
     div.my-work-section {
       div.display-container {
           div.sub-container-1 {
             div.screens-container {
-              height: 35vw;
-              width: 35vw;
+              height: 39vw;
+              width: 39vw;
 
               div.desktop-frame{}
               div.tablet-frame{}
               div.mobile-frame{}
             }
-            div.tools-used {}
+            div.tools-used {
+              top: -25vw;
+            }
           }
           div.sub-container-2 {
             div.title-container {
-              margin: 2rem auto;
+              width: 39vw;
             }
           }
       }
@@ -201,6 +217,8 @@
 //iPad pro portrait
 @media (min-width: 1000px) and (min-height: 1200px) {
   div.my-work-container {
+    border-width: 0.6vw;
+
     div.my-work-section {
       div.display-container {
         div.sub-container-1 {
@@ -250,8 +268,8 @@
       div.display-container {
         div.sub-container-1 {
           div.screens-container {
-            width: 42vw;
-            height: 42vw;
+            width: 47vw;
+            height: 47vw;
 
             div.desktop-frame{}
             div.tablet-frame{}
@@ -261,7 +279,8 @@
         }
         div.sub-container-2 {
           div.title-container {
-            margin: 3rem auto;
+            width: 47vw;
+            margin-top: 3rem;
           }
         }
       }

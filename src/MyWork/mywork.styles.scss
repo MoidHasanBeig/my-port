@@ -3,7 +3,7 @@ div.my-work-container {
   padding-top: 10vw;
   padding-bottom: 10vw;
   overflow: hidden;
-  border-bottom: 2px dashed #E9E9E9;
+  border-bottom: 1vw dashed #E9E9E9;
   position: relative;
 
   div.my-work-section {
@@ -154,7 +154,7 @@ div.my-work-container {
           div.work-title {
             color: #595959;
             font-size: 2.2rem;
-            margin: 0 2rem;
+            margin: auto;
             text-align: center;
           }
           div.next-work-btn {
@@ -165,9 +165,6 @@ div.my-work-container {
             margin: auto;
             margin-right: 0;
             transform: scale(-1);
-          }
-          div.next-work-btn:hover, div.prev-work-btn:hover {
-            height: 1.7rem;
           }
         }
       }
