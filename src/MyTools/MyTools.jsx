@@ -67,7 +67,7 @@ let skillsArr = [
   },
 ];
 
-function MyTools() {
+function MyTools(props) {
 
   let [currentSkill,setCurrentSkill] = useState(0);
 
@@ -76,12 +76,12 @@ function MyTools() {
   }
 
   return (
-    <div className="my-tools-container">
+    <div className={`my-tools-container ${props.dark && "invert"}`}>
       <div className="my-tools-section section" id="my-tools">
         <Heading text="My tools" />
           <div className="display-container">
             <Fade bottom>
-              <div className={`tool-logo-lg ${skillsArr[currentSkill].class}`} />
+              <div className={`tool-logo-lg ${skillsArr[currentSkill].class} ${props.dark && "invert"}`} />
               <div className="tool-desc-container">
                 <div className="tool-name">{skillsArr[currentSkill].name}</div>
                 <div className="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -104,6 +104,7 @@ function MyTools() {
                       name={skill.name}
                       class={skill.class}
                       active={currentSkill===index ? true : false}
+                      dark={props.dark}
                     />
                   );
                 })

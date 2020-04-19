@@ -1,7 +1,10 @@
 div.toggle-theme {
   width: 30px;
   height: 30px;
+  background-image: url('./images/dark-mode.svg'),url('./images/light-mode.svg');
   background-size: 100% 100%;
+  background-position: 0 0,100vw 0;
+  background-repeat: no-repeat;
   position: fixed;
   right: 0;
   top: 0;
@@ -10,14 +13,12 @@ div.toggle-theme {
   cursor: pointer;
   opacity: 0.6;
   display: none;
-  transition: all 500ms;
+  transition: opacity 500ms;
 }
 div.toggle-theme:hover {
   opacity: 1;
 }
 div.dark-mode {
-  background-image: url('./images/dark-mode.svg');
-}
-div.light-mode {
-  background-image: url('./images/dark-mode.svg');
+  background-position: 100vw 0,0 0;
+  opacity: 1 !important;
 }

@@ -7,13 +7,13 @@ import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
 import MenuButton from './components/MenuButton/MenuButton';
 import ToggleTheme from './components/ToggleTheme/ToggleTheme';
 import store from './redux/reduxStore'
-import { Provider } from 'react-redux';
 import './main.styles.scss';
 import './main.responsive.scss';
 
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
+  let [isDark,setIsDark] = useState(false);
 
   function getScreenHeight() {
     let vh = window.innerHeight * 0.01;
@@ -69,6 +69,9 @@ function App() {
       }
   };
 
+  function darkMode() {
+    setIsDark(prevValue => !prevValue);
+  }
 
   useEffect(() => {
     getScreenHeight();
@@ -81,17 +84,15 @@ function App() {
   });
 
   return (
-    <Provider store={store}>
-      <div className="App">
-        <MenuButton />
-        <MenuNonMobile activeSection={activeSection} />
-        <ToggleTheme />
-        <Top />
-        <AboutMe />
-        <MyTools />
-        <MyWork />
-      </div>
-    </Provider>
+    <div className="App">
+      <MenuButton />
+      <MenuNonMobile activeSection={activeSection} dark={isDark} />
+      <ToggleTheme darkMode={darkMode} dark={isDark} />
+      <Top dark={isDark} />
+      <AboutMe dark={isDark} />
+      <MyTools dark={isDark} />
+      <MyWork dark={isDark} />
+    </div>
   );
 }
 

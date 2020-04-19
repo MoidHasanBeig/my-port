@@ -6,7 +6,7 @@ function MenuNonMobile(props) {
   let activeStyle = {color: "#595959",fontSize: "0.9rem"};
 
   return (
-    <div className="menu-non-mobile">
+    <div className={`menu-non-mobile ${props.dark && "invert"}`}>
       <a href="#top" className="menu-option" style={props.activeSection==="top" ? activeStyle :{}}>Top</a>
       <a href="#about-me" className="menu-option" style={props.activeSection==="about-me" ? activeStyle :{}}>About me</a>
       <a href="#my-tools" className="menu-option" style={props.activeSection==="my-tools" ? activeStyle :{}}>My tools</a>

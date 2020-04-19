@@ -15,6 +15,18 @@ html,body {
   font-size: 100%;
   background: #F8F8F8;
 
+  .invert {
+    filter: invert(1);
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .no-bg {
+    background-image: none !important;
+  }
+
   /* width & height */
   ::-webkit-scrollbar {
       width: 0px;

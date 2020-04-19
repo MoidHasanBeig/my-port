@@ -39,7 +39,7 @@ let workArr = [
   },
 ];
 
-function MyWork() {
+function MyWork(props) {
 
   let [currentWork,setCurrentWork] = useState(0);
   let [shouldDisplayDetails,setShouldDisplayDetails] = useState(false);
@@ -67,14 +67,14 @@ function MyWork() {
   }
 
   return (
-    <div className="my-work-container">
+    <div className={`my-work-container ${props.dark && "invert"}`}>
       <div className="my-work-section section" id="my-work">
         <Heading text="My work" />
         {shouldDisplayDetails && <WorkDetailsDialog />}
           <div className="display-container">
             <Fade bottom>
               <div className="sub-container-1">
-                <div className="screens-container">
+                <div className={`screens-container ${props.dark && "invert"}`}>
                   <div onClick={() => handleClick('show')} className="desktop-frame">
                     <div className="desktop-screen">
                       <DisplayWork className={workArr[currentWork].desktopImg} />

@@ -4,6 +4,7 @@ div.my-tools-container {
   padding-bottom: 10vw;
   border-bottom: 1vw dashed #E9E9E9;
   position: relative;
+  transition: all 500ms;
 
   div.my-tools-section {
     height: 100vh;

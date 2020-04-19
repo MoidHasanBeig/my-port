@@ -5,6 +5,7 @@ div.my-work-container {
   overflow: hidden;
   border-bottom: 1vw dashed #E9E9E9;
   position: relative;
+  transition: all 500ms;
 
   div.my-work-section {
     height: 100vh;
