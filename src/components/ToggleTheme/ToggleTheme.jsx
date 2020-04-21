@@ -4,8 +4,6 @@ import './toggletheme.responsive.scss';
 
 function ToggleTheme(props) {
 
-  let isDark = false;
-
   function handleClick() {
     props.darkMode();
   }

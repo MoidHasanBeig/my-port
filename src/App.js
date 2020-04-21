@@ -1,14 +1,14 @@
-import React,{ useEffect,useState } from 'react';
-import Top from './Top/Top';
-import AboutMe from './AboutMe/AboutMe';
-import MyTools from './MyTools/MyTools';
-import MyWork from './MyWork/MyWork';
-import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
-import MenuButton from './components/MenuButton/MenuButton';
-import ToggleTheme from './components/ToggleTheme/ToggleTheme';
-import store from './redux/reduxStore'
+import React,{ useEffect,useState,Suspense } from 'react';
 import './main.styles.scss';
 import './main.responsive.scss';
+
+const Top = React.lazy(() => import('./Top/Top'));
+const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
+const MyTools = React.lazy(() => import('./MyTools/MyTools'));
+const MyWork = React.lazy(() => import('./MyWork/MyWork'));
+const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
+const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
+const ToggleTheme = React.lazy(() => import('./components/ToggleTheme/ToggleTheme'));
 
 function App() {
 
@@ -85,13 +85,15 @@ function App() {
 
   return (
     <div className="App">
-      <MenuButton />
-      <MenuNonMobile activeSection={activeSection} dark={isDark} />
-      <ToggleTheme darkMode={darkMode} dark={isDark} />
-      <Top dark={isDark} />
-      <AboutMe dark={isDark} />
-      <MyTools dark={isDark} />
-      <MyWork dark={isDark} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <MenuButton />
+        <MenuNonMobile activeSection={activeSection} dark={isDark} />
+        <ToggleTheme darkMode={darkMode} dark={isDark} />
+        <Top dark={isDark} />
+        <AboutMe dark={isDark} />
+        <MyTools dark={isDark} />
+        <MyWork dark={isDark} />
+      </Suspense>
     </div>
   );
 }

@@ -8,8 +8,8 @@ function Top(props) {
     <div className={`top-section section ${props.dark && "night-sky"}`} id="top">
       <div className="top-additional-images" />
       <div className={`light-source ${props.dark && "moon"}`} />
-      <div className={`cloud-1 ${props.dark && "hide"}`} />
-      <div className={`cloud-2 ${props.dark && "hide"}`} />
+      <div className={`cloud-1 ${props.dark && "slide-left"}`} />
+      <div className={`cloud-2 ${props.dark && "slide-right"}`} />
       <div className="speech-container">
         <div className="speech-bubble" />
         <div className={`balloon ${props.dark && "night-colors"}`} />
