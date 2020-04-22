@@ -5,25 +5,14 @@ div.work-details-dialog-container {
   height: 100%;
   width: 100%;
   z-index: 100;
-  animation-name: dialogOpen;
+  // animation-name: dialogOpen;
   animation-duration: 500ms;
-
-  div.work-dialog-bg {
-    height: 100%;
-    width: 100%;
-    background-color: #595959;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 
   div.work-details-dialog {
     margin: auto;
-    width: 90%;
-    height: 95%;
+    width: 100vw;
+    height: 100vh;
     background: #F4F4F4;
-    border-radius: 10px;
     opacity: inherit;
     z-index: 2;
     display: flex;

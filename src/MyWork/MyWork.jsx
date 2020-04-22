@@ -67,7 +67,7 @@ function MyWork(props) {
   }
 
   return (
-    <div className={`my-work-container ${props.dark && "invert"}`}>
+    <div className={`my-work-container ${props.dark && "invert"} ${shouldDisplayDetails && "fix-context-stack"}`}>
       <div className="my-work-section section" id="my-work">
         <Heading text="My work" />
         {shouldDisplayDetails && <WorkDetailsDialog />}

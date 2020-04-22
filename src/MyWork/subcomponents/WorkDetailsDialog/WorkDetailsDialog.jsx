@@ -6,7 +6,6 @@ import '../../mywork.images.scss';
 function WorkDetailsDialog() {
   return (
     <div className="work-details-dialog-container">
-      <div className="work-dialog-bg" />
       <div className="work-details-dialog">
         <div className="work-title">Klipmunk</div>
           <div className="sub-container-2">

@@ -1,3 +1,11 @@
+div.fix-context-stack {
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+}
+
 div.my-work-container {
   background: #F8F8F8;
   padding-top: 10vw;
