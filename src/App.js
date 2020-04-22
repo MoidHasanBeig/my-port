@@ -14,16 +14,7 @@ const ToggleTheme = React.lazy(() => import('./components/ToggleTheme/ToggleThem
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
-  let [isDark,setIsDark] = useState(false);
-  let theme;
-  if (localStorage.getItem("theme")!== null) {
-    theme = localStorage.getItem("theme");
-    setIsDark(theme);
-  }
-  else {
-    theme = isDark;
-    localStorage.setItem("theme",theme);
-  }
+  let [isDark,setIsDark] = useState(localStorage.getItem("theme") || false);
 
   function getScreenHeight() {
     let vh = window.innerHeight * 0.01;
@@ -92,6 +83,10 @@ function App() {
       window.removeEventListener("scroll", scrollThrottler, false);
     }
   });
+
+  useEffect(() => {
+    localStorage.setItem("theme",isDark);
+  },[isDark]);
 
   return (
     <div className="App">
