@@ -1,6 +1,7 @@
 import React,{ useEffect,useState,Suspense } from 'react';
 import './main.styles.scss';
 import './main.responsive.scss';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 
 const Top = React.lazy(() => import('./Top/Top'));
 const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
@@ -14,6 +15,15 @@ function App() {
 
   let [activeSection,setActiveSection] = useState("top");
   let [isDark,setIsDark] = useState(false);
+  let theme;
+  if (localStorage.getItem("theme")!== null) {
+    theme = localStorage.getItem("theme");
+    setIsDark(theme);
+  }
+  else {
+    theme = isDark;
+    localStorage.setItem("theme",theme);
+  }
 
   function getScreenHeight() {
     let vh = window.innerHeight * 0.01;
@@ -85,7 +95,7 @@ function App() {
 
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingScreen dark={isDark} />}>
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} dark={isDark} />
         <ToggleTheme darkMode={darkMode} dark={isDark} />

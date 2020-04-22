@@ -1,0 +1,49 @@
+div.loading-screen {
+  position: fixed;
+  background: #F8F8F8;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+
+  $width: 30px;
+  $height: 30px;
+  $bounce_height: 60px;
+
+  .loading-ball {
+    position: relative;
+    display: inline-block;
+    height: 74px;
+    width: $width;
+    margin: auto;
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      width: $width;
+      height: $height;
+      border-radius: 50%;
+      background-color: #595959;
+      transform-origin: 50%;
+      animation: bounce 500ms alternate infinite ease;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      top: $bounce_height;
+      height: 10px;
+      border-radius: 120px 120px 40px 40px;
+      transform: scaleX(2);
+    }
+    35% {
+      height: $height;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
