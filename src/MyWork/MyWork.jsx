@@ -66,11 +66,15 @@ function MyWork(props) {
     }
   }
 
+  function dismissDialog() {
+    setShouldDisplayDetails(false);
+  }
+
   return (
     <div className={`my-work-container ${props.dark && "invert"} ${shouldDisplayDetails && "fix-context-stack"}`}>
       <div className="my-work-section section" id="my-work">
         <Heading text="My work" />
-        {shouldDisplayDetails && <WorkDetailsDialog />}
+        {shouldDisplayDetails && <WorkDetailsDialog dismissDialog={dismissDialog} />}
           <div className="display-container">
             <Fade bottom>
               <div className="sub-container-1">

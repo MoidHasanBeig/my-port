@@ -49,6 +49,7 @@ div.my-work-container {
               border-radius: 10px;
               height: 90%;
               position: relative;
+              transition: all 500ms;
             }
           }
           div.tablet-frame {
@@ -68,6 +69,7 @@ div.my-work-container {
               height: 100%;
               width: 95%;
               position: relative;
+              transition: all 500ms;
             }
             div.tablet-button {
               background: #FFFFFF;
@@ -98,6 +100,7 @@ div.my-work-container {
               height: 100%;
               width: 100%;
               position: relative;
+              transition: all 500ms;
             }
             div.mobile-notch {
               position: absolute;
@@ -130,6 +133,23 @@ div.my-work-container {
                 background: #D3D3D3;
                 border-radius: 1px;
               }
+            }
+          }
+        }
+        div.screens-container:hover {
+          div.desktop-frame {
+            div.desktop-screen {
+              opacity: 0;
+            }
+          }
+          div.tablet-frame {
+            div.tablet-screen {
+              opacity: 0;
+            }
+          }
+          div.mobile-frame {
+            div.mobile-screen {
+              opacity: 0;
             }
           }
         }

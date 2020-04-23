@@ -3,9 +3,9 @@ import './workdetailsdialog.styles.scss';
 import './workdetailsdialog.responsive.scss';
 import '../../mywork.images.scss';
 
-function WorkDetailsDialog() {
+function WorkDetailsDialog(props) {
   return (
-    <div className="work-details-dialog-container">
+    <div onClick={props.dismissDialog} className="work-details-dialog-container">
       <div className="work-details-dialog">
         <div className="work-title">Klipmunk</div>
           <div className="text-container">
