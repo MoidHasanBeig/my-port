@@ -109,16 +109,16 @@ function MyWork(props) {
             <Fade>
               <div className="sub-container-2">
                   <div className="title-container">
-                    <div onClick={() => handleClick('prev')} className="prev-work-btn" />
+                    <div onClick={() => handleClick('prev')} className="prev-work-btn nav-btn" />
                     <div onClick={() => handleClick('show')} className="work-title">{workArr[currentWork].name}</div>
-                    <div onClick={() => handleClick('next')} className="next-work-btn" />
+                    <div onClick={() => handleClick('next')} className="next-work-btn nav-btn" />
                 </div>
               </div>
             </Fade>
           </div>
           <div className="nav-footer">
-            <div onClick={() => handleClick('prev')} className="nav-prev">PREV</div>
-            <div onClick={() => handleClick('next')} className="nav-next">NEXT</div>
+            <div onClick={() => handleClick('prev')} className="nav-prev nav-btn" />
+            <div onClick={() => handleClick('next')} className="nav-next nav-btn" />
           </div>
       </div>
       <FooterQuote text="&quot;There is no substitute for hard work.&quot; – Thomas Edison" />

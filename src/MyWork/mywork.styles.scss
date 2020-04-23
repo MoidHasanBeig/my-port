@@ -36,13 +36,13 @@ div.my-work-container {
           margin: auto;
 
           div.desktop-frame {
-            background: #ABABAB;
+            background: #D3D3D3;
             border-radius: 15px;
             max-width: 100%;
             height: 65%;
             position: relative;
             padding: 0.2rem;
-            border: 1px solid #FFFFFF;
+            filter: drop-shadow(1px 1px 3px #595959);
 
             div.desktop-screen {
               background-color: #FFFFFF;
@@ -52,7 +52,7 @@ div.my-work-container {
             }
           }
           div.tablet-frame {
-            background: #ABABAB;
+            background: #D3D3D3;
             border-radius: 15px;
             max-width: 61%;
             height: 40%;
@@ -60,7 +60,7 @@ div.my-work-container {
             padding: 0.2rem;
             top: -10%;
             margin-left: 0.5rem;
-            border: 1px solid #FFFFFF;
+            filter: drop-shadow(1px 1px 3px #595959);
 
             div.tablet-screen {
               background-color: #FFFFFF;
@@ -81,16 +81,16 @@ div.my-work-container {
             }
           }
           div.mobile-frame {
-            background: #ABABAB;
+            background: #D3D3D3;
             border-radius: 15px;
-            max-width: 28%;
+            max-width: 27%;
             height: 50%;
             position: relative;
             margin-left: auto;
             margin-right: 0.5rem;
             padding: 0.2rem;
             top: -60%;
-            border: 1px solid #FFFFFF;
+            filter: drop-shadow(1px 1px 3px #595959);
 
             div.mobile-screen {
               background-color: #FFFFFF;
@@ -112,7 +112,7 @@ div.my-work-container {
                 width: 50%;
                 height: 100%;
                 transform: skewX(45deg);
-                background: #ABABAB;
+                background: #D3D3D3;
                 border-radius: 1px;
               }
               div.notch-fill {
@@ -120,14 +120,14 @@ div.my-work-container {
                 width: 50%;
                 position: absolute;
                 left: 50%;
-                background: #ABABAB;
+                background: #D3D3D3;
                 transform: translateX(-50%);
               }
               div.notch-2 {
                 width: 50%;
                 height: 100%;
                 transform: skewX(-45deg);
-                background: #ABABAB;
+                background: #D3D3D3;
                 border-radius: 1px;
               }
             }
@@ -153,10 +153,6 @@ div.my-work-container {
           width: 80vw;
 
           div.prev-work-btn {
-            background-image: url('./images/nav-btn.svg');
-            background-size: 100% 100%;
-            height: 2rem;
-            width: 2rem;
             margin: auto;
             margin-left: 0;
           }
@@ -164,13 +160,9 @@ div.my-work-container {
             color: #595959;
             font-size: 2.2rem;
             margin: auto;
-            text-align: center;
+            text-align: left;
           }
           div.next-work-btn {
-            background-image: url('./images/nav-btn.svg');
-            background-size: 100% 100%;
-            height: 2rem;
-            width: 2rem;
             margin: auto;
             margin-right: 0;
             transform: scale(-1);
@@ -180,6 +172,13 @@ div.my-work-container {
     }
     div.nav-footer {
       display: none;
+    }
+    div.nav-btn {
+      background-image: url('./images/nav-btn.svg');
+      background-size: 100% 100%;
+      height: 2rem;
+      width: 2rem;
+      opacity: 0.8;
     }
   }
 }
