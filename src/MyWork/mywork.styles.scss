@@ -42,19 +42,20 @@ div.my-work-container {
               border-radius: 10px;
               height: 90%;
               position: relative;
-            }
-            div.desktop-details {
-              background-color: rgba(255,255,255,0.8);
-              border-radius: 10px;
-              height: 90%;
-              width: 100%;
-              position: absolute;
-              transition: opacity 500ms;
-              -moz-transition: opacity 0ms;
-              opacity: 0;
-              top: 0;
-              left: 0;
-              z-index: -1;
+
+              div.desktop-details {
+                background-color: rgba(255,255,255,0.95);
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: opacity 300ms;
+                -moz-transition: opacity 0ms;
+                opacity: 0;
+                z-index: -1;
+                top: 0;
+                left: 0;
+              }
             }
           }
           div.tablet-frame {
@@ -76,6 +77,20 @@ div.my-work-container {
               position: relative;
               transition: all 500ms;
               -moz-transition: all 0ms;
+
+              div.tablet-details {
+                background-color: rgba(255,255,255,0.95);
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: opacity 300ms;
+                -moz-transition: opacity 0ms;
+                opacity: 0;
+                z-index: -1;
+                top: 0;
+                left: 0;
+              }
             }
             div.tablet-button {
               background: #FFFFFF;
@@ -109,6 +124,20 @@ div.my-work-container {
               position: relative;
               transition: all 500ms;
               -moz-transition: all 0ms;
+
+              div.mobile-details {
+                background-color: rgba(255,255,255,0.95);
+                border-radius: 10px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: opacity 300ms;
+                -moz-transition: opacity 0ms;
+                opacity: 0;
+                z-index: -1;
+                top: 0;
+                left: 0;
+              }
             }
             div.mobile-notch {
               position: absolute;
@@ -146,19 +175,27 @@ div.my-work-container {
         }
         div.screens-container:hover {
           div.desktop-frame {
-            div.desktop-details {
-              opacity: 1;
-              z-index: 1;
+            div.desktop-screen {
+              div.desktop-details {
+                opacity: 1;
+                z-index: 0;
+              }
             }
           }
           div.tablet-frame {
             div.tablet-screen {
-              opacity: 0;
+              div.tablet-details {
+                opacity: 1;
+                z-index: 0;
+              }
             }
           }
           div.mobile-frame {
             div.mobile-screen {
-              opacity: 0;
+              div.mobile-details {
+                opacity: 1;
+                z-index: 0;
+              }
             }
           }
         }

@@ -76,21 +76,21 @@ function MyWork(props) {
                   <div onClick={() => handleClick('show')} className="desktop-frame">
                     <div className="desktop-screen">
                       <DisplayWork className={workArr[currentWork].desktopImg} />
+                      <div className="desktop-details"></div>
                     </div>
-                    <div className="desktop-details"></div>
                   </div>
                   <div onClick={() => handleClick('show')} className="tablet-frame">
                     <div className="tablet-screen">
                       <DisplayWork className={workArr[currentWork].tabletImg} />
+                      <div className="tablet-details"></div>
                     </div>
-                    <div className="tablet-details"></div>
                     <div className="tablet-button" />
                   </div>
                   <div onClick={() => handleClick('show')} className="mobile-frame">
                   <div className="mobile-screen">
                     <DisplayWork className={workArr[currentWork].mobileImg} />
+                    <div className="mobile-details"></div>
                   </div>
-                  <div className="mobile-details"></div>
                   <div className="mobile-notch">
                     <div className="notch-1" />
                     <div className="notch-fill" />
