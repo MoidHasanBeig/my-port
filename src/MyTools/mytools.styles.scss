@@ -5,6 +5,7 @@ div.my-tools-container {
   border-bottom: 1vw dashed #E9E9E9;
   position: relative;
   transition: all 500ms;
+  -moz-transition: all 0ms;
 
   div.my-tools-section {
     height: 100vh;
@@ -29,6 +30,7 @@ div.my-tools-container {
         margin: auto;
         margin-bottom: 1rem;
         transition: all 500ms;
+        -moz-transition: all 0ms;
       }
       div.tool-desc-container {
         display: flex;
@@ -39,6 +41,7 @@ div.my-tools-container {
           text-align: center;
           margin-bottom: 2rem;
           transition: all 500ms;
+          -moz-transition: all 0ms;
           color: #595959;
         }
         div.tool-desc {

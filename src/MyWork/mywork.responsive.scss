@@ -69,9 +69,7 @@
             div.next-work-btn {
               height: 1.5rem;
             }
-            div.work-title {
-              font-size: 2rem;
-            }
+            select.work-title {}
           }
         }
       }
@@ -159,9 +157,13 @@
             margin: 1.5rem auto 1rem auto;
             width: 50vw;
 
-            div.work-title {
-              width: 100%;
-              font-size: 1.5rem;
+            select.work-title {
+              border-bottom: 0;
+              padding-bottom: 0;
+              cursor: pointer;
+            }
+            select.work-title:hover {
+              transform: scale(1.1);
             }
             div.prev-work-btn, div.next-work-btn {
               display: none;
@@ -188,6 +190,7 @@
         div.nav-next:hover, div.nav-prev:hover {
           opacity: 1;
           width: 2.5rem;
+          filter: none;
         }
       }
     }

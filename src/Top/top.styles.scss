@@ -15,6 +15,7 @@ div.top-section {
   position: relative;
   overflow: hidden;
   transition: background-color 500ms;
+  -moz-transition: background-color 0ms;
 
   div.top-additional-images {
     height: 1vw;
@@ -40,6 +41,7 @@ div.top-section {
     background-size: 100% 100%;
     position: absolute;
     transition: all 500ms;
+    -moz-transition: all 0ms;
   }
   div.cloud-1 {
     background-image: url('./images/cloud1.svg');
@@ -94,6 +96,7 @@ div.top-section {
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
       transition: all 500ms;
+      -moz-transition: all 0ms;
     }
     @keyframes balloonAnim {
       0% {transform: scaleX(1) translateY(0px);}
@@ -118,6 +121,7 @@ div.top-section {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         transition: all 500ms;
+        -moz-transition: all 0ms;
       }
     }
     @keyframes rotateGlobe {
@@ -133,5 +137,6 @@ div.top-section {
       background-image: url('./images/seamless-clouds-sm.svg');
       background-size: 100% 100%;
       transition: all 500ms;
+      -moz-transition: all 0ms;
     }
 }

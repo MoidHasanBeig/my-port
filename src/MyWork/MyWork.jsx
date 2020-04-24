@@ -5,7 +5,6 @@ import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
 import FooterQuote from '../components/FooterQuote/FooterQuote';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
-import WorkDetailsDialog from './subcomponents/WorkDetailsDialog/WorkDetailsDialog';
 import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
 import Fade from 'react-reveal/Fade';
 
@@ -42,7 +41,6 @@ let workArr = [
 function MyWork(props) {
 
   let [currentWork,setCurrentWork] = useState(0);
-  let [shouldDisplayDetails,setShouldDisplayDetails] = useState(false);
 
   function handleClick(type) {
     if(type === 'next') {
@@ -61,20 +59,16 @@ function MyWork(props) {
         setCurrentWork( prevValue => prevValue-1);
       }
     }
-    else {
-      setShouldDisplayDetails(true);
-    }
   }
 
-  function dismissDialog() {
-    setShouldDisplayDetails(false);
+  function handleChange(evt) {
+    setCurrentWork(Number(evt.target.value));
   }
 
   return (
-    <div className={`my-work-container ${props.dark && "invert"} ${shouldDisplayDetails && "fix-context-stack"}`}>
+    <div className={`my-work-container ${props.dark && "invert"}`}>
       <div className="my-work-section section" id="my-work">
         <Heading text="My work" />
-        {shouldDisplayDetails && <WorkDetailsDialog dismissDialog={dismissDialog} />}
           <div className="display-container">
             <Fade bottom>
               <div className="sub-container-1">
@@ -83,17 +77,20 @@ function MyWork(props) {
                     <div className="desktop-screen">
                       <DisplayWork className={workArr[currentWork].desktopImg} />
                     </div>
+                    <div className="desktop-details"></div>
                   </div>
                   <div onClick={() => handleClick('show')} className="tablet-frame">
                     <div className="tablet-screen">
                       <DisplayWork className={workArr[currentWork].tabletImg} />
                     </div>
+                    <div className="tablet-details"></div>
                     <div className="tablet-button" />
                   </div>
                   <div onClick={() => handleClick('show')} className="mobile-frame">
                   <div className="mobile-screen">
                     <DisplayWork className={workArr[currentWork].mobileImg} />
                   </div>
+                  <div className="mobile-details"></div>
                   <div className="mobile-notch">
                     <div className="notch-1" />
                     <div className="notch-fill" />
@@ -114,7 +111,13 @@ function MyWork(props) {
               <div className="sub-container-2">
                   <div className="title-container">
                     <div onClick={() => handleClick('prev')} className="prev-work-btn nav-btn" />
-                    <div onClick={() => handleClick('show')} className="work-title">{workArr[currentWork].name}</div>
+                    <select className="work-title" value={currentWork} onChange={handleChange}>
+                      {
+                        workArr.map( (work,index) => {
+                          return <option value={index}>{work.name}</option>;
+                        })
+                      }
+                    </select>
                     <div onClick={() => handleClick('next')} className="next-work-btn nav-btn" />
                 </div>
               </div>

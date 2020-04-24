@@ -5,6 +5,7 @@ div.about-me-container {
   border-bottom: 1vw dashed #E9E9E9;
   position: relative;
   transition: all 500ms;
+  -moz-transition: all 0ms;
 
   div.about-me-section {
     height: 100vh;
@@ -16,6 +17,7 @@ div.about-me-container {
     justify-content: space-around;
     overflow: hidden;
     transition: all 500ms;
+    -moz-transition: all 0ms;
 
     div.about-heading {
       text-align: center;
@@ -27,6 +29,7 @@ div.about-me-container {
     div.about-pic-container {
       margin: auto;
       transition: all 500ms;
+      -moz-transition: all 0ms;
 
       div.about-pic-subcontainer {
         width: 31vw;

@@ -30,6 +30,10 @@ html,body {
     background-image: none !important;
   }
 
+  :focus {
+    outline: none;
+  }
+
   /* width & height */
   ::-webkit-scrollbar {
       width: 0px;
