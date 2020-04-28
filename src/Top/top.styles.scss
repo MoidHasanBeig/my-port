@@ -14,6 +14,7 @@ div.top-section {
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
+  background-attachment: fixed;
   transition: background-color 500ms;
   -moz-transition: background-color 0ms;
 
@@ -27,9 +28,17 @@ div.top-section {
     background-image: url('./images/starry-sky.svg');
     background-size: 100% 100%;
   }
-
+  div.animate-sunset {
+    animation: sunset;
+    animation-duration: 2000ms;
+  }
+  @keyframes sunset {
+    0% {transform: translate(0%,0%);}
+    50% {transform: translate(-100%,-100%);}
+    100% {transform: translate(0%,0%);}
+  }
   div.moon {
-    filter: brightness(3.5);
+    filter: brightness(3.5) !important;
   }
   div.night-colors {
     filter: brightness(0.8) contrast(1.5) !important;
@@ -42,6 +51,7 @@ div.top-section {
     position: absolute;
     transition: all 500ms;
     -moz-transition: all 0ms;
+    filter: brightness(1.3);
   }
   div.cloud-1 {
     background-image: url('./images/cloud1.svg');
@@ -75,6 +85,7 @@ div.top-section {
       height: 55vw;
       background-size: 100% 100%;
       position: relative;
+      animation-name: speechAnim;
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
@@ -95,6 +106,7 @@ div.top-section {
       animation-duration: 2s;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
+      animation-name: balloonAnim;
       transition: all 500ms;
       -moz-transition: all 0ms;
     }
@@ -120,6 +132,7 @@ div.top-section {
         animation-duration: 60s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
+        animation-name: rotateGlobe;
         transition: all 500ms;
         -moz-transition: all 0ms;
       }
