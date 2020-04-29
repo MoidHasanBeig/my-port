@@ -77,7 +77,7 @@ function App() {
       // window.removeEventListener("orientationchange", resizeThrottler, false);
       window.removeEventListener("scroll", scrollThrottler, false);
     }
-  },[]);
+  });
 
   useEffect(() => {
     localStorage.setItem("theme",isDark);
