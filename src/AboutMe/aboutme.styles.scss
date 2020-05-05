@@ -1,11 +1,11 @@
 div.about-me-container {
-  background: #F8F8F8;
   padding-top: 10vw;
-  padding-bottom: 10vw;
-  border-bottom: 1vw dashed #E9E9E9;
+  padding-bottom: 0vw;
+  // border-bottom: 1vw dashed #EDEDED;
   position: relative;
   transition: all 500ms;
   -moz-transition: all 0ms;
+  background-color: #F8F8F8;
 
   div.about-me-section {
     height: 100vh;
@@ -13,75 +13,79 @@ div.about-me-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     overflow: hidden;
     transition: all 500ms;
     -moz-transition: all 0ms;
 
     div.about-heading {
       text-align: center;
-      font-size: 2.3rem;
+      font-size: 3rem;
       position: relative;
-      color: #D3D3D3;
-      margin: auto;
+      color: #EDEDED;
+      margin: 0rem auto 1rem auto;
     }
-    div.about-pic-container {
-      margin: auto;
-      transition: all 500ms;
-      -moz-transition: all 0ms;
+    div.details-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 80vh;
 
-      div.about-pic-subcontainer {
-        width: 31vw;
-        height: 31vw;
-        position: relative;
+      div.individual-intro {
+        display: flex;
+        flex-direction: row;
         margin: auto;
-        z-index: 2;
 
-        div.about-pic {
-          background-image: url('./images/profile-cod.png'),url('./images/profile-des.png'),url('./images/profile-pla.png');
-          background-position: 0% -100%, 0% 0%, 0% 100%;
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          opacity: 0.9;
-          height: 100%;
-          width: 100%;
-          animation-name: picAnim;
-          animation-duration: 2s;
-          animation-timing-function: steps(1);
-          animation-iteration-count: infinite;
+        div.about-pic-container {
+          margin: auto;
+          transition: all 500ms;
+          -moz-transition: all 0ms;
+
+          div.about-pic-subcontainer {
+            width: 35vw;
+            height: 35vw;
+            position: relative;
+            margin: auto;
+            z-index: 2;
+
+            div.about-pic {
+              background-position: 0% -100%, 0% 0%, 0% 100%;
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              opacity: 0.9;
+              height: 100%;
+              width: 100%;
+            }
+            div.cod-pic {
+              background-image: url('./images/profile-cod.png');
+            }
+            div.des-pic {
+              background-image: url('./images/profile-des.png');
+            }
+            div.pla-pic {
+              background-image: url('./images/profile-pla.png');
+            }
+          }
         }
-        @keyframes picAnim {
-          0% {background-position: 0% 100vh, 0% 0%, 0% 100vh;}
-          35% {background-position: 0% 0%, 0% 100vh, 0% 100vh;}
-          70% {background-position: 0% 100vh, 0% 100vh, 0% 0%;}
+        // p.about-text:before {
+        //   color: #D3D3D3;
+        //   content: open-quote;
+        //   font-size: 4em;
+        //   line-height: 0.1em;
+        //   margin-right: 0.25em;
+        //   vertical-align: -0.4em;
+        // }
+        p.about-text {
+          text-align: justify;
+          color: #ABABAB;
+          width: 50vw;
+          font-size: 1.35rem;
+          position: relative;
+          margin: auto 1rem;
         }
       }
-      hr {
-        width: 80vw;
-        position: relative;
-        top: -50%;
-        color: #DDD;
-        border: 1px solid;
-        margin: 0;
-        text-align: center;
-        margin: 0 auto;
+      div.des-intro {
+        flex-direction: row-reverse;
       }
-    }
-    p.about-text:before {
-      color: #D3D3D3;
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-    }
-    p.about-text {
-      text-align: justify;
-      color: #595959;
-      width: 75vw;
-      font-size: 1.35rem;
-      position: relative;
-      margin: auto;
     }
   }
 }

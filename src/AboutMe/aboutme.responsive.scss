@@ -2,20 +2,31 @@
 @media (max-width: 360px) {}
 
 // Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {
+@media (min-width: 568px) and (orientation: landscape) {
   div.about-me-container {
     border-width: 0.5vw;
 
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 12vw;
-          height: 12vw;
+      div.details-container {
+        flex-direction: row;
+        width: 90vw;
+        margin: auto;
+
+        div.individual-intro {
+          flex-direction: column;
+
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 18vw;
+              height: 18vw;
+            }
+          }
+          p.about-text {
+            font-size: 1rem;
+            width: 18vw;
+            margin: 1.5rem;
+          }
         }
-      }
-      p.about-text {
-        font-size: 1rem;
-        width: 50vw;
       }
     }
   }
@@ -27,15 +38,20 @@
     border-width: 0.6vw;
 
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 20vw;
-          height: 20vw;
+
+      div.details-container {
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 25vw;
+              height: 25vw;
+            }
+          }
+          p.about-text {
+            font-size: 1rem;
+            width: 40vw;
+          }
         }
-      }
-      p.about-text {
-        font-size: 1rem;
-        width: 60vw;
       }
     }
   }
@@ -50,19 +66,28 @@
       background-image: url('./images/about-bg.svg');
       background-size: 100% 100%;
 
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 12vw;
-          height: 12vw;
+      div.details-container {
+        width: 70vw;
 
-          div.about-pic {
-            opacity: 1;
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 15vw;
+              height: 15vw;
+
+              div.about-pic {
+                opacity: 1;
+              }
+            }
+          }
+          p.about-text {
+            font-size: 0.9rem;
+            width: 20vw;
           }
         }
       }
-      p.about-text {
-        font-size: 0.9rem;
-        width: 52vw;
+      div.about-heading {
+        font-size: 3rem;
       }
     }
   }
@@ -74,19 +99,23 @@
     border-width: 0.3vw;
 
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 12vw;
-          height: 12vw;
+      div.details-container {
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 12vw;
+              height: 12vw;
 
-          div.about-pic {
-            opacity: 1;
+              div.about-pic {
+                opacity: 1;
+              }
+            }
+          }
+          p.about-text {
+            font-size: 0.9rem;
+            width: 15vw;
           }
         }
-      }
-      p.about-text {
-        font-size: 0.9rem;
-        width: 35vw;
       }
     }
   }
@@ -98,15 +127,19 @@
     border-width: 0.6vw;
 
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 18vw;
-          height: 18vw;
-          padding: 5px;
+      div.details-container {
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 18vw;
+              height: 18vw;
+              padding: 5px;
+            }
+          }
+          p.about-text {
+            width: 60vw;
+          }
         }
-      }
-      p.about-text {
-        width: 60vw;
       }
     }
   }
@@ -116,14 +149,18 @@
 @media (min-width: 1200px) and (min-height: 1000px) {
   div.about-me-container {
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 12vw;
-          height: 12vw;
+      div.details-container {
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 12vw;
+              height: 12vw;
+            }
+          }
+          p.about-text {
+            width: 40vw;
+          }
         }
-      }
-      p.about-text {
-        width: 40vw;
       }
     }
   }
@@ -133,14 +170,18 @@
 @media (min-width: 1400px) {
   div.about-me-container {
     div.about-me-section {
-      div.about-pic-container {
-        div.about-pic-subcontainer {
-          width: 12vw;
-          height: 12vw;
+      div.details-container {
+        div.individual-intro {
+          div.about-pic-container {
+            div.about-pic-subcontainer {
+              width: 12vw;
+              height: 12vw;
+            }
+          }
+          p.about-text {
+            width: 40vw;
+          }
         }
-      }
-      p.about-text {
-        width: 40vw;
       }
     }
   }

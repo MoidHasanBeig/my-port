@@ -1,11 +1,11 @@
 div.my-tools-container {
-  background: #F8F8F8;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
-  border-bottom: 1vw dashed #E9E9E9;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  // border-bottom: 1vw dashed #EDEDED;
   position: relative;
   transition: all 500ms;
   -moz-transition: all 0ms;
+  background-color: #F8F8F8;
 
   div.my-tools-section {
     height: 100vh;
@@ -16,7 +16,7 @@ div.my-tools-container {
     div.display-container {
       display: flex;
       flex-direction: column;
-      width: 50vw;
+      width: 60vw;
       margin: auto;
       position: relative;
       top: 40%;
@@ -45,11 +45,14 @@ div.my-tools-container {
         }
         div.tool-desc {
           font-size: 1.3rem;
-          color: #595959;
+          color: #ABABAB;
           text-align: justify;
           margin-bottom: 2rem;
         }
         div.details-container {
+          width: max-content;
+          margin: auto;
+
           div.used-for {
             margin-bottom: 0.6rem;
             color: #ABABAB;
@@ -57,13 +60,14 @@ div.my-tools-container {
             width: max-content;
 
             span.for {
-              color: #595959;
+              color: #ABABAB;
             }
           }
           div.skill-level {
             color: #ABABAB;
             font-size: 1rem;
             display: flex;
+            width: max-content;
           }
         }
       }
