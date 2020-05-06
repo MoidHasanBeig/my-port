@@ -1,7 +1,14 @@
 div.heading-general {
   font-size: 3rem;
   position: relative;
-  color: #EDEDED;
+  color: #E9E9E9;
   top: 1.5rem;
-  margin-left: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+div.heading-general:before {
+  content: '_';
+}
+div.heading-general:after {
+  content: '_';
 }
