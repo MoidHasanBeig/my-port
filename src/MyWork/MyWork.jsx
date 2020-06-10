@@ -3,7 +3,6 @@ import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
-import FooterQuote from '../components/FooterQuote/FooterQuote';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
 import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
 
@@ -14,8 +13,9 @@ let workArr = [
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
     tools:['HTML/CSS/JS','NodeJS','ExpressJS','Figma'],
-    desc:'',
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link:'https://klipmunk.com/',
+    git:false
   },
   {
     name:'Speedklip',
@@ -23,8 +23,9 @@ let workArr = [
     tabletImg:'speedklip-md',
     mobileImg:'speedklip-sm',
     tools:['HTML/CSS/JS','Figma'],
-    desc:'',
-    link:''
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link:'https://klipmunk.com/speedklip',
+    git:false
   },
   {
     name:'Mindly',
@@ -32,8 +33,9 @@ let workArr = [
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
     tools:['React-native','Redux'],
-    desc:'',
-    link:''
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link:false,
+    git:'https://github.com/MoidHasanBeig/mindly-copy-reactApp'
   },
 ];
 
@@ -74,20 +76,32 @@ function MyWork(props) {
                 <div onClick={() => handleClick('show')} className="desktop-frame">
                   <div className="desktop-screen">
                     <DisplayWork className={workArr[currentWork].desktopImg} />
-                    <div className="desktop-details"></div>
+                    <div className="desktop-details">
+                      <div className="project-desc">{workArr[currentWork].desc}</div>
+                    </div>
                   </div>
                 </div>
                 <div onClick={() => handleClick('show')} className="tablet-frame">
                   <div className="tablet-screen">
                     <DisplayWork className={workArr[currentWork].tabletImg} />
-                    <div className="tablet-details"></div>
+                    <div className="tablet-details">
+                      <a className="project-live" href={workArr[currentWork].link} target={workArr[currentWork].link ? "blank" : undefined}>
+                        <div className={workArr[currentWork].link && "project-live-icon"} />
+                        <div className="project-link">{workArr[currentWork].link ? "View live\nproject" : "This project is\nnot live yet :("}</div>
+                      </a>
+                    </div>
                   </div>
                   <div className="tablet-button" />
                 </div>
                 <div onClick={() => handleClick('show')} className="mobile-frame">
                 <div className="mobile-screen">
                   <DisplayWork className={workArr[currentWork].mobileImg} />
-                  <div className="mobile-details"></div>
+                  <div className="mobile-details">
+                  <a className="project-repo" href={workArr[currentWork].git ? workArr[currentWork].git : undefined} target={workArr[currentWork].git ? "blank" : undefined}>
+                    <div className={workArr[currentWork].git ? "github-icon" : undefined} />
+                    <div className="repo-link">{workArr[currentWork].git ? "View GitHub repository" : "This repository\nis private :("}</div>
+                  </a>
+                  </div>
                 </div>
                 <div className="mobile-notch">
                   <div className="notch-1" />
@@ -118,12 +132,11 @@ function MyWork(props) {
               </div>
             </div>
           </div>
-          <div className="nav-footer">
+          <div className={`nav-footer ${props.dark && "invert"}`}>
             <div onClick={() => handleClick('prev')} className="nav-prev nav-btn" />
             <div onClick={() => handleClick('next')} className="nav-next nav-btn" />
           </div>
       </div>
-      <FooterQuote text="&quot;There is no substitute for hard work.&quot; – Thomas Edison" />
     </div>
   );
 }

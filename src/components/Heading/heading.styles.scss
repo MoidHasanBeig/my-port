@@ -4,11 +4,7 @@ div.heading-general {
   color: #E9E9E9;
   top: 1.5rem;
   margin: 1rem;
-  text-align: center;
-}
-div.heading-general:before {
-  content: '_';
 }
 div.heading-general:after {
-  content: '_';
+  content: '.';
 }

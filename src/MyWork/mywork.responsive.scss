@@ -156,9 +156,12 @@
             width: 50vw;
 
             select.work-title {
-              border-bottom: 0;
-              padding-bottom: 0;
               cursor: pointer;
+              background-color: transparent;
+              padding-bottom: 0;
+              padding-left: 0;
+              color: #595959;
+              filter: none;
             }
             select.work-title:hover {
               transform: scale(1.1);
