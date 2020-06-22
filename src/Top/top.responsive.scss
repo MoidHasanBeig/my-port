@@ -9,8 +9,8 @@
     background-image: url('./images/blue-sky-lg.svg');
 
     div.light-source {
-      width: 40vw;
-      height: 40vw;
+      width: 30vw;
+      height: 30vw;
     }
     div.cloud-1 {
       width: 35vw;
@@ -47,7 +47,11 @@
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
   div.top-section {
-    background-size: 100% 140%;
+    background-size: 100% 100%;
+
+    div.animate-sunset {
+      animation: none;
+    }
 
     div.light-source {
       width: 50vw;
@@ -88,15 +92,28 @@
 
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) and (orientation:landscape) {
+  .night-sky {
+    background-size: 50% !important;
+  }
+
   div.top-section {
     height: 110vh;
     background-image: url('./images/blue-sky-lg.svg');
-    background-size: 105% 100%;
+    background-size: 100% 100%;
     background-attachment: fixed;
 
     div.light-source {
-      width: 35vw;
-      height: 35vw;
+      width: 30vw;
+      height: 30vw;
+    }
+    div.animate-sunset {
+      animation: sunset;
+      animation-duration: 1000ms;
+    }
+    @keyframes sunset {
+      0% {transform: translate(0%,0%);}
+      50% {transform: translate(-100%,-100%);}
+      100% {transform: translate(0%,0%);}
     }
     div.cloud-1 {
       width: 23vw;
@@ -147,11 +164,11 @@
 @media (min-width: 1300px) {
   div.top-section {
     background-image: url('./images/blue-sky-lg.svg');
-    background-size: 105% 100%;
+    background-size: 100% 100%;
 
     div.light-source {
-      width: 30vw;
-      height: 30vw;
+      width: 25vw;
+      height: 25vw;
     }
     div.cloud-1 {
       width: 20vw;
@@ -189,6 +206,9 @@
   div.top-section {
     background-size: 100% 140%;
 
+    div.animate-sunset {
+      animation: none;
+    }
     div.light-source {
       width: 50vw;
       height: 50vw;
@@ -228,11 +248,14 @@
 @media (min-width: 1200px) and (min-height: 1000px) {
   div.top-section {
     background-image: url('./images/blue-sky-lg.svg');
-    background-size: 105% 120%;
+    background-size: 100% 100%;
 
     div.light-source {
-      width: 35vw;
-      height: 35vw;
+      width: 30vw;
+      height: 30vw;
+    }
+    div.animate-sunset {
+      animation: none;
     }
     div.cloud-1 {
       width: 25vw;
@@ -269,11 +292,11 @@
 @media (min-width: 1400px) {
   div.top-section {
     background-image: url('./images/blue-sky-lg.svg');
-    background-size: 105% 100%;
+    background-size: 100% 100%;
 
     div.light-source {
-      width: 35vw;
-      height: 35vw;
+      width: 30vw;
+      height: 30vw;
     }
     div.cloud-1 {
       width: 24vw;

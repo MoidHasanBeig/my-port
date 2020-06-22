@@ -11,6 +11,7 @@ const Credentials = React.lazy(() => import('./Credentials/Credentials'));
 const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
 const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
 const ToggleTheme = React.lazy(() => import('./components/ToggleTheme/ToggleTheme'));
+const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
 
 function App() {
 
@@ -89,7 +90,14 @@ function App() {
       <Suspense fallback={<LoadingScreen dark={isDark} />}>
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} dark={isDark} />
-        <ToggleTheme darkMode={darkMode} dark={isDark} />
+        <div style={{position:"fixed", zIndex:10, right:"0.5rem", top:"0.5rem", filter:"brightness(1.2)"}}>
+          <DarkModeToggle
+          onChange={setIsDark}
+          checked={isDark}
+          size={60}
+          speed={1.5}
+          />
+        </div>
         <Top dark={isDark} />
         <AboutMe dark={isDark} />
         <MyTools dark={isDark} />

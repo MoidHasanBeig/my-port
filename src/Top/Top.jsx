@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import './top.styles.scss';
 import './top.responsive.scss';
 
 function Top(props) {
 
+  let [isSunAnimate, setIsSunAnimate] = useState(false);
+
+  useEffect(() => {
+    setIsSunAnimate(true);
+  },[props.dark]);
+
   return (
     <div className={`top-section section ${props.dark && "night-sky"}`} id="top">
       <div className="top-additional-images" />
-      <div className={`light-source ${props.dark && "moon"}`} />
-      <div className={`cloud-1 ${props.dark && "slide-left"}`} />
-      <div className={`cloud-2 ${props.dark && "slide-right"}`} />
+      <div className={`light-source ${props.dark && "moon"} ${isSunAnimate && "animate-sunset"}`} onAnimationEnd={() => setIsSunAnimate(false)}/>
       <div className="speech-container">
         <div className="speech-bubble" />
         <div className={`balloon ${props.dark && "night-colors"}`} />
