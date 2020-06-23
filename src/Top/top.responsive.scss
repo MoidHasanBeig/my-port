@@ -162,8 +162,8 @@
       height: 3rem;
       width: 3rem;
       background-color: #BB6622;
-      right: 3vw;
-      bottom: 10vh;
+      right: 5vw;
+      bottom: 15vh;
       background-image: url('./images/planet.png');
     }
     div.planet-2 {
@@ -171,11 +171,14 @@
       width: 1.2rem;
       background-color: #001378;
       right: 15vw;
-      bottom: 25vh;
+      bottom: 30vh;
     }
     @keyframes rotatePlanet {
       from {background-position: -192% 0%;}
       to {background-position: 192% 0%;}
+    }
+    div.hide-planet {
+      bottom: -10vh !important;
     }
     div.shooting-star {
       width: 1px;
