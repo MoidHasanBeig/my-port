@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import { Parallax, Background } from 'react-parallax';
 import './top.styles.scss';
 import './top.responsive.scss';
 
@@ -21,6 +22,9 @@ function Top(props) {
       <div className="glob-container">
         <div className={`globe ${props.dark && "night-colors"}`} />
       </div>
+      <div className={`${!props.dark && "hide"} new-planet planet-1`} />
+      <div className={`${!props.dark && "hide"} new-planet planet-2`} />
+      <div className={`${props.dark && "shooting-star"}`} />
       <div className={`seamless-clouds ${props.dark && "invert"}`} />
     </div>
   );

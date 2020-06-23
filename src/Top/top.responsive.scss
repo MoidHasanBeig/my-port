@@ -100,7 +100,6 @@
     height: 110vh;
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 100% 100%;
-    background-attachment: fixed;
 
     div.light-source {
       width: 30vw;
@@ -139,14 +138,64 @@
     }
     div.glob-container {
       div.globe {
-        width: 100vw;
-        height: 57vw;
-        transform: translateY(59%) rotate(0deg);
+        width: 60vw;
+        height: 60vw;
+        transform: translate(-65%,45%) rotate(0deg);
       }
     }
     @keyframes rotateGlobe {
-      from {transform: translateY(59%) rotate(0deg);}
-      to {transform: translateY(59%) rotate(360deg);}
+      from {transform: translate(-65%,45%) rotate(0deg);}
+      to {transform: translate(-65%,45%) rotate(360deg);}
+    }
+    div.new-planet {
+      border-radius: 50%;
+      transform: rotate(10deg);
+      position: absolute;
+      filter: brightness(0.6);
+      background-repeat: repeat-x;
+      background-size: cover;
+      animation: rotatePlanet 10s linear infinite;
+      box-shadow: inset -8px -8px 4px rgba(0, 0, 0, 0.5);
+      transition: all 500ms;
+    }
+    div.planet-1 {
+      height: 3rem;
+      width: 3rem;
+      background-color: #BB6622;
+      right: 3vw;
+      bottom: 10vh;
+      background-image: url('./images/planet.png');
+    }
+    div.planet-2 {
+      height: 1.2rem;
+      width: 1.2rem;
+      background-color: #001378;
+      right: 15vw;
+      bottom: 25vh;
+    }
+    @keyframes rotatePlanet {
+      from {background-position: -192% 0%;}
+      to {background-position: 192% 0%;}
+    }
+    div.shooting-star {
+      width: 1px;
+      height: 10rem;
+      background: linear-gradient(360deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 104.44%);
+      position: absolute;
+      right: 35vw;
+      top: 0;
+      transform: rotate(-35deg) translate(0,-150%);
+      animation-name: shootingStar;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+    @keyframes shootingStar {
+      0% {transform: rotate(-35deg) translate(0,-150%);}
+      2% {transform: rotate(-35deg) translate(0,350%);}
+      4% {opacity: 0;}
+      5% {transform: rotate(-35deg) translate(0,-150%);}
+      100% {opacity: 1;}
     }
     div.seamless-clouds {
       position: absolute;
@@ -194,7 +243,7 @@
     }
     div.glob-container {
       div.globe {
-        width: 100vw;
+        width: 60vw;
         height: 50vw;
       }
     }
@@ -281,8 +330,8 @@
     }
     div.glob-container {
       div.globe {
-        width: 100vw;
-        height: 65vw;
+        width: 70vw;
+        height: 100vw;
       }
     }
   }
@@ -322,8 +371,8 @@
     }
     div.glob-container {
       div.globe {
-        width: 100vw;
-        height: 55vw;
+        width: 60vw;
+        height: 100vw;
       }
     }
   }
