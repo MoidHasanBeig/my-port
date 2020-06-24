@@ -5,7 +5,7 @@ import FooterQuote from '../components/FooterQuote/FooterQuote';
 
 function AboutMe(props) {
   return (
-    <div className={`about-me-container ${props.dark && "invert"}`}>
+    <div className="about-me-container">
       <div className={`about-me-section section ${props.dark && "about-night"}`} id="about-me">
         <div className="about-heading">I design<br />& I develop</div>
         <div className="details-container">

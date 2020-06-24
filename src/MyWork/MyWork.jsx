@@ -67,7 +67,7 @@ function MyWork(props) {
   }
 
   return (
-    <div className={`my-work-container ${props.dark && "invert"}`}>
+    <div className="my-work-container">
       <div className="my-work-section section" id="my-work">
         <Heading text="My work" />
           <div className="display-container">

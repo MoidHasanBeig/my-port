@@ -149,40 +149,49 @@
     }
     div.new-planet {
       border-radius: 50%;
-      transform: rotate(10deg);
       position: absolute;
       filter: brightness(0.6);
+      z-index: 2;
       background-repeat: repeat-x;
       background-size: cover;
       animation: rotatePlanet 10s linear infinite;
       box-shadow: inset -8px -8px 4px rgba(0, 0, 0, 0.5);
-      transition: all 500ms;
+      transition: top 500ms, opacity 200ms;
     }
     div.planet-1 {
-      height: 3rem;
-      width: 3rem;
+      height: 4rem;
+      width: 4rem;
+      transform: rotate(10deg);
       background-color: #BB6622;
-      right: 5vw;
-      bottom: 15vh;
+      right: 15vw;
+      top: 15vh;
       background-image: url('./images/planet.png');
     }
     div.planet-2 {
-      height: 1.2rem;
-      width: 1.2rem;
+      height: 2.5rem;
+      width: 2.5rem;
       background-color: #001378;
-      right: 15vw;
-      bottom: 30vh;
+      right: 30vw;
+      top: 30vh;
+    }
+    div.planet-3 {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: #126300;
+      right: 20vw;
+      top: 40vh;
     }
     @keyframes rotatePlanet {
-      from {background-position: -192% 0%;}
-      to {background-position: 192% 0%;}
+      from {background-position: -190% 0%;}
+      to {background-position: 190% 0%;}
     }
     div.hide-planet {
-      bottom: -10vh !important;
+      top: -30vh !important;
     }
     div.shooting-star {
       width: 1px;
       height: 10rem;
+      z-index: 1;
       background: linear-gradient(360deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 104.44%);
       position: absolute;
       right: 35vw;

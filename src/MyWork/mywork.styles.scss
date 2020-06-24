@@ -1,12 +1,9 @@
 div.my-work-container {
   padding-top: 5vw;
   padding-bottom: 5vw;
-  overflow: hidden;
-  // border-bottom: 1vw dashed #EDEDED;
   position: relative;
   transition: all 500ms;
   -moz-transition: all 0ms;
-  background-color: #F8F8F8;
 
   div.my-work-section {
     height: 100vh;

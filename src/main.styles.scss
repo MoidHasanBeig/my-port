@@ -9,11 +9,16 @@ html,body {
   user-select: none;
   scrollbar-width: none;  //for firefox
   scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0); //for firefox
+  overflow-x: hidden;
 
   margin: 0;
   font-family: 'Poor Story', PoorStory , cursive;
   font-size: 100%;
-  background: #F8F8F8;
+
+  .mode-toggle-container {
+    background: #F8F8F8;
+    transition: all 500ms;
+  }
 
   .hide {
     opacity: 0 !important;

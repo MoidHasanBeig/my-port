@@ -75,7 +75,7 @@ function MyTools(props) {
   }
 
   return (
-    <div className={`my-tools-container ${props.dark && "invert"}`}>
+    <div className="my-tools-container">
       <div className="my-tools-section section" id="my-tools">
         <Heading text="My tools" />
           <div className="display-container">

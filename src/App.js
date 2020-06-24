@@ -99,10 +99,12 @@ function App() {
           />
         </div>
         <Top dark={isDark} />
-        <AboutMe dark={isDark} />
-        <MyTools dark={isDark} />
-        <MyWork dark={isDark} />
-        <Credentials dark={isDark} />
+        <div className={`mode-toggle-container ${isDark && "invert"}`}>
+          <AboutMe dark={isDark} />
+          <MyTools dark={isDark} />
+          <MyWork dark={isDark} />
+          <Credentials dark={isDark} />
+        </div>
       </Suspense>
     </div>
   );
