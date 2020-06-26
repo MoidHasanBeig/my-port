@@ -22,8 +22,6 @@ function Top(props) {
         <div className={`globe ${props.dark && "night-colors"}`} />
       </div>
       <div className={`${!props.dark && "hide-planet hide"} new-planet planet-1`} />
-      <div className={`${!props.dark && "hide-planet hide"} new-planet planet-2`} />
-      <div className={`${!props.dark && "hide-planet hide"} new-planet planet-3`} />
       <div className={`${props.dark && "shooting-star"}`} />
       <div className={`seamless-clouds ${props.dark && "invert"}`} />
     </div>

@@ -95,7 +95,6 @@ function App() {
           onChange={setIsDark}
           checked={isDark}
           size={60}
-          speed={1.5}
           />
         </div>
         <Top dark={isDark} />

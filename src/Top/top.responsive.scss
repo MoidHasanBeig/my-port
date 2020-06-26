@@ -148,45 +148,56 @@
       to {transform: translate(-65%,45%) rotate(360deg);}
     }
     div.new-planet {
-      border-radius: 50%;
       position: absolute;
-      filter: brightness(0.6);
       z-index: 2;
-      background-repeat: repeat-x;
-      background-size: cover;
-      animation: rotatePlanet 10s linear infinite;
-      box-shadow: inset -8px -8px 4px rgba(0, 0, 0, 0.5);
+      background-size: 100% 100%;
       transition: top 500ms, opacity 200ms;
     }
     div.planet-1 {
-      height: 4rem;
-      width: 4rem;
-      transform: rotate(10deg);
-      background-color: #BB6622;
-      right: 15vw;
-      top: 15vh;
-      background-image: url('./images/planet.png');
+      height: 23vw;
+      width: 23vw;
+      right: 10vw;
+      top: 10vh;
+      background-image: url('./images/constell.svg');
     }
     div.planet-2 {
       height: 2.5rem;
       width: 2.5rem;
       background-color: #001378;
-      right: 30vw;
+      right: 26vw;
       top: 30vh;
     }
     div.planet-3 {
       height: 1.5rem;
       width: 1.5rem;
       background-color: #126300;
-      right: 20vw;
+      right: 16vw;
       top: 40vh;
     }
+    div.planet-4 {
+      height: 6.5rem;
+      width: 6.5rem;
+      background-color: #126300;
+      right: 21vw;
+      top: 55vh;
+      background-image: url('./images/planet2.svg');
+      animation-direction: reverse;
+      transform: rotate(-5deg);
+
+    }
+    div.planet-5 {
+      height: 3rem;
+      width: 3rem;
+      background-color: #FABE19;
+      right: 15vw;
+      top: 80vh;
+    }
     @keyframes rotatePlanet {
-      from {background-position: -190% 0%;}
-      to {background-position: 190% 0%;}
+      from {background-position: 0% 0%;}
+      to {background-position: 200% 0%;}
     }
     div.hide-planet {
-      top: -30vh !important;
+      // top: 10vh !important;
     }
     div.shooting-star {
       width: 1px;
@@ -212,6 +223,7 @@
     div.seamless-clouds {
       position: absolute;
       bottom: 0;
+      z-index: 2;
       margin-bottom: -10px;
       width: 100vw;
       height: 14vw;
