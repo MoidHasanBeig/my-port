@@ -25,7 +25,7 @@ html,body {
   }
 
   .invert {
-    filter: invert(1);
+    filter: invert(1) !important;
   }
 
   .slide-left {

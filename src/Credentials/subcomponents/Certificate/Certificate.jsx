@@ -1,10 +1,10 @@
 import React from 'react';
 import './certificate.styles.scss';
 
-function Certificate() {
+function Certificate(props) {
   return (
-    <div className="cert-cont">
-      <div className="cert cert-1" />
+    <div className={`cert-cont ${props.dark && 'invert'}`}>
+      <div className={`cert ${props.class}`} />
     </div>
   );
 }

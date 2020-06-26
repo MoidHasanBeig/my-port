@@ -59,7 +59,7 @@ function App() {
   let isInViewport = function (elem) {
       let bounding = elem.getBoundingClientRect();
       let screenHeight = window.innerHeight || document.documentElement.clientHeight;
-      if ( bounding.top > -300 && bounding.bottom*0.6 <= (screenHeight)) {
+      if ( bounding.top > -300 && bounding.top*2 <= (screenHeight)) {
         return elem.id;
       }
       else {
