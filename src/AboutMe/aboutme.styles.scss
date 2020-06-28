@@ -1,6 +1,6 @@
 div.about-me-container {
   padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-bottom: 0vw;
   position: relative;
   transition: all 500ms;
   -moz-transition: all 0ms;
@@ -18,7 +18,7 @@ div.about-me-container {
       text-align: center;
       font-size: 3rem;
       position: relative;
-      color: #E9E9E9;
+      color: #E3E3E3;
       margin: 0rem auto 1rem auto;
     }
     div.details-container {
@@ -45,7 +45,6 @@ div.about-me-container {
             z-index: 2;
 
             div.about-pic {
-              background-position: 0% -100%, 0% 0%, 0% 100%;
               background-size: 100% 100%;
               background-repeat: no-repeat;
               opacity: 0.9;

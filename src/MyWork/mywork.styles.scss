@@ -48,7 +48,6 @@ div.my-work-container {
                 transition: opacity 300ms;
                 -moz-transition: opacity 0ms;
                 opacity: 0;
-                z-index: -1;
                 top: 0;
                 left: 0;
 
@@ -90,7 +89,6 @@ div.my-work-container {
                 transition: opacity 300ms;
                 -moz-transition: opacity 0ms;
                 opacity: 0;
-                z-index: -1;
                 top: 0;
                 left: 0;
 
@@ -172,7 +170,6 @@ div.my-work-container {
                 transition: opacity 300ms;
                 -moz-transition: opacity 0ms;
                 opacity: 0;
-                z-index: -1;
                 top: 0;
                 left: 0;
 
@@ -249,7 +246,6 @@ div.my-work-container {
             div.desktop-screen {
               div.desktop-details {
                 opacity: 1;
-                z-index: 0;
               }
             }
           }
@@ -257,7 +253,6 @@ div.my-work-container {
             div.tablet-screen {
               div.tablet-details {
                 opacity: 1;
-                z-index: 0;
 
                 a.project-live {
                   visibility: visible;
@@ -269,7 +264,6 @@ div.my-work-container {
             div.mobile-screen {
               div.mobile-details {
                 opacity: 1;
-                z-index: 0;
 
                 a.project-repo {
                   visibility: visible;

@@ -1,0 +1,83 @@
+div.contact-container {
+  padding-top: 5vw;
+  padding-bottom: 0vw;
+  position: relative;
+  transition: all 500ms;
+  -moz-transition: all 0ms;
+
+  div.contact-section {
+    position: relative;
+    height: 100vh;
+    min-height: 550px;
+
+    div.form-container {
+      width: 90vw;
+      margin: auto;
+      padding-top: 2rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .text-field {
+          width: -webkit-fill-available;
+          border: 1px solid #E3E3E3;
+          padding: 0.8rem;
+          margin: 0.5rem;
+          border-radius: 5px;
+          color: #595959;
+          background: #E9E9E9;
+        }
+        textarea {
+          resize: none;
+          height: 7rem;
+          padding-right: 3rem !important;
+        }
+        ::placeholder {
+          color: #ababab;
+          font-size: 1rem;
+          font-family: 'Poor Story', PoorStory , cursive;
+        }
+        .submit-btn {
+          cursor: pointer;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          border: 0;
+          position: absolute;
+          right: 1rem;
+          bottom: -0.5rem;
+          background-color: #F8F8F8;
+          background-image: url('./images/send.svg');
+          background-size: 60%;
+          background-repeat: no-repeat;
+          background-position: center;
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+        }
+        .submit-btn:hover {
+          transform: scale(0.9);
+        }
+      }
+    }
+    div.zing {
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      height: 45vw;
+      width: 40vw;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url('./images/zing.png');
+    }
+    div.year {
+      position: absolute;
+      bottom: 5px;
+      width: 100vw;
+      text-align: center;
+      color: #ABABAB;
+      font-size: 1rem;
+    }
+  }
+}

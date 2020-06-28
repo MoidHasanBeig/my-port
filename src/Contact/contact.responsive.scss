@@ -12,25 +12,24 @@
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) and (orientation: landscape) {
-  div.credentials-container {
-    padding-top: 5vw;
+@media (min-width: 992px) {
+  div.contact-container {
+    div.contact-section {
+      div.form-container {
+        width: 60vw;
 
-    div.credentials-section {
-      div.certificates-container {
-        width: 80vw;
-        padding-top: 0;
-
-        div.row {
-          justify-content: center;
-          div.cert-cont {
-            width: 35%;
-
-            div.cert {
-              height: 20vw;
-            }
+        form {
+          .submit-btn {
+            width: 2rem;
+            height: 2rem;
+            right: 1.5rem;
+            bottom: 0rem;
           }
         }
+      }
+      div.zing {
+        height: 15vw;
+        width: 15vw;
       }
     }
   }

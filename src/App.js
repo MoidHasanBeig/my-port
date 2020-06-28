@@ -8,6 +8,7 @@ const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
 const MyTools = React.lazy(() => import('./MyTools/MyTools'));
 const MyWork = React.lazy(() => import('./MyWork/MyWork'));
 const Credentials = React.lazy(() => import('./Credentials/Credentials'));
+const Contact = React.lazy(() => import('./Contact/Contact'));
 const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
 const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
 const ToggleTheme = React.lazy(() => import('./components/ToggleTheme/ToggleTheme'));
@@ -103,6 +104,7 @@ function App() {
           <MyTools dark={isDark} />
           <MyWork dark={isDark} />
           <Credentials dark={isDark} />
+          <Contact dark={isDark} />
         </div>
       </Suspense>
     </div>

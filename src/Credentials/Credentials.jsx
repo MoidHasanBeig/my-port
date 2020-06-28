@@ -22,7 +22,7 @@ function Credentials(props) {
   const [viewNumber,setViewNumber] = useState(6);
 
   function collapseToggle() {
-    if (viewNumber == 6) {
+    if (viewNumber === 6) {
       setViewNumber(certArr.length);
     }
     else {
@@ -48,8 +48,8 @@ function Credentials(props) {
               })
             }
           </div>
-          <div onClick={collapseToggle} className="view-all">
-            <p>{viewNumber == 6 ? 'View more' : 'View less'}</p>
+          <div onClick={collapseToggle} className={`view-all ${viewNumber !== 6 && 'view-less'}`}>
+            <p>{viewNumber === 6 ? 'View more' : 'View less'}</p>
           </div>
         </div>
       </div>
