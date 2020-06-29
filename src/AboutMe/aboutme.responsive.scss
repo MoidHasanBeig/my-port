@@ -1,51 +1,12 @@
-// Extra small devices (portrait phones, less than 360px)
-@media (max-width: 360px) {}
-
-// Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) and (orientation: landscape) {
-  div.about-me-container {
-    border-width: 0.5vw;
-
-    div.about-me-section {
-      div.details-container {
-        flex-direction: row;
-        width: 90vw;
-        margin: auto;
-
-        div.individual-intro {
-          flex-direction: column;
-
-          div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 18vw;
-              height: 18vw;
-            }
-          }
-          p.about-text {
-            font-size: 1rem;
-            width: 18vw;
-            margin: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-}
-
 // Medium devices (tablets portrait, 768px and up)
-@media (min-width: 760px) and (min-height: 1000px) {
+@media (min-width: 760px) and (min-height: 1000px) and (orientation: portrait) {
   div.about-me-container {
-    border-width: 0.6vw;
-
     div.about-me-section {
-
       div.details-container {
         div.individual-intro {
           div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 25vw;
-              height: 25vw;
-            }
+            width: 25vw;
+            height: 25vw;
           }
           p.about-text {
             font-size: 1rem;
@@ -60,33 +21,29 @@
 // MDPI devices (desktops, 992px and up)
 @media (min-width: 992px) and (orientation: landscape) {
   div.about-me-container {
-    border-width: 0.4vw;
-
     div.about-night {
       background-image: url('./images/about-night.svg') !important;
     }
-
     div.about-me-section {
       background-image: url('./images/about-bg.svg');
       background-size: 100% 100%;
+      height: 100vh;
 
       div.details-container {
         width: 70vw;
+        flex-direction: row;
 
         div.individual-intro {
-          div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 15vw;
-              height: 15vw;
+          flex-direction: column;
 
-              div.about-pic {
-                opacity: 1;
-              }
-            }
+          div.about-pic-container {
+            width: 15vw;
+            height: 15vw;
           }
           p.about-text {
             font-size: 0.9rem;
             width: 20vw;
+            margin: 1.5rem;
           }
         }
       }
@@ -101,20 +58,12 @@
 // Large devices (desktops, 1300px and up)
 @media (min-width: 1300px) and (orientation: landscape) {
   div.about-me-container {
-    border-width: 0.3vw;
-
     div.about-me-section {
       div.details-container {
         div.individual-intro {
           div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 12vw;
-              height: 12vw;
-
-              div.about-pic {
-                opacity: 1;
-              }
-            }
+            width: 12vw;
+            height: 12vw;
           }
           p.about-text {
             font-size: 0.9rem;
@@ -127,19 +76,15 @@
 }
 
 //iPad pro portrait
-@media (min-width: 1000px) and (min-height: 1200px) {
+@media (min-width: 1000px) and (min-height: 1200px) and (orientation: portrait) {
   div.about-me-container {
-    border-width: 0.6vw;
-
     div.about-me-section {
       div.details-container {
         div.individual-intro {
           div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 19vw;
-              height: 19vw;
-              padding: 5px;
-            }
+            width: 19vw;
+            height: 19vw;
+            padding: 5px;
           }
           p.about-text {
             width: 45vw;
@@ -151,16 +96,14 @@
 }
 
 //iPad pro landscape
-@media (min-width: 1200px) and (min-height: 1000px) {
+@media (min-width: 1200px) and (min-height: 1000px) and (orientation: landscape) {
   div.about-me-container {
     div.about-me-section {
       div.details-container {
         div.individual-intro {
           div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 16vw;
-              height: 16vw;
-            }
+            width: 16vw;
+            height: 16vw;
           }
           p.about-text {
             font-size: 0.9rem;
@@ -173,16 +116,14 @@
 }
 
 // Extra large devices (large desktops, 1400px and up)
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (orientation: landscape) {
   div.about-me-container {
     div.about-me-section {
       div.details-container {
         div.individual-intro {
           div.about-pic-container {
-            div.about-pic-subcontainer {
-              width: 14vw;
-              height: 14vw;
-            }
+            width: 14vw;
+            height: 14vw;
           }
           p.about-text {
             font-size: 0.9rem;

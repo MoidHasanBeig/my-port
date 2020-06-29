@@ -1,14 +1,11 @@
 div.about-me-container {
   padding-top: 5vw;
-  padding-bottom: 0vw;
-  position: relative;
+  padding-bottom: 5vw;
   transition: all 500ms;
   -moz-transition: all 0ms;
 
   div.about-me-section {
-    height: 100vh;
     min-height: 550px;
-    position: relative;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -18,7 +15,6 @@ div.about-me-container {
     div.about-heading {
       text-align: center;
       font-size: 3rem;
-      position: relative;
       color: #E3E3E3;
       margin: 0rem auto 1rem auto;
     }
@@ -26,6 +22,7 @@ div.about-me-container {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      margin: auto;
       height: 80vh;
 
       div.individual-intro {
@@ -37,46 +34,31 @@ div.about-me-container {
           margin: auto;
           transition: all 500ms;
           -moz-transition: all 0ms;
+          width: 35vw;
+          height: 35vw;
+          z-index: 2;
 
-          div.about-pic-subcontainer {
-            width: 35vw;
-            height: 35vw;
-            position: relative;
-            margin: auto;
-            z-index: 2;
-
-            div.about-pic {
-              background-size: 100% 100%;
-              background-repeat: no-repeat;
-              opacity: 0.9;
-              height: 100%;
-              width: 100%;
-            }
-            div.cod-pic {
-              background-image: url('./images/profile-cod.png');
-            }
-            div.des-pic {
-              background-image: url('./images/profile-des.png');
-            }
-            div.pla-pic {
-              background-image: url('./images/profile-pla.png');
-            }
+          div.about-pic {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+          }
+          div.cod-pic {
+            background-image: url('./images/profile-cod.png');
+          }
+          div.des-pic {
+            background-image: url('./images/profile-des.png');
+          }
+          div.pla-pic {
+            background-image: url('./images/profile-pla.png');
           }
         }
-        // p.about-text:before {
-        //   color: #D3D3D3;
-        //   content: open-quote;
-        //   font-size: 4em;
-        //   line-height: 0.1em;
-        //   margin-right: 0.25em;
-        //   vertical-align: -0.4em;
-        // }
         p.about-text {
           text-align: justify;
           color: #ABABAB;
           width: 50vw;
           font-size: 1.35rem;
-          position: relative;
           margin: auto 1rem;
         }
       }
