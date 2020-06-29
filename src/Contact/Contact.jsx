@@ -55,6 +55,20 @@ function Contact(props) {
             <input className="submit-btn" type="submit" value="" />
           </form>
         </div>
+        <div className="social-container">
+          <a target="blank" href="https://www.linkedin.com/in/moidhasanbeig/" className="ico-container linkedin">
+            <div className="social-ico linkedin-ico" />
+          </a>
+          <a target="blank" href="https://github.com/MoidHasanBeig" className="ico-container git">
+            <div className="social-ico git-ico" />
+          </a>
+          <a target="blank" href=" https://wa.me/918838681753" className="ico-container wa">
+            <div className="social-ico wa-ico" />
+          </a>
+          <a target="blank" href="mailto:mhbdgr8@gmail.com" className="ico-container gmail">
+            <div className="social-ico gmail-ico" />
+          </a>
+        </div>
         <div className={`zing ${props.dark && "invert"}`} />
         <div className="year">{new Date().getFullYear()}</div>
       </div>
