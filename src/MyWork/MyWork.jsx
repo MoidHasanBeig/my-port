@@ -120,7 +120,6 @@ function MyWork(props) {
             </div>
             <div className="sub-container-2">
                 <div className="title-container">
-                  <div onClick={() => handleClick('prev')} className="prev-work-btn nav-btn" />
                   <select className="work-title" value={currentWork} onChange={handleChange}>
                     {
                       workArr.map( (work,index) => {
@@ -128,7 +127,6 @@ function MyWork(props) {
                       })
                     }
                   </select>
-                  <div onClick={() => handleClick('next')} className="next-work-btn nav-btn" />
               </div>
             </div>
           </div>
