@@ -1,10 +1,11 @@
-import React,{ useState } from 'react';
+import React,{ useState,Suspense } from 'react';
 import './mywork.styles.scss';
 import './mywork.responsive.scss';
 import './mywork.images.scss';
 import Heading from '../components/Heading/Heading';
+import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 import ToolUsed from './subcomponents/ToolUsed/ToolUsed';
-import DisplayWork from './subcomponents/DisplayWork/DisplayWork';
+const DisplayWork = React.lazy(() => import('./subcomponents/DisplayWork/DisplayWork'));
 
 let workArr = [
   {
@@ -26,17 +27,17 @@ let workArr = [
     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link:'https://klipmunk.com/speedklip',
     git:false
-  },
-  {
-    name:'Mindly',
-    desktopImg:'klipmunk-lg',
-    tabletImg:'klipmunk-md',
-    mobileImg:'klipmunk-sm',
-    tools:['React-native','Redux'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link:false,
-    git:'https://github.com/MoidHasanBeig/mindly-copy-reactApp'
-  },
+  }
+  // {
+  //   name:'Mindly',
+  //   desktopImg:'klipmunk-lg',
+  //   tabletImg:'klipmunk-md',
+  //   mobileImg:'klipmunk-sm',
+  //   tools:['React-native','Redux'],
+  //   desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   link:false,
+  //   git:'https://github.com/MoidHasanBeig/mindly-copy-reactApp'
+  // },
 ];
 
 function MyWork(props) {
@@ -75,7 +76,9 @@ function MyWork(props) {
               <div className={`screens-container ${props.dark && "invert"}`}>
                 <div onClick={() => handleClick('show')} className="desktop-frame">
                   <div className="desktop-screen">
-                    <DisplayWork className={workArr[currentWork].desktopImg} />
+                    <Suspense fallback={<LoadingScreen dark={props.dark} />}>
+                      <DisplayWork className={workArr[currentWork].desktopImg} />
+                    </Suspense>
                     <div className="desktop-details">
                       <div className="project-desc">{workArr[currentWork].desc}</div>
                     </div>
@@ -83,7 +86,9 @@ function MyWork(props) {
                 </div>
                 <div onClick={() => handleClick('show')} className="tablet-frame">
                   <div className="tablet-screen">
-                    <DisplayWork className={workArr[currentWork].tabletImg} />
+                    <Suspense fallback={<LoadingScreen dark={props.dark} />}>
+                      <DisplayWork className={workArr[currentWork].tabletImg} />
+                    </Suspense>
                     <div className="tablet-details">
                       <a className="project-live" href={workArr[currentWork].link} target={workArr[currentWork].link ? "blank" : undefined}>
                         <div className={workArr[currentWork].link && "project-live-icon"} />
@@ -95,7 +100,9 @@ function MyWork(props) {
                 </div>
                 <div onClick={() => handleClick('show')} className="mobile-frame">
                 <div className="mobile-screen">
-                  <DisplayWork className={workArr[currentWork].mobileImg} />
+                  <Suspense fallback={<LoadingScreen dark={props.dark} />}>
+                    <DisplayWork className={workArr[currentWork].mobileImg} />
+                  </Suspense>
                   <div className="mobile-details">
                   <a className="project-repo" href={workArr[currentWork].git ? workArr[currentWork].git : undefined} target={workArr[currentWork].git ? "blank" : undefined}>
                     <div className={workArr[currentWork].git ? "github-icon" : undefined} />

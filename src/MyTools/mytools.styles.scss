@@ -1,7 +1,6 @@
 div.my-tools-container {
   padding-top: 1vw;
   padding-bottom: 1vw;
-  position: relative;
   transition: all 500ms;
   -moz-transition: all 0ms;
 
@@ -11,73 +10,75 @@ div.my-tools-container {
     position: relative;
 
     div.display-container {
-      display: flex;
+      display: flex;;
       flex-direction: column;
-      width: 60vw;
-      margin: auto;
-      position: relative;
-      top: 36%;
-      transform: translateY(-50%);
+      justify-content: space-around;
+      height: 90%;
 
-      div.tool-logo-lg {
-        background-size: 100% 100%;
-        min-width: 26vw;
-        height: 26vw;
-        margin: auto;
-        margin-bottom: 1rem;
-        transition: all 500ms;
-        -moz-transition: all 0ms;
-      }
-      div.tool-desc-container {
+      div.sub-container-1 {
         display: flex;
         flex-direction: column;
+        width: 60vw;
+        margin: auto;
 
-        div.tool-name {
-          font-size: 2rem;
-          text-align: center;
-          margin-bottom: 2rem;
+        div.tool-logo-lg {
+          background-size: 100% 100%;
+          min-width: 26vw;
+          height: 26vw;
+          margin: auto;
+          margin-bottom: 1rem;
           transition: all 500ms;
           -moz-transition: all 0ms;
-          color: #595959;
         }
-        div.tool-desc {
-          font-size: 1.3rem;
-          color: #ABABAB;
-          text-align: justify;
-          margin-bottom: 2rem;
-        }
-        div.details-container {
-          width: max-content;
-          margin: auto;
+        div.tool-desc-container {
+          display: flex;
+          flex-direction: column;
 
-          div.used-for {
-            margin-bottom: 0.6rem;
-            color: #ABABAB;
-            font-size: 1rem;
-            width: max-content;
-
-            span.for {
-              color: #ABABAB;
-            }
+          div.tool-name {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            transition: all 500ms;
+            -moz-transition: all 0ms;
+            color: #595959;
           }
-          div.skill-level {
+          div.tool-desc {
+            font-size: 1.3rem;
             color: #ABABAB;
-            font-size: 1rem;
-            display: flex;
+            text-align: justify;
+            margin-bottom: 2rem;
+          }
+          div.details-container {
             width: max-content;
+            margin: auto;
+
+            div.used-for {
+              margin-bottom: 0.6rem;
+              color: #ABABAB;
+              font-size: 1rem;
+              width: max-content;
+
+              span.for {
+                color: #ABABAB;
+              }
+            }
+            div.skill-level {
+              color: #ABABAB;
+              font-size: 1rem;
+              display: flex;
+              width: max-content;
+            }
           }
         }
       }
-    }
-    div.selector-container {
-      display: flex;
-      flex-direction: row;
-      width: 100vw;
-      min-height: 25vw;
-      overflow-x: auto;
-      overflow-y: hidden;
-      position: absolute;
-      bottom: 0;
+      div.sub-container-2 {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        min-height: 25vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
     }
   }
 }

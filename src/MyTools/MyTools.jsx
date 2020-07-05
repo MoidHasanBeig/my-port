@@ -78,7 +78,8 @@ function MyTools(props) {
     <div className="my-tools-container">
       <div className="my-tools-section section" id="my-tools">
         <Heading text="My tools" />
-          <div className="display-container">
+        <div className="display-container">
+          <div className="sub-container-1">
             <div className={`tool-logo-lg ${skillsArr[currentSkill].class} ${props.dark && "invert"}`} />
             <div className="tool-desc-container">
               <div className="tool-name">{skillsArr[currentSkill].name}</div>
@@ -89,7 +90,7 @@ function MyTools(props) {
               </div>
             </div>
           </div>
-          <div className="selector-container">
+          <div className="sub-container-2">
             {
               skillsArr.map( (skill,index) => {
                 return (
@@ -106,6 +107,7 @@ function MyTools(props) {
               })
             }
           </div>
+        </div>
       </div>
       <FooterQuote text="&quot;All limitations are self-imposed.&quot; – Oliver Wendell Holmes" />
     </div>
