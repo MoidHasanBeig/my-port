@@ -28,6 +28,10 @@ html,body {
     filter: brightness(1.2);
   }
 
+  .landscape-small {
+    display: none;
+  }
+
   .hide {
     opacity: 0 !important;
   }

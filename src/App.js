@@ -17,7 +17,7 @@ const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
-  let [isDark,setIsDark] = useState(false);
+  let [isDark,setIsDark] = useState(localStorage.getItem("theme") || false);
 
   // function getScreenHeight() {
   //   let vh = window.innerHeight * 0.01;
@@ -89,13 +89,16 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<LoadingScreen dark={isDark} />}>
+        <div className={`landscape-small ${isDark && "invert"}`}>
+          <p>Please switch to portrait mode</p>
+        </div>
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} dark={isDark} />
         <div className="dark-mode-toggle">
           <DarkModeToggle
           onChange={setIsDark}
           checked={isDark}
-          size={60}
+          size={50}
           />
         </div>
         <Top dark={isDark} />

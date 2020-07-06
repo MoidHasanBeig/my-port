@@ -25,7 +25,7 @@ let workArr = [
     mobileImg:'chatrooms-sm',
     tools:['JavaScript','NodeJS','ExpressJS','Socket.io'],
     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link:'https://owbiz.sse.codesandbox.io/',
+    link:'https://codesandbox.io/s/frosty-thunder-yvysl',
     git:'https://github.com/MoidHasanBeig/chatrooms'
   },
   {
@@ -35,7 +35,7 @@ let workArr = [
     mobileImg:'keeper-sm',
     tools:['ReactJS','CSS3','JavaScript','Figma'],
     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link:'https://58bxk.csb.app/',
+    link:'https://codesandbox.io/s/peaceful-haze-mm0hq',
     git:'https://github.com/MoidHasanBeig/keeper-app'
   },
   {

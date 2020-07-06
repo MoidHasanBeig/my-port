@@ -6,7 +6,23 @@
 }
 
 // Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {}
+@media (min-width: 568px) and (orientation: landscape) {
+  .landscape-small {
+    display: flex !important;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: #F8F8F8;
+
+    p {
+      margin: auto;
+      text-align: center;
+      color: #ABABAB;
+      font-size: 1.5rem;
+    }
+  }
+}
 
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) {
@@ -19,6 +35,10 @@
 @media (min-width: 992px) {
   html,body {
     font-size: 160%;
+
+    .landscape-small {
+      display: none !important;
+    }
   }
 }
 

@@ -12,19 +12,19 @@ function AboutMe(props) {
             <div className={`about-pic-container ${props.dark && "invert"}`}>
               <div className="about-pic cod-pic" />
             </div>
-            <p className="about-text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p className="about-text">You’ll find me mostly writing code or rambling to someone about how Linux is the best OS. Seriously!</p>
           </div>
           <div className="individual-intro des-intro">
             <div className={`about-pic-container ${props.dark && "invert"}`}>
               <div className="about-pic des-pic" />
             </div>
-            <p className="about-text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p className="about-text">Well I hope you appreciate this portfolio. I’ve poured my heart out while designing it!</p>
           </div>
           <div className="individual-intro pla-intro">
             <div className={`about-pic-container ${props.dark && "invert"}`}>
               <div className="about-pic pla-pic" />
             </div>
-            <p className="about-text">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p className="about-text">I hardly ever turn down anything fun. So you’ve got a plan for the weekend? Do count me in!</p>
           </div>
         </div>
       </div>
