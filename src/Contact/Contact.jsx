@@ -44,13 +44,13 @@ function Contact(props) {
         <div className="form-container">
           <form onSubmit={handleSubmit}>
             <label>
-              <input className="text-field" required type="text" placeholder="Your name" name="name" value={inputValue.name} onChange={handleChange} />
+              <input className="text-field" required type="text" placeholder="Your name (Or maybe an alias?)" name="name" value={inputValue.name} onChange={handleChange} />
             </label>
             <label>
-              <input className="text-field" required type="email" placeholder="Your email" name="email" value={inputValue.email} onChange={handleChange} />
+              <input className="text-field" required type="email" placeholder="Your email (Don't worry! Won't spam.)" name="email" value={inputValue.email} onChange={handleChange} />
             </label>
             <label>
-              <textarea className="text-field" required type="text" placeholder="Drop me a message" name="body" value={inputValue.body} onChange={handleChange} />
+              <textarea className="text-field" required type="text" placeholder="Drop me a message (I'm all ears)" name="body" value={inputValue.body} onChange={handleChange} />
             </label>
             <input className="submit-btn" type="submit" value="" />
           </form>

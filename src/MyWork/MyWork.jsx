@@ -14,7 +14,7 @@ let workArr = [
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
     tools:['JavaScript','NodeJS','ExpressJS','Figma'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc:'Klipmunk is a cloud-based platform where users can save and annotate videos, create their own libraries and collaborate. Also they can discover interesting videos via the custom feed.',
     link:'https://klipmunk.com/',
     git:false
   },
@@ -24,7 +24,7 @@ let workArr = [
     tabletImg:'chatrooms-md',
     mobileImg:'chatrooms-sm',
     tools:['JavaScript','NodeJS','ExpressJS','Socket.io'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc:'Based on WebSocket protocol, Chatrooms is a simple peer to peer communication app where users can form groups and send instant messages.',
     link:'https://codesandbox.io/s/frosty-thunder-yvysl',
     git:'https://github.com/MoidHasanBeig/chatrooms'
   },
@@ -33,8 +33,8 @@ let workArr = [
     desktopImg:'keeper-lg',
     tabletImg:'keeper-md',
     mobileImg:'keeper-sm',
-    tools:['ReactJS','CSS3','JavaScript','Figma'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    tools:['ReactJS','CSS3','JavaScript'],
+    desc:'A cheeky imitation of the Google Keep App, Keeper is a note taking platform. This is only the Frontend built on React without a backend.',
     link:'https://codesandbox.io/s/peaceful-haze-mm0hq',
     git:'https://github.com/MoidHasanBeig/keeper-app'
   },
@@ -44,7 +44,7 @@ let workArr = [
     tabletImg:'portfolio-md',
     mobileImg:'portfolio-sm',
     tools:['ReactJS','CSS3','JavaScript','Figma'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc:'Well you are already inside this (Portfolio Inception). I hope you are liking it! I built this on React cause why not!',
     link:'http://moidhasan.herokuapp.com/',
     git:'https://github.com/MoidHasanBeig/my-port'
   },
@@ -54,7 +54,7 @@ let workArr = [
     tabletImg:'speedklip-md',
     mobileImg:'speedklip-sm',
     tools:['HTML/CSS/JS','Figma'],
-    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    desc:'A simple Landing Page built as a part of a Marketing Startegy for the Klipmunk app. Also the illustrations were done by me :)',
     link:'https://klipmunk.com/speedklip',
     git:false
   }
