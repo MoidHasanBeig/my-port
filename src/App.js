@@ -11,13 +11,12 @@ const Credentials = React.lazy(() => import('./Credentials/Credentials'));
 const Contact = React.lazy(() => import('./Contact/Contact'));
 const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
 const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
-const ToggleTheme = React.lazy(() => import('./components/ToggleTheme/ToggleTheme'));
 const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
 
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
-  let [isDark,setIsDark] = useState(localStorage.getItem("theme") || false);
+  let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
 
   // function getScreenHeight() {
   //   let vh = window.innerHeight * 0.01;
@@ -67,10 +66,6 @@ function App() {
         return false;
       }
   };
-
-  function darkMode() {
-    setIsDark(prevValue => !prevValue);
-  }
 
   useEffect(() => {
     // getScreenHeight();

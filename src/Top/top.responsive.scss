@@ -1,3 +1,10 @@
+@media (min-width: 568px) and (orientation: landscape) {
+  div.top-section {
+    display: none;
+  }
+}
+
+
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) and (orientation: portrait) {
   div.top-section {
@@ -42,6 +49,7 @@
   }
 
   div.top-section {
+    display: block;
     height: 110vh;
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 100% 100%;
