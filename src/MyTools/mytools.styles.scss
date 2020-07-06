@@ -79,6 +79,14 @@ div.my-tools-container {
         overflow-x: auto;
         overflow-y: hidden;
       }
+      div.scroll-left-placeholder {
+        position: absolute;
+        font-size: 0.8rem;
+        color: #D3D3D3;
+        transform: rotate(-90deg);
+        right: -10px;
+        bottom: 7rem;
+      }
     }
   }
 }

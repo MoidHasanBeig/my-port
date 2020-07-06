@@ -33,7 +33,14 @@ function Contact(props) {
       Subject : inputValue.name + ' ' + inputValue.email,
       Body : inputValue.body
     }).then(
-      message => alert(message)
+      () => {
+        setInputValue({
+          name:'',
+          email:'',
+          body:''
+        });
+        alert('Thank you for your message!');
+      }
     );
   }
 

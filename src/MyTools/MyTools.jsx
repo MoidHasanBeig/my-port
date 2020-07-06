@@ -3,7 +3,6 @@ import './mytools.styles.scss';
 import './mytools.responsive.scss';
 import './mytools.icons.scss';
 import Heading from '../components/Heading/Heading';
-import FooterQuote from '../components/FooterQuote/FooterQuote';
 import Level from './subcomponents/Level/Level'
 import SelectSkill from './subcomponents/SelectSkill/SelectSkill'
 
@@ -107,9 +106,9 @@ function MyTools(props) {
               })
             }
           </div>
+          <div className="scroll-left-placeholder">&lt;&lt; Scroll left</div>
         </div>
       </div>
-      <FooterQuote text="&quot;All limitations are self-imposed.&quot; – Oliver Wendell Holmes" />
     </div>
   );
 }

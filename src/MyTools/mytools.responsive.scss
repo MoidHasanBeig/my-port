@@ -1,44 +1,3 @@
-// // Small devices (landscape phones, 568px and up)
-// @media (min-width: 568px) {
-//   div.my-tools-container {
-//     div.my-tools-section {
-//       div.display-container {
-//         div.sub-container-1 {
-//           flex-direction: row;
-//           width: 85vw;
-//
-//           div.tool-logo-lg {
-//             min-width: 22vw;
-//             height: 22vw;
-//             margin-bottom: auto;
-//             margin-right: 3rem;
-//           }
-//           div.tool-desc-container {
-//             div.tool-name {
-//               text-align: left;
-//               margin-bottom: 1rem;
-//             }
-//             div.tool-desc {
-//               font-size: 1rem;
-//             }
-//           }
-//           div.details-container {
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-between;
-//             width: auto !important;
-//             margin: 0 !important;
-//           }
-//         }
-//         div.sub-container-2 {
-//           justify-content: center;
-//           min-height: 13vw;
-//         }
-//       }
-//     }
-//   }
-// }
-
 // Medium devices (tablets portrait, 768px and up)
 @media (min-width: 760px) and (min-height: 1000px) and (orientation:portrait) {
   div.my-tools-container {
@@ -129,6 +88,9 @@
         div.sub-container-2 {
           justify-content: center;
           min-height: 11vw;
+        }
+        div.scroll-left-placeholder {
+          display: none;
         }
       }
     }
