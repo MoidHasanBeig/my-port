@@ -20,6 +20,14 @@ html,body {
     transition: all 500ms;
   }
 
+  .dark-mode-toggle {
+    position: fixed;
+    z-index: 10;
+    right: 0.5rem;
+    top: 0.5rem;
+    filter: brightness(1.2);
+  }
+
   .hide {
     opacity: 0 !important;
   }

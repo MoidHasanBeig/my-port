@@ -13,10 +13,40 @@ let workArr = [
     desktopImg:'klipmunk-lg',
     tabletImg:'klipmunk-md',
     mobileImg:'klipmunk-sm',
-    tools:['HTML/CSS/JS','NodeJS','ExpressJS','Figma'],
+    tools:['JavaScript','NodeJS','ExpressJS','Figma'],
     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     link:'https://klipmunk.com/',
     git:false
+  },
+  {
+    name:'Chatrooms',
+    desktopImg:'chatrooms-lg',
+    tabletImg:'chatrooms-md',
+    mobileImg:'chatrooms-sm',
+    tools:['JavaScript','NodeJS','ExpressJS','Socket.io'],
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link:'https://owbiz.sse.codesandbox.io/',
+    git:'https://github.com/MoidHasanBeig/chatrooms'
+  },
+  {
+    name:'Keeper App',
+    desktopImg:'keeper-lg',
+    tabletImg:'keeper-md',
+    mobileImg:'keeper-sm',
+    tools:['ReactJS','CSS3','JavaScript','Figma'],
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link:'https://58bxk.csb.app/',
+    git:'https://github.com/MoidHasanBeig/keeper-app'
+  },
+  {
+    name:'My Portfolio',
+    desktopImg:'portfolio-lg',
+    tabletImg:'portfolio-md',
+    mobileImg:'portfolio-sm',
+    tools:['ReactJS','CSS3','JavaScript','Figma'],
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    link:'http://moidhasan.herokuapp.com/',
+    git:'https://github.com/MoidHasanBeig/my-port'
   },
   {
     name:'Speedklip',

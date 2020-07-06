@@ -17,7 +17,7 @@ const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
-  let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
+  let [isDark,setIsDark] = useState(false);
 
   // function getScreenHeight() {
   //   let vh = window.innerHeight * 0.01;
@@ -91,7 +91,7 @@ function App() {
       <Suspense fallback={<LoadingScreen dark={isDark} />}>
         <MenuButton />
         <MenuNonMobile activeSection={activeSection} dark={isDark} />
-        <div style={{position:"fixed", zIndex:10, right:"0.5rem", top:"0.5rem", filter:"brightness(1.2)"}}>
+        <div className="dark-mode-toggle">
           <DarkModeToggle
           onChange={setIsDark}
           checked={isDark}
