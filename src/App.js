@@ -108,7 +108,7 @@ function App() {
         />
         <div className="dark-mode-toggle">
           <DarkModeToggle
-          onChange={toggleTheme}
+          onChange={setIsDark}
           checked={isDark}
           size={50}
           />
