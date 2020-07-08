@@ -40,6 +40,7 @@ function Credentials(props) {
               certArr.slice(0,viewNumber).map((cert,index) => {
                 return (
                   <Certificate
+                    key={new Date().getTime() + index}
                     dark={props.dark}
                     class={cert.class}
                     link={cert.link}

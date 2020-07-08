@@ -94,7 +94,7 @@ function MyTools(props) {
               skillsArr.map( (skill,index) => {
                 return (
                   <SelectSkill
-                    key={index}
+                    key={new Date().getTime() + index}
                     index={index}
                     handleClick={handleClick}
                     name={skill.name}

@@ -39,12 +39,12 @@ let workArr = [
     git:'https://github.com/MoidHasanBeig/keeper-app'
   },
   {
-    name:'My Portfolio',
+    name:'Portfolio [in a Portfolio :P]',
     desktopImg:'portfolio-lg',
     tabletImg:'portfolio-md',
     mobileImg:'portfolio-sm',
     tools:['ReactJS','CSS3','JavaScript','Figma'],
-    desc:'Well you are already inside this (Portfolio Inception). I hope you are liking it! I built this on React cause why not!',
+    desc:'Well you are already inside this (Inception). I hope you are liking it! I built this on React cause why not!',
     link:'http://moidhasan.herokuapp.com/',
     git:'https://github.com/MoidHasanBeig/my-port'
   },
@@ -58,16 +58,6 @@ let workArr = [
     link:'https://klipmunk.com/speedklip',
     git:false
   }
-  // {
-  //   name:'Mindly',
-  //   desktopImg:'klipmunk-lg',
-  //   tabletImg:'klipmunk-md',
-  //   mobileImg:'klipmunk-sm',
-  //   tools:['React-native','Redux'],
-  //   desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  //   link:false,
-  //   git:'https://github.com/MoidHasanBeig/mindly-copy-reactApp'
-  // },
 ];
 
 function MyWork(props) {
@@ -150,7 +140,7 @@ function MyWork(props) {
               <div className="tools-used">
                 {
                   workArr[currentWork].tools.map( (tool,index) => {
-                    return <ToolUsed key={index} text={tool} />;
+                    return <ToolUsed key={new Date().getTime() + index} text={tool} />;
                   })
                 }
               </div>
@@ -160,7 +150,7 @@ function MyWork(props) {
                   <select className="work-title" value={currentWork} onChange={handleChange}>
                     {
                       workArr.map( (work,index) => {
-                        return <option value={index}>{work.name}</option>;
+                        return <option key={new Date().getTime() + index} value={index}>{work.name}</option>;
                       })
                     }
                   </select>

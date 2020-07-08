@@ -8,18 +8,18 @@ function Level(props) {
   return (
     <div className="level-container">
       {
-        runSampleArr.map( (item) => {
+        runSampleArr.map( (item,index) => {
           if (x === 0.5) {
             x = x-0.5;
-            return (<div className="level-ball half" />);
+            return (<div key={new Date().getTime() + index} className="level-ball half" />);
           }
           else if (x>=1) {
             x = x-1;
-            return (<div className="level-ball one" />);
+            return (<div key={new Date().getTime() + index} className="level-ball one" />);
           }
           else {
             x=0;
-            return (<div className="level-ball zero" />);
+            return (<div key={new Date().getTime() + index} className="level-ball zero" />);
           }
         })
       }

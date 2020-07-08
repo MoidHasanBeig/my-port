@@ -20,23 +20,6 @@ function App() {
   let [notification,setNotification] = useState(false);
   let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
 
-  // function getScreenHeight() {
-  //   let vh = window.innerHeight * 0.01;
-  //   document.documentElement.style.setProperty('--vh', `${vh}px`);
-  // }
-
-  // var resizeTimeout;
-  // function resizeThrottler() {
-  //   // ignore resize events as long as an actualResizeHandler execution is in the queue
-  //   if ( !resizeTimeout ) {
-  //     resizeTimeout = setTimeout(function() {
-  //       resizeTimeout = null;
-  //       getScreenHeight();
-  //      // The actualResizeHandler will execute at a rate of 15fps
-  //      }, 66);
-  //   }
-  // }
-
   var scrollTimeout;
   function scrollThrottler() {
     if ( !scrollTimeout ) {
@@ -74,11 +57,8 @@ function App() {
   }
 
   useEffect(() => {
-    // getScreenHeight();
-    // window.addEventListener("orientationchange", resizeThrottler, false);
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
-      // window.removeEventListener("orientationchange", resizeThrottler, false);
       window.removeEventListener("scroll", scrollThrottler, false);
     }
   });
