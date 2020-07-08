@@ -11,11 +11,13 @@ const Credentials = React.lazy(() => import('./Credentials/Credentials'));
 const Contact = React.lazy(() => import('./Contact/Contact'));
 const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
 const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
+const Notification = React.lazy(() => import('./components/Notification/Notification'));
 const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
 
 function App() {
 
   let [activeSection,setActiveSection] = useState("top");
+  let [notification,setNotification] = useState(false);
   let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
 
   // function getScreenHeight() {
@@ -67,6 +69,10 @@ function App() {
       }
   };
 
+  function newNotification(message) {
+    setNotification(message);
+  }
+
   useEffect(() => {
     // getScreenHeight();
     // window.addEventListener("orientationchange", resizeThrottler, false);
@@ -96,13 +102,14 @@ function App() {
           size={50}
           />
         </div>
+        <Notification text={notification} dNone={!notification && "d-none"} newNotification={(message) => newNotification(message)} />
         <Top dark={isDark} />
         <div className={`mode-toggle-container ${isDark && "invert"}`}>
           <AboutMe dark={isDark} />
           <MyTools dark={isDark} />
           <MyWork dark={isDark} />
           <Credentials dark={isDark} />
-          <Contact dark={isDark} />
+          <Contact dark={isDark} newNotification={(message) => newNotification(message)} />
         </div>
       </Suspense>
     </div>

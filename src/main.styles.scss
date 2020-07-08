@@ -36,6 +36,10 @@ html,body {
     opacity: 0 !important;
   }
 
+  .d-none {
+    display: none;
+  }
+
   .invert {
     filter: invert(1) !important;
   }

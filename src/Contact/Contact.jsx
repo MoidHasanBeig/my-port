@@ -25,23 +25,26 @@ function Contact(props) {
   function handleSubmit(evt) {
     evt.preventDefault();
     window.Email.send({
-      Host : "smtp.elasticemail.com",
-      Username : "mhbdgr8@gmail.com",
-      Password : "FACFDF44CF1D4CD83FE8165BA917AE58EF64",
+      SecureToken: "1be7a4e5-47b2-4244-b549-cc31c7405625",
       To : 'mhbdgr8@gmail.com',
       From : 'mhbdgr8@gmail.com',
       Subject : inputValue.name + ' ' + inputValue.email,
       Body : inputValue.body
     }).then(
-      () => {
-        setInputValue({
-          name:'',
-          email:'',
-          body:''
-        });
-        alert('Thank you for your message!');
+      (message) => {
+        if(message === 'OK') {
+          setInputValue({
+            name:'',
+            email:'',
+            body:''
+          });
+          props.newNotification('Cheers! Your message was sent succesfully.');
+        } else {
+          console.log(message);
+          props.newNotification('Oops! I didn\'t get you. Please try again.');
+        }
       }
-    );
+    )
   }
 
   return (
@@ -84,5 +87,3 @@ function Contact(props) {
 }
 
 export default Contact;
-
-//FACFDF44CF1D4CD83FE8165BA917AE58EF64

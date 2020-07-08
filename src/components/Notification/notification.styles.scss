@@ -1,0 +1,25 @@
+div.floating-notification {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  opacity: 0;
+  width: fit-content;
+  background: #9ACA6B;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.animate-notification {
+  animation: notifyAndGo;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+}
+@keyframes notifyAndGo {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  60% {opacity: 1;}
+  100% {opacity: 0;}
+}
