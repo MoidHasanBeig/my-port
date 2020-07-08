@@ -1,0 +1,38 @@
+div.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: #F8F8F8;
+  opacity: 0;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 500ms;
+
+  a.menu-option {
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    transition: font-size 300ms;
+    color: #ABABAB;
+  }
+  div.close-menu {
+    position: absolute;
+    right: 1rem;
+    top: 0rem;
+    font-size: 3rem;
+    color: #ABABAB;
+  }
+  div.dark-mode-toggle-mobile {
+    text-align: center;
+    filter: brightness(1.2);
+  }
+}
+div.show-menu {
+  left: 0;
+  opacity: 1;
+}

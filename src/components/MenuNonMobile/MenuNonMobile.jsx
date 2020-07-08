@@ -7,12 +7,11 @@ function MenuNonMobile(props) {
 
   return (
     <div className={`menu-non-mobile ${props.dark && "invert"}`}>
-      <a href="#top" className="menu-option" style={props.activeSection==="top" ? activeStyle :{}}>Top</a>
-      <a href="#about-me" className="menu-option" style={props.activeSection==="about-me" ? activeStyle :{}}>About me</a>
-      <a href="#my-tools" className="menu-option" style={props.activeSection==="my-tools" ? activeStyle :{}}>My tools</a>
-      <a href="#my-work" className="menu-option" style={props.activeSection==="my-work" ? activeStyle :{}}>My work</a>
-      <a href="#credentials" className="menu-option" style={props.activeSection==="credentials" ? activeStyle :{}}>Credentials</a>
-      <a href="#contact" className="menu-option" style={props.activeSection==="contact" ? activeStyle :{}}>Contact</a>
+      {
+        props.menuItems.map( (item) => {
+          return <a href={`#${item.id}`} key={item.id} className="menu-option" style={props.activeSection===item.id ? activeStyle :{}}>{item.name}</a>;
+        })
+      }
     </div>
   );
 }

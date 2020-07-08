@@ -32,12 +32,16 @@
 }
 
 // MDPI devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation: landscape) {
   html,body {
     font-size: 160%;
 
     .landscape-small {
       display: none !important;
+    }
+
+    .dark-mode-toggle {
+      display: block;
     }
   }
 }

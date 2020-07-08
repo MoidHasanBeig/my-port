@@ -10,6 +10,7 @@ const MyWork = React.lazy(() => import('./MyWork/MyWork'));
 const Credentials = React.lazy(() => import('./Credentials/Credentials'));
 const Contact = React.lazy(() => import('./Contact/Contact'));
 const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
+const MenuMobile = React.lazy(() => import('./components/MenuMobile/MenuMobile'));
 const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
 const Notification = React.lazy(() => import('./components/Notification/Notification'));
 const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
@@ -19,6 +20,16 @@ function App() {
   let [activeSection,setActiveSection] = useState("top");
   let [notification,setNotification] = useState(false);
   let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
+  let [isMobileMenu,setIsMobileMenu] = useState(false);
+
+  let menuItems = [
+    {name:'Top', id:'top'},
+    {name:'About me', id:'about-me'},
+    {name:'My tools', id:'my-tools'},
+    {name:'My work', id:'my-work'},
+    {name:'Credentials', id:'credentials'},
+    {name:'Contact', id:'contact'}
+  ];
 
   var scrollTimeout;
   function scrollThrottler() {
@@ -56,6 +67,14 @@ function App() {
     setNotification(message);
   }
 
+  function toggleMenu() {
+    setIsMobileMenu(prevValue => !prevValue);
+  }
+
+  function toggleTheme() {
+    setIsDark(prevValue => !prevValue);
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
@@ -73,18 +92,30 @@ function App() {
         <div className={`landscape-small ${isDark && "invert"}`}>
           <p>Please switch to portrait mode</p>
         </div>
-        <MenuButton />
-        <MenuNonMobile activeSection={activeSection} dark={isDark} />
+        <MenuButton toggleMenu={toggleMenu} />
+        <MenuNonMobile
+          menuItems={menuItems}
+          activeSection={activeSection}
+          dark={isDark}
+        />
+        <MenuMobile
+          menuItems={menuItems}
+          activeSection={activeSection}
+          dark={isDark}
+          visible={isMobileMenu}
+          toggleMenu={toggleMenu}
+          toggleTheme={toggleTheme}
+        />
         <div className="dark-mode-toggle">
           <DarkModeToggle
-          onChange={setIsDark}
+          onChange={toggleTheme}
           checked={isDark}
           size={50}
           />
         </div>
         <Notification text={notification} dNone={!notification && "d-none"} newNotification={(message) => newNotification(message)} />
         <Top dark={isDark} />
-        <div className={`mode-toggle-container ${isDark && "invert"}`}>
+        <div className={`theme-container ${isDark && "invert"}`}>
           <AboutMe dark={isDark} />
           <MyTools dark={isDark} />
           <MyWork dark={isDark} />

@@ -15,7 +15,7 @@ html,body {
   font-family: 'Poor Story', PoorStory , cursive;
   font-size: 100%;
 
-  .mode-toggle-container {
+  .theme-container {
     background: #F8F8F8;
     transition: all 500ms;
   }
@@ -26,6 +26,7 @@ html,body {
     right: 0.5rem;
     top: 0.5rem;
     filter: brightness(1.2);
+    display: none;
   }
 
   .landscape-small {

@@ -1,18 +1,5 @@
-// Extra small devices (portrait phones, less than 567px)
-@media (max-width: 567px) {
-//This is by default.
-}
-
-// Small devices (landscape phones, 568px and up)
-@media (min-width: 568px) {
-  div.menu-button {
-    width: 8vw;
-    height: 8vw;
-  }
-}
-
 // Medium devices (tablets portrait, 760px and up)
-@media (min-width: 760px) and (min-height: 1000px) {
+@media (min-width: 760px) and (orientation: portrait) {
   div.menu-button {
     width: 11vw;
     height: 11vw;
@@ -20,15 +7,8 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (orientation: landscape) {
   div.menu-button {
     display: none;
-  }
-}
-
-//iPad pro portrait
-@media (min-width: 1000px) and (min-height: 1200px) {
-  div.menu-button {
-    // display: inline-block;
   }
 }
