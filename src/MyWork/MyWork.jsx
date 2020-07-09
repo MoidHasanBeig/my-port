@@ -39,7 +39,7 @@ let workArr = [
     git:'https://github.com/MoidHasanBeig/keeper-app'
   },
   {
-    name:'Portfolio [in a Portfolio :P]',
+    name:'My Portfolio',
     desktopImg:'portfolio-lg',
     tabletImg:'portfolio-md',
     mobileImg:'portfolio-sm',
