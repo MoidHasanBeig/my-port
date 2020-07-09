@@ -10,6 +10,11 @@ function MenuMobile(props) {
     <div className={`menu-mobile ${props.dark && "invert"} ${props.visible && "show-menu"}`}>
       <div onClick={props.toggleMenu} className="close-menu">&times;</div>
       <div className={`dark-mode-toggle-mobile ${props.dark && "invert"}`}>
+        <DarkModeToggle
+        onChange={props.toggleTheme}
+        checked={props.dark}
+        size={60}
+        />
       </div>
       {
         props.menuItems.map( (item) => {

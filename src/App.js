@@ -71,10 +71,6 @@ function App() {
     setIsMobileMenu(prevValue => !prevValue);
   }
 
-  function toggleTheme() {
-    setIsDark(prevValue => !prevValue);
-  }
-
   useEffect(() => {
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
@@ -104,7 +100,7 @@ function App() {
           dark={isDark}
           visible={isMobileMenu}
           toggleMenu={toggleMenu}
-          toggleTheme={toggleTheme}
+          toggleTheme={setIsDark}
         />
         <div className="dark-mode-toggle">
           <DarkModeToggle
