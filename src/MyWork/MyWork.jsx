@@ -9,6 +9,16 @@ const DisplayWork = React.lazy(() => import('./subcomponents/DisplayWork/Display
 
 let workArr = [
   {
+    name:'Webbcast',
+    desktopImg:'webbcast-lg',
+    tabletImg:'webbcast-md',
+    mobileImg:'webbcast-sm',
+    tools:['ReactJS','NodeJS','WebRTC','WebSockets'],
+    desc:'This is a live streaming app currently supporting 1 broadcast session only. Built on React+Node. WebRTC and WebSockets at the very core of the app.',
+    link:'https://webbcast.herokuapp.com/',
+    git:'https://github.com/MoidHasanBeig/axtrion-broadcast-app'
+  },
+  {
     name:'Klipmunk',
     desktopImg:'klipmunk-lg',
     tabletImg:'klipmunk-md',
@@ -23,7 +33,7 @@ let workArr = [
     desktopImg:'chatrooms-lg',
     tabletImg:'chatrooms-md',
     mobileImg:'chatrooms-sm',
-    tools:['JavaScript','NodeJS','ExpressJS','Socket.io'],
+    tools:['JavaScript','NodeJS','ExpressJS','WebSockets'],
     desc:'Based on WebSocket protocol, Chatrooms is a simple peer to peer communication app where users can form groups and send instant messages.',
     link:'https://codesandbox.io/s/frosty-thunder-yvysl',
     git:'https://github.com/MoidHasanBeig/chatrooms'
