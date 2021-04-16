@@ -54,17 +54,6 @@
     background-image: url('./images/blue-sky-lg.svg');
     background-size: 100% 100%;
 
-    div.show-btn-location {
-      position: absolute;
-      right: 40px;
-      top: 30px;
-      width: 6vw;
-      height: 6vw;
-      background-image: url('./images/placeholder.svg');
-      background-size: 100% 100%;
-      transition: all 500ms;
-    }
-
     div.light-source {
       width: 30vw;
       height: 30vw;
@@ -98,17 +87,6 @@
     @keyframes rotateGlobe {
       from {transform: translate(-65%,45%) rotate(0deg);}
       to {transform: translate(-65%,45%) rotate(360deg);}
-    }
-    div.constellation {
-      position: absolute;
-      z-index: 2;
-      background-size: 100% 100%;
-      transition: top 500ms, opacity 200ms;
-      height: 23vw;
-      width: 23vw;
-      right: 10vw;
-      top: 10vh;
-      background-image: url('./images/constell.svg');
     }
     div.shooting-star {
       width: 1px;
