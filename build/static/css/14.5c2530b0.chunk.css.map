@@ -1,0 +1,1 @@
+{"version":3,"sources":["displaywork.styles.scss"],"names":[],"mappings":"AAAA,iBACE,WAAY,CACZ,UAAW,CACX,yBAA0B,CAC1B,kBAAmB,CACnB,kBAAqB","file":"14.5c2530b0.chunk.css","sourcesContent":["div.display-work {\n  height: 100%;\n  width: 100%;\n  background-size: 100% 100%;\n  border-radius: 10px;\n  transition: all 500ms;\n}\n"]}
