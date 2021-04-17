@@ -12,7 +12,7 @@ function AboutMe(props) {
             <div className={`about-pic-container ${props.dark && "invert"}`}>
               <div className="about-pic cod-pic" />
             </div>
-            <p className="about-text">You’ll find me mostly writing code or rambling to someone about how Linux is the best OS. Seriously!</p>
+            <p className="about-text">You’ll either find me writing code or rambling to someone about how Linux is the best OS. You using Windows?!</p>
           </div>
           <div className="individual-intro des-intro">
             <div className={`about-pic-container ${props.dark && "invert"}`}>
