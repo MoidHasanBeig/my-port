@@ -9,59 +9,59 @@ import SelectSkill from './subcomponents/SelectSkill/SelectSkill'
 let skillsArr = [
   {
     name: "ReactJS",
-    desc: "In a parallel universe where Honda Cars run on JavaScript, a Porsche would be running on ReactJS. It makes everything faster.",
+    desc: "From webpages to SPAs to android apps, ReactJS got it all. The declarative component-based approach makes debugging a child's play.",
     class: "react-logo",
     level: 4.0,
     for: "Frontend development"
   },
   {
-    name: "HTML/ CSS/ JS",
-    desc: "HTML, JS & CSS are like the old but mighty & wise. You’re not a good developer if you don’t respect them. Eh... CSS maybe not so much.",
-    class: "js-logo",
-    level: 4.5,
-    for: "Frontend development"
-  },
-  {
-    name: "ReduxJS",
-    desc: "Imagine solving an extremely complex maths problem without a calculator. That’s developing a React app without Redux.",
-    class: "redux-logo",
-    level: "4.0",
-    for: "State management"
-  },
-  {
     name: "NodeJS",
-    desc: "NodeJS is the rebellious offspring of JavaScript who refused to work with browsers and set out to rule the ‘Server’ reign.",
+    desc: "Running on the V8 engine, NodeJS took JavaScript to the server side. World's largest software library, NPM, gives it unmatchable capabilities.",
     class: "node-logo",
     level: 3.5,
     for: "Backend development"
   },
   {
+    name: "ExpressJS",
+    desc: "Built atop NodeJS, ExpressJS really simplifies complex operations like routing, handling requests and connecting to a database by using various packages.",
+    class: "express-logo",
+    level: 4.0,
+    for: "Backend development"
+  },
+  {
     name: "MongoDB",
-    desc: "To have your way with MongoDB, you’ve got to ask the right questions. This fellow knows everything about your users.",
+    desc: "Need for handling large unstructrured data with speed calls for MongoDB. With its flexible schemas, scalability becomes really easy.",
     class: "mongo-logo",
     level: 3.5,
     for: "Database management"
   },
   {
-    name: "ExpressJS",
-    desc: "Well, NodeJS can do A LOT!! More than you can handle alone. ExpressJS to the rescue! It's a mediator between Node and yourself.",
-    class: "express-logo",
-    level: 3.5,
+    name: "ReduxJS",
+    desc: "Features like state persistence, state predictability, time-travel debugging and more, makes ReduxJS a great companion for ReactJS.",
+    class: "redux-logo",
+    level: "4.0",
+    for: "State management"
+  },
+  {
+    name: "HTML/ CSS/ JS",
+    desc: "The base foundation of majority web-frameworks, this trio rules the client side of web applications, with or without frameworks.",
+    class: "js-logo",
+    level: 4.5,
+    for: "Frontend development"
+  },
+  {
+    name: "Python",
+    desc: "Easy to read syntax, versitality, efficiency, speed and unending libraries and frameworks makes Python a must know for all developers as a general purpose language.",
+    class: "python-logo",
+    level: "3.5",
     for: "Backend development"
   },
   {
     name: "Figma",
-    desc: "When it comes to design, Figma is a one-man army. Illustrations, wireframes, prototypes, anything. That too on the cloud!",
+    desc: "With the ability to make illustrations, wireframes and prototypes, topped with real-time collaboration, Figma is all I need when it comes to design.",
     class: "figma-logo",
     level: "4.5",
     for: "Illustrations/ Prototypes"
-  },
-  {
-    name: "Adobe XD",
-    desc: "AdobeXD is a lifelong rival to Figma. Can do things similar to Figma but comes as a bulky desktop application.",
-    class: "xd-logo",
-    level: "4.0",
-    for: "Prototypes"
   },
 ];
 
