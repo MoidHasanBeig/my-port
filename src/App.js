@@ -3,20 +3,21 @@ import './main.styles.scss';
 import './main.responsive.scss';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 
-const Top = React.lazy(() => import('./Top/Top'));
-const AboutMe = React.lazy(() => import('./AboutMe/AboutMe'));
-const MyTools = React.lazy(() => import('./MyTools/MyTools'));
-const MyWork = React.lazy(() => import('./MyWork/MyWork'));
-const Credentials = React.lazy(() => import('./Credentials/Credentials'));
-const Contact = React.lazy(() => import('./Contact/Contact'));
-const MenuNonMobile = React.lazy(() => import('./components/MenuNonMobile/MenuNonMobile'));
-const MenuMobile = React.lazy(() => import('./components/MenuMobile/MenuMobile'));
-const MenuButton = React.lazy(() => import('./components/MenuButton/MenuButton'));
-const Notification = React.lazy(() => import('./components/Notification/Notification'));
-const DarkModeToggle = React.lazy(() => import('react-dark-mode-toggle'));
+import Top from './Top/Top';
+import AboutMe from './AboutMe/AboutMe';
+import MyTools from './MyTools/MyTools';
+import MyWork from './MyWork/MyWork';
+import Credentials from './Credentials/Credentials';
+import Contact from './Contact/Contact';
+import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
+import MenuMobile from './components/MenuMobile/MenuMobile';
+import MenuButton from './components/MenuButton/MenuButton';
+import Notification from './components/Notification/Notification';
+import DarkModeToggle from 'react-dark-mode-toggle';
 
 function App() {
 
+  let [isLoading,setIsLoading] = useState(true);
   let [activeSection,setActiveSection] = useState("top");
   let [notification,setNotification] = useState(false);
   let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
@@ -72,6 +73,12 @@ function App() {
   }
 
   useEffect(() => {
+    window.onload = () => {
+      setIsLoading(false);
+    }
+  },[]);
+
+  useEffect(() => {
     window.addEventListener("scroll", scrollThrottler, false);
     return function cleanUp() {
       window.removeEventListener("scroll", scrollThrottler, false);
@@ -84,6 +91,7 @@ function App() {
 
   return (
     <div className="App">
+      {isLoading && <LoadingScreen dark={isDark} />}
       <Suspense fallback={<LoadingScreen dark={isDark} />}>
         <div className={`landscape-small ${isDark && "invert"}`}>
           <p>Please switch to portrait mode</p>
