@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && cd build && git init && git add . && git commit -m 'auto deploy' && git remote add origin https://github.com/MoidHasanBeig/MoidHasanBeig.github.io.git && git push origin master -f",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
