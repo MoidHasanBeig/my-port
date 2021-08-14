@@ -14,9 +14,19 @@ let workArr = [
     tabletImg:'webbcast-md',
     mobileImg:'webbcast-sm',
     tools:['ReactJS','NodeJS','WebRTC','WebSockets'],
-    desc:'This is a live streaming app currently supporting 1 broadcast session only. Built on React+Node. WebRTC and WebSockets at the very core of the app.',
+    desc:'This is a live streaming app that can put you live in few seconds without any signup. Built on React+Node. WebRTC and WebSockets at the very core of the app.',
     link:'https://webbcast.herokuapp.com/',
     git:'https://github.com/MoidHasanBeig/axtrion-broadcast-app'
+  },
+  {
+    name:'Moon of Doom',
+    desktopImg:'game-lg',
+    tabletImg:'game-md',
+    mobileImg:'game-sm',
+    tools:['PhaserJS','HTML5','Canvas','JavaScript'],
+    desc:'Built on PhaserJS, this is a survival game where the player is tested on how long he can survive the unending alien attack. Shoutout to Rick and Morty. ',
+    link:'https://moonofdoom.github.io/',
+    git:'https://github.com/MoidHasanBeig/theMoonOfDoomVsJanMichaelVincent'
   },
   {
     name:'Klipmunk',
@@ -44,7 +54,7 @@ let workArr = [
     tabletImg:'keeper-md',
     mobileImg:'keeper-sm',
     tools:['ReactJS','CSS3','JavaScript'],
-    desc:'A cheeky imitation of the Google Keep App, Keeper is a note taking platform. This is only the Frontend built on React without a backend.',
+    desc:'An imitation of the Google Keep App, Keeper is a note taking platform. This is only the Frontend built on React without a backend.',
     link:'https://codesandbox.io/s/peaceful-haze-mm0hq',
     git:'https://github.com/MoidHasanBeig/keeper-app'
   },
@@ -54,7 +64,7 @@ let workArr = [
     tabletImg:'portfolio-md',
     mobileImg:'portfolio-sm',
     tools:['ReactJS','CSS3','JavaScript','Figma'],
-    desc:'Well you are already inside this (Inception). I hope you are liking it! I built this on React cause why not!',
+    desc:'Built on ReactJS, this portfolio is lightweight, fast and super responsive to all screen sizes.',
     link:'http://moidhasan.herokuapp.com/',
     git:'https://github.com/MoidHasanBeig/my-port'
   },
