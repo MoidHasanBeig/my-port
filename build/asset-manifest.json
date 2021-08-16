@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.9daa1b17.chunk.css",
+    "main.css": "/static/css/main.45b4aba6.chunk.css",
     "main.js": "/static/js/main.964408e5.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.68b3478b.js",
     "static/js/2.9c3b3a6d.chunk.js": "/static/js/2.9c3b3a6d.chunk.js",
     "static/css/3.e8793ca7.chunk.css": "/static/css/3.e8793ca7.chunk.css",
     "static/js/3.84901e02.chunk.js": "/static/js/3.84901e02.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.d179d0661a5b565d33c6f30e86fb6c12.js": "/precache-manifest.d179d0661a5b565d33c6f30e86fb6c12.js",
+    "precache-manifest.5f5afab3de8a63263226681283ec40a1.js": "/precache-manifest.5f5afab3de8a63263226681283ec40a1.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.9c3b3a6d.chunk.js.LICENSE.txt": "/static/js/2.9c3b3a6d.chunk.js.LICENSE.txt",
     "static/media/main.styles.scss": "/static/media/PoorStory.a1d66fcf.ttf",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.68b3478b.js",
     "static/js/2.9c3b3a6d.chunk.js",
-    "static/css/main.9daa1b17.chunk.css",
+    "static/css/main.45b4aba6.chunk.css",
     "static/js/main.964408e5.chunk.js"
   ]
 }
