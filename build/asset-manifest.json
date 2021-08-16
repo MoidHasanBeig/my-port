@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf010775.chunk.css",
-    "main.js": "/static/js/main.257b0844.chunk.js",
+    "main.css": "/static/css/main.7d268011.chunk.css",
+    "main.js": "/static/js/main.06df9302.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.b51632b6.js",
     "static/js/2.b4da5d2a.chunk.js": "/static/js/2.b4da5d2a.chunk.js",
     "static/css/3.e8793ca7.chunk.css": "/static/css/3.e8793ca7.chunk.css",
     "static/js/3.941565b4.chunk.js": "/static/js/3.941565b4.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.4294a1a639dcfca79e83622ec205626e.js": "/precache-manifest.4294a1a639dcfca79e83622ec205626e.js",
+    "precache-manifest.ed11d9ebfe42378ad9aee09349673d2e.js": "/precache-manifest.ed11d9ebfe42378ad9aee09349673d2e.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.b4da5d2a.chunk.js.LICENSE.txt": "/static/js/2.b4da5d2a.chunk.js.LICENSE.txt",
     "static/media/main.styles.scss": "/static/media/PoorStory.a1d66fcf.ttf",
@@ -16,7 +16,7 @@
     "static/media/top.responsive.scss": "/static/media/seamless-clouds.a38526b9.svg",
     "static/media/credentials.images.scss": "/static/media/udemyfullstack.a0ccd55b.jpg",
     "static/media/mywork.images.scss": "/static/media/webbcast-sm.ad41aab3.jpg",
-    "static/media/contact.styles.scss": "/static/media/wa.4e73fbe6.svg",
+    "static/media/contact.styles.scss": "/static/media/wa.e29a7b11.svg",
     "static/media/mywork.styles.scss": "/static/media/nav-btn.751a24e6.svg",
     "static/media/level.styles.scss": "/static/media/zero.c93e5d21.svg",
     "static/media/menubutton.styles.scss": "/static/media/menu-icon-lite.418e6138.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.b51632b6.js",
     "static/js/2.b4da5d2a.chunk.js",
-    "static/css/main.cf010775.chunk.css",
-    "static/js/main.257b0844.chunk.js"
+    "static/css/main.7d268011.chunk.css",
+    "static/js/main.06df9302.chunk.js"
   ]
 }

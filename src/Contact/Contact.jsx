@@ -80,7 +80,7 @@ function Contact(props) {
           </a>
         </div>
         <div className={`zing ${props.dark && "invert"}`} />
-        <div className="year">{new Date().getFullYear()}</div>
+        <div className="year">moid.dev &copy; {new Date().getFullYear()}</div>
       </div>
     </div>
   );
