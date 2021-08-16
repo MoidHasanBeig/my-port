@@ -1,3 +1,26 @@
+div.menu-non-mobile {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 10;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  display: none;
+  flex-direction: column;
+
+  a.menu-option {
+    transition: font-size 300ms;
+    text-decoration: none;
+    color: #ABABAB;
+    line-height: 1.2rem;
+  }
+  a.menu-option:hover {
+    font-size: 1.1rem;
+  }
+}
+
 div.menu-mobile {
   position: fixed;
   top: 0;
@@ -36,3 +59,15 @@ div.show-menu {
   left: 0;
   opacity: 1;
 }
+
+div.menu-button {
+  background-image: url('./images/menu-icon-lite.svg');
+  width: 14vw;
+  height: 14vw;
+  background-size: 100% 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+

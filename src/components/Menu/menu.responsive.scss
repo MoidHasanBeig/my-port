@@ -1,3 +1,9 @@
+@media (orientation: landscape) {
+  div.menu-mobile {
+    display: none;
+  }
+}
+
 // Extra small devices (portrait phones, less than 360px)
 @media (max-width: 360px) {
     div.menu-non-mobile {
@@ -17,12 +23,19 @@
   div.menu-non-mobile {
     display: none;
   }
+  div.menu-button {
+    width: 11vw;
+    height: 11vw;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   div.menu-non-mobile {
     display: flex;
+  }
+  div.menu-button {
+    display: none;
   }
 }
 

@@ -9,19 +9,15 @@ import MyTools from './MyTools/MyTools';
 import MyWork from './MyWork/MyWork';
 import Credentials from './Credentials/Credentials';
 import Contact from './Contact/Contact';
-import MenuNonMobile from './components/MenuNonMobile/MenuNonMobile';
-import MenuMobile from './components/MenuMobile/MenuMobile';
-import MenuButton from './components/MenuButton/MenuButton';
+import Menu from './components/Menu/Menu';
 import Notification from './components/Notification/Notification';
 import DarkModeToggle from 'react-dark-mode-toggle';
 
 function App() {
 
   let [isLoading,setIsLoading] = useState(true);
-  let [activeSection,setActiveSection] = useState("top");
   let [notification,setNotification] = useState(false);
   let [isDark,setIsDark] = useState(JSON.parse(localStorage.getItem("theme")) || false);
-  let [isMobileMenu,setIsMobileMenu] = useState(false);
 
   let menuItems = [
     {name:'Top', id:'top'},
@@ -32,44 +28,8 @@ function App() {
     {name:'Contact', id:'contact'}
   ];
 
-  var scrollTimeout;
-  function scrollThrottler() {
-    if ( !scrollTimeout ) {
-      scrollTimeout = setTimeout(function() {
-        scrollTimeout = null;
-        checkActiveSection();
-       }, 66);
-    }
-  }
-
-  function checkActiveSection() {
-    let sectionList = document.getElementsByClassName("section");
-    let sectionArr = Array.from(sectionList);
-    sectionArr.forEach( (section) => {
-      let activeId = isInViewport(section);
-      if (activeId && activeId!==activeSection) {
-        setActiveSection(activeId);
-      }
-    });
-  }
-
-  let isInViewport = function (elem) {
-      let bounding = elem.getBoundingClientRect();
-      let screenHeight = window.innerHeight || document.documentElement.clientHeight;
-      if ( bounding.top > -300 && bounding.top*2 <= (screenHeight)) {
-        return elem.id;
-      }
-      else {
-        return false;
-      }
-  };
-
   function newNotification(message) {
     setNotification(message);
-  }
-
-  function toggleMenu() {
-    setIsMobileMenu(prevValue => !prevValue);
   }
 
   useEffect(() => {
@@ -77,13 +37,6 @@ function App() {
       setIsLoading(false);
     }
   },[]);
-
-  useEffect(() => {
-    window.addEventListener("scroll", scrollThrottler, false);
-    return function cleanUp() {
-      window.removeEventListener("scroll", scrollThrottler, false);
-    }
-  });
 
   useEffect(() => {
     localStorage.setItem("theme",isDark);
@@ -96,18 +49,9 @@ function App() {
         <div className={`landscape-small ${isDark && "invert"}`}>
           <p>Please switch to portrait mode</p>
         </div>
-        <MenuButton toggleMenu={toggleMenu} />
-        <MenuNonMobile
+        <Menu
           menuItems={menuItems}
-          activeSection={activeSection}
           dark={isDark}
-        />
-        <MenuMobile
-          menuItems={menuItems}
-          activeSection={activeSection}
-          dark={isDark}
-          visible={isMobileMenu}
-          toggleMenu={toggleMenu}
           toggleTheme={setIsDark}
         />
         <div className="dark-mode-toggle">
