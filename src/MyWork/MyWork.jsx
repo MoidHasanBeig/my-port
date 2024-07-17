@@ -15,7 +15,7 @@ let workArr = [
     mobileImg:'webbcast-sm',
     tools:['ReactJS','NodeJS','WebRTC','WebSockets'],
     desc:'This is a live streaming app that can put you live in few seconds without any signup. Built on React+Node. WebRTC and WebSockets at the very core of the app.',
-    link:'https://webbcast.herokuapp.com/',
+    link:'https://axtrion-broadcast-app.onrender.com/',
     git:'https://github.com/MoidHasanBeig/axtrion-broadcast-app'
   },
   {
